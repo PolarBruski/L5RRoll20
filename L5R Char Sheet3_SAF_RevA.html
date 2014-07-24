@@ -1,0 +1,1136 @@
+<div class="bio sheet-3colrow">
+    <div class="sheet-col">
+        <label><span>Name</span> <input type="text" name="attr_Name" /></label>
+        <label>
+            <span>Clan:</span>
+            <select name="attr_Clan">
+                <option value="Crab">Crab</option>
+                <option value="Crane">Crane</option>
+                <option value="Dragon">Dragon</option>
+                <option value="Lion">Lion</option>
+                <option value="Mantis">Mantis</option>
+                <option value="Phoenix">Phoenix</option>
+                <option value="Scorpion">Scorpion</option>
+                <option value="Spider">Spider</option>
+                <option value="Unicorn">Unicorn</option>
+                <option value="Misc">Misc</option>
+            </select>
+            </label>
+        <label><span>Family</span> <input type="text" name="attr_Family" /></label>
+        <label><span>School</span> <input type="text" name="attr_School" /></label>
+    </div>
+     <div class="sheet-col">
+        <table>
+         <tr>
+            <td><label style=display:inline><span>Rank</span></label></td>
+            <td><input  type="number" name="attr_Rank" /></td>
+        </tr>
+        <tr>
+            <td><div><label style=display:inline><span>Experience</span></label></td>
+            <td><input type="number" name="attr_Experience" /></div></td>
+        </tr>
+        <tr>
+            <td><div><label style=display:inline><span>Insight</span></label></td>
+            <td><input type="number" disabled="true" name="attr_Insight" value="((@{Air} + @{Water} + @{Fire} + @{Earth} + @{Void}) * 10 )"/></div></td>
+        </tr>            
+        </table>
+    </div>
+    <div class="sheet-col center">
+        <img src="http://i.imgur.com/tv2Gvag.png" class="banner" />
+    </div>
+</div>
+
+<div class="center">
+    <input type="radio" class="tab" name="attr_tab" value="statistics" checked="checked" /><span title="Traits"></span>
+    <input type="radio" class="tab" name="attr_tab" value="skills" /><span title="Skills"></span>
+    <input type="radio" class="tab" name="attr_tab" value="techniques" /><span title="Techniques"></span>
+    <input type="radio" class="tab" name="attr_tab" value="background" /><span title="Background"></span>
+    <input type="radio" class="tab" name="attr_tab" value="Equipment" /><span title="Equipment"></span>
+
+<p></p>
+<div class="tab-content statistics-tab">
+    <h1 class="separator"><span></span></h1>
+    
+<div class="center">
+    <div class="sheet-6colrow">
+        <div class="sheet-col" style=background-color:#B4C8DB;>
+            <p></p>
+            <div class="attribute">
+                <img src="http://fc03.deviantart.net/fs71/f/2011/163/b/0/air_ring_by_exahyl-d3is15c.png"/>
+                <h3 class="attribute">Air</h3>
+            </div>
+            <div class="attribute">
+                <input type="number" name="attr_Air"/>
+                <button type='roll' name='roll_Air' value='@{name} rolls Air [[@{Air}d10!!]]'></button><br/>
+            </div>
+            <div class="attribute">
+                <p></ladel><span>Reflexes</span></p>
+                <input type="number" name="attr_Reflexes" />
+                <button type='roll' name='roll_Reflexes' value='@{name} rolls Reflexes [[@{Reflexes}d10!!]]'></button><br/>
+            </div>
+            <div class="attribute">
+                <p></ladel><span>Awareness</span></p>
+                <input type="number" name="attr_Awareness" />
+                <button type='roll' name='roll_Awareness' value='@{name} rolls Awareness [[@{Awareness}d10!!]]'></button><br/>
+            </div>
+            <p></p>
+        </div>
+        <div class="sheet-col" style=background-color:#B39C85;>
+            <p></p>
+            <div class="attribute">
+                <img src="http://fc04.deviantart.net/fs70/f/2011/163/8/3/earth_by_exahyl-d3is114.png"/>
+                <h3 class="attribute">Earth</h3>
+                
+            </div>
+             <div class="attribute">
+                <input type="number" name="attr_Earth"/>
+                <button type='roll' name='roll_Earth' value='@{name} rolls Earth [[@{Earth}d10!!]]'></button><br/>
+            </div>
+            <div class="attribute">
+                <p></ladel><span>Stamina</span></p>
+                <input type="number" name="attr_Stamina" />
+                <button type='roll' name='roll_Stamina' value='@{name} rolls Stamina [[@{Stamina}d10!!]]'></button><br/>
+            </div>
+            <div class="attribute">
+                <p></ladel><span>Willpower</span></p>
+                <input type="number" name="attr_Willpower" />
+                <button type='roll' name='roll_Willpower' value='@{name} rolls Willpower [[@{Willpower}d10!!]]'></button><br/>
+            </div>
+            <p></p>
+        </div>
+        <div class="sheet-col" style=background-color:#EBA93C;>
+            <p></p>
+            <div class="attribute">
+                 <img src="http://fc00.deviantart.net/fs70/f/2011/163/2/d/fire_ring_by_exahyl-d3is13z.png"/>
+                 <h3 class="attribute">Fire</h3>
+            </div>
+             <div class="attribute">
+                <input type="number" name="attr_Fire"/>
+                <button type='roll' name='roll_Fire' value='@{name} rolls Fire [[@{Fire}d10!!]]'></button><br/>
+            </div>
+            <div class="attribute">
+                <p></ladel><span>Agility</span></p>
+                <input type="number" name="attr_Agility" />
+                <button type='roll' name='roll_Agility' value='@{name} rolls Agility [[@{Agility}d10!!]]'></button><br/>
+            </div>
+            <div class="attribute">
+                <p></ladel><span>Intelligence</span></p>
+                <input type="number" name="attr_Intelligence" />
+                <button type='roll' name='roll_Intelligence' value='@{name} rolls Intelligence [[@{Intelligence}d10!!]]'></button><br/>
+            </div>
+            <p></p>
+        </div>
+        <div class="sheet-col" style=background-color:#98ADDA;>
+            <p></p>
+            <div class="attribute">
+                 <img src="http://fc06.deviantart.net/fs71/f/2011/163/d/e/water_ring_by_exahyl-d3is12g.png"/>
+                 <h3 class="attribute">Water</h3>
+            </div>
+             <div class="attribute">
+                <input type="number" name="attr_Water" />
+                <button type='roll' name='roll_Water' value='@{name} rolls Water [[@{Water}d10!!]]'></button><br/>
+            </div>
+            <div class="attribute">
+                <p></ladel><span>Strength</span></p>
+                <input type="number" name="attr_Strength" />
+                <button type='roll' name='roll_Strength' value='@{name} rolls Strength [[@{Strength}d10!!]]'></button><br/>
+            </div>
+            <div class="attribute">
+                <p></ladel><span>Perception</span></p>
+                <input type="number" name="attr_Perception" />
+                <button type='roll' name='roll_Perception' value='@{name} rolls Perception [[@{Perception}d10!!]]'></button><br/>
+            </div>
+            <p></p>
+        </div>
+        <div class="sheet-col" style=background-color:#BDA7A8;>
+            <p></p>
+            <div class="attribute">
+                 <img src="http://fc01.deviantart.net/fs71/f/2011/163/4/1/void_by_exahyl-d3is16h.png"/>
+                 <h3 class="attribute">Void</h3>
+                 </div>
+             <div class="attribute">
+                <input type="number" name="attr_Void" />
+                <button type='roll' name='roll_Void' value='@{name} rolls Void [[@{Void}d10!!]]'></button><br/>
+            </div>
+            <div class="attribute">
+                <p></ladel><span>Void Spent</span></p>
+                <input type="number" name="attr_Voidspent" />
+            </div>
+            <div class="sheet-col">
+            <div class="attribute">
+            
+            <p></p>
+            </div>
+        </div>
+        
+    </div>
+</div>
+<p></p>    
+    <h1 class="separator"><span></span></h1>
+     <div class="sheet-2colrow">
+         <div class="sheet-col">
+            <table class=borderedtable>
+                <tr>
+                    <th>Initiative</th>
+                    <th></th>
+                    <th>Armor TN</th>
+                    <th></th>
+                    <th>Armor</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td>Rank / Reflexes</td>
+                    <td><input type="number" disabled="true" name="attr_BaseInitiative" value="(@{Reflexes}+@{Rank})" />
+                <button type='roll' name='roll_Initiative' value='@{name} rolls Initiative [[(@{BaseInitiative})d10k@{reflexes}!!]]'></button><br/></td>
+                    <td>Base TN</td>
+                    <td><input type="number" disabled="true" name="attr_BaseTN" value="(((@{Reflexes}) * 5) + 5)"/></td>
+                    <td>Quality</td>
+                    <td><input type="text" class="narrow" name="attr_ArmorType"></td>
+                </tr>
+                <tr>
+                    <td>Modifiers</td>
+                    <td><input type="number" name="attr_InitiativeMod"></td>
+                    <td>Armor Bonus</td>
+                    <td><input type="number" name="attr_ArmorBonus"></td>
+                    <td>Reduction</td>
+                    <td><input type="number" name="attr_ArmorReduction"></td>
+                </tr>
+                <tr>
+                    <td>Initiative</td>
+                    <td><input type="number" name="attr_Initiative"/>
+                        <button type='roll' name='roll_Initiative' value='@{name} rolls Initiative [[(@{BaseInitiative})d10k@{reflexes}!! + @{InitiativeMod}]]'></button>
+                    </td>
+                    <td>Current TN</td>
+                    <td><input type="number" disabled="true" name="attr_CurrentTN" value="(@{BaseTN}+@{ArmorBonus})"/></td>
+                    <td>Notes</td>
+                    <td><input type="text" class="narrow" name="attr_ArmorNotes"></td>
+                </tr>
+            </table>
+        </div>
+        
+    
+        <div class="sheet-col">
+            <h3 class="ability">Honor     <input type="number" name="attr_HonorRank" /></h3>
+                <div class="dots">
+                    <input type="checkbox" name="attr_Honor_max" value="1" /><span></span>
+                    <input type="radio" name="attr_Honor" value="0" checked="checked" />
+                    <input type="radio" name="attr_Honor" value="1" /><span></span>
+                    <input type="radio" name="attr_Honor" value="2" /><span></span>
+                    <input type="radio" name="attr_Honor" value="3" /><span></span>
+                    <input type="radio" name="attr_Honor" value="4" /><span></span>
+                    <input type="radio" name="attr_Honor" value="5" /><span></span>
+                    <input type="radio" name="attr_Honor" value="6" /><span></span>
+                    <input type="radio" name="attr_Honor" value="7" /><span></span>
+                    <input type="radio" name="attr_Honor" value="8" /><span></span>
+                    <input type="radio" name="attr_Honor" value="9" /><span></span>
+                    <input type="radio" name="attr_Honor" value="10" /><span></span>
+                </div>
+            
+            <h3 class="ability">Glory     <input type="number" name="attr_GloryRank" /></h3>
+                <div class="dots">
+                    <input type="checkbox" name="attr_Glory_max" value="1" /><span></span>
+                    <input type="radio" name="attr_Glory" value="0" checked="checked" />
+                    <input type="radio" name="attr_Glory" value="1" /><span></span>
+                    <input type="radio" name="attr_Glory" value="2" /><span></span>
+                    <input type="radio" name="attr_Glory" value="3" /><span></span>
+                    <input type="radio" name="attr_Glory" value="4" /><span></span>
+                    <input type="radio" name="attr_Glory" value="5" /><span></span>
+                    <input type="radio" name="attr_Glory" value="6" /><span></span>
+                    <input type="radio" name="attr_Glory" value="7" /><span></span>
+                    <input type="radio" name="attr_Glory" value="8" /><span></span>
+                    <input type="radio" name="attr_Glory" value="9" /><span></span>
+                    <input type="radio" name="attr_Glory" value="10" /><span></span>
+                </div>
+            
+            <h3 class="ability">Status     <input type="number" name="attr_StatusRank" /></h3>
+                <div class="dots">
+                    <input type="checkbox" name="attr_Status_max" value="1" /><span></span>
+                    <input type="radio" name="attr_Status" value="0" checked="checked" />
+                    <input type="radio" name="attr_Status" value="1" /><span></span>
+                    <input type="radio" name="attr_Status" value="2" /><span></span>
+                    <input type="radio" name="attr_Status" value="3" /><span></span>
+                    <input type="radio" name="attr_Status" value="4" /><span></span>
+                    <input type="radio" name="attr_Status" value="5" /><span></span>
+                    <input type="radio" name="attr_Status" value="6" /><span></span>
+                    <input type="radio" name="attr_Status" value="7" /><span></span>
+                    <input type="radio" name="attr_Status" value="8" /><span></span>
+                    <input type="radio" name="attr_Status" value="9" /><span></span>
+                    <input type="radio" name="attr_Status" value="10" /><span></span>
+                </div>
+        </div>
+        
+       
+    </div>
+    <p></p>
+    <p></p>
+    <h1 class="separator"><span></span></h1>
+    
+    <div class="sheet-3colrow">
+        <div class="sheet-col">
+            <h3> Description</h3>
+            <textarea name="attr_Description" class="four-lines"></textarea>
+        </div>
+        <div class="sheet-col">
+            <h3> Advantages</h3>
+            <textarea name="attr_Advantages" class="four-lines"></textarea>
+        </div>
+        <div class="sheet-col">
+            <h3> Disadvantages</h3>
+            <textarea name="attr_Disadvantages" class="four-lines"></textarea>    
+        </div>
+    </div>
+    
+    
+    <div>
+  <table style='border-collapse: collapse; border-spacing: 0;'>
+   <h4>Wounds</h4><input type="number" name="attr_Wounds" value="0"/>       
+   <tr>
+           <td style='font-weight: bold;'>Wound Level</td>
+           <td style='font-weight: bold;'>Total</td>
+   </tr>
+   <tr>
+           <td style='font-weight: bold;'>Healthy (+0)</td>
+           <td><input type="number" name="attr_Healthy" value="@{Earth}*5" disabled="true"/></td>
+   </tr>
+   <tr>
+           <td style='font-weight: bold;'>Nicked (+3)</td>
+           <td><input type="number" name="attr_Nicked" value="@{Earth}*7" disabled="true"/></td></td>
+   </tr>
+   <tr>
+           <td style='font-weight: bold;'>Grazed (+5)</td>
+           <td><input type="number" name="attr_Grazed" value="@{Earth}*9" disabled="true"/></td>
+   </tr>
+    <tr>
+           <td style='font-weight: bold;'>Hurt (+10)</td>
+           <td><input type="number" name="attr_Hurt" value="@{Earth}*11" disabled="true"/></td>
+   </tr>
+   <tr>
+           <td style='font-weight: bold;'>Injured (+15)</td>
+           <td><input type="number" name="attr_Injured" value="@{Earth}*13" disabled="true"/></td>
+   </tr>
+   <tr>
+           <td style='font-weight: bold;'>Crippled (+20)</td>
+           <td><input type="number" name="attr_Crippled" value="@{Earth}*15" disabled="true"/></td>
+   </tr>
+   <tr>
+           <td style='font-weight: bold;'>Down (+40)</td>
+           <td><input type="number" name="attr_Down" value="@{Earth}*17" disabled="true"/></td>
+   </tr>
+   <tr>
+           <td style='font-weight: bold;'>Out</td>
+           <td><input type="number" name="attr_Out" value="@{Earth}*19" disabled="true"/></td>
+   </tr>
+</table></div>
+</div>
+</div>
+
+<div class="tab-content background-tab">
+    <div class="sheet-2colrow">
+        <div class="sheet-col">
+            <h3>Background</h3>
+            <textarea name="attr_Background" class="four-lines"></textarea>        
+
+        </div>
+    </div>
+</div>
+
+<div class="tab-content skills-tab">
+    <h3>Skills</h3>
+        <fieldset>
+            <h1 class="separator vspace"><span>High Skills</span></h1>
+            <table style='border-collapse: collapse; border-spacing: 0;'>
+        <tr>
+            <td style='font-weight: bold;'>Skill Name</td>
+            <td style='font-weight: bold;'>Rank</td>
+            <td style='font-weight: bold;'>Trait</td>
+            <td style='font-weight: bold;'>Roll</td>
+            <td style='font-weight: bold;'>Keep</td>
+            <td style='font-weight: bold;'>+Roll</td>
+            <td style='font-weight: bold;'>+Keep</td>
+            <td style='font-weight: bold;'>Emphases</td>
+            <td style='font-weight: bold;'>Untrained</td>
+            <td style='font-weight: bold;'>Trained</td>
+            <td style='font-weight: bold;'>Emphasis</td>
+            <td style='font-weight: bold;'>Sub-Type</td>
+        </tr>
+        <tr>
+            <td class="span">Acting</td> 
+            <td><input type="number" name="attr_rank_acting" class="short" value='0'/></td>
+            <td>Awareness</td>
+            <td><input type="number" name="attr_roll_acting" class="sheet-short" value="@{rank_acting}+@{Awareness}" disabled="true"/></td>
+            <td><input type="number" name="attr_keep_acting" value="@{Awareness}" disabled="true"></td>
+            <td><input type="number" name="attr_roll_bonus_acting" value='0'></td>
+            <td><input type="number" name="attr_keep_bonus_acting" value='0'></td>
+            <td><input type="text" name="attr_acting_Emphases" value=></td>
+            <td><button type='roll' value='/roll [[@{roll_acting}+@{roll_bonus_acting}]]d10k[[@{keep_acting}+@{keep_bonus_acting}]]'/></td>
+            <td><button type='roll' value='/roll [[@{roll_acting}+@{roll_bonus_acting}]]d10k[[@{keep_acting}+@{keep_bonus_acting}]]!!'/></td>
+            <td><button type='roll' value='/roll [[@{roll_acting}+@{roll_bonus_acting}]]d10k[[@{keep_acting}+@{keep_bonus_acting}]]!!<1'/></td>
+        </tr>
+        <tr>
+            <td class="span">Artisan</td> 
+            <td><input type="number" name="attr_rank_artisan" class="short" value='0'/></td>
+            <td>Awareness</td>
+            <td><input type="number" name="attr_roll_artisan" class="sheet-short" value="@{rank_artisan}+@{Awareness}" disabled="true"/></td>
+            <td><input type="number" name="attr_keep_artisan" value="@{Awareness}" disabled="true"></td>
+            <td><input type="number" name="attr_roll_bonus_artisan" value='0'></td>
+            <td><input type="number" name="attr_keep_bonus_artisan" value='0'></td>
+            <td><input type="text" name="attr_artisan_Emphases" value=></td>
+            <td><button type='roll' value='/roll [[@{roll_artisan}+@{roll_bonus_artisan}]]d10k[[@{keep_Artisan}+@{keep_bonus_artisan}]]'/></td>
+            <td><button type='roll' value='/roll [[@{roll_artisan}+@{roll_bonus_artisan}]]d10k[[@{keep_Artisan}+@{keep_bonus_artisan}]]!!'/></td>
+            <td><button type='roll' value='/roll [[@{roll_artisan}+@{roll_bonus_artisan}]]d10k[[@{keep_Artisan}+@{keep_bonus_artisan}]]!!<1'/></td>
+            <td><input type="text" name="attr_artisan_type" value=></td>
+        </tr>
+        <tr>
+            <td class="span">Calligraphy</td> 
+            <td><input type="number" name="attr_rank_calligraphy" class="short" value='0'/></td>
+            <td>Intelligence</td>
+            <td><input type="number" name="attr_roll_calligraphy" class="sheet-short" value="@{rank_calligraphy}+@{Intelligence}" disabled="true"/></td>
+            <td><input type="number" name="attr_keep_calligraphy" value="@{Intelligence}" disabled="true"></td>
+            <td><input type="number" name="attr_roll_bonus_calligraphy" value='0'></td>
+            <td><input type="number" name="attr_keep_bonus_calligraphy" value='0'></td>
+            <td><input type="text" name="attr_calligraphy_Emphases" value=></td>
+            <td><button type='roll' value='/roll [[@{roll_calligraphy}+@{roll_bonus_calligraphy}]]d10k[[@{keep_Calligraphy}+@{keep_bonus_calligraphy}]]'/></td>
+            <td><button type='roll' value='/roll [[@{roll_calligraphy}+@{roll_bonus_calligraphy}]]d10k[[@{keep_Calligraphy}+@{keep_bonus_calligraphy}]]!!'/></td>
+            <td><button type='roll' value='/roll [[@{roll_calligraphy}+@{roll_bonus_calligraphy}]]d10k[[@{keep_Calligraphy}+@{keep_bonus_calligraphy}]]!!<1'/></td>
+        </tr>  
+        <tr>
+            <td class="span">Courtier</td> 
+            <td><input type="number" name="attr_rank_courtier" class="short" value='0'/></td>
+            <td>Awareness</td>
+            <td><input type="number" name="attr_roll_courtier" class="sheet-short" value="@{rank_courtier}+@{Awareness}" disabled="true"/></td>
+            <td><input type="number" name="attr_keep_courtier" value="@{Awareness}" disabled="true"></td>
+            <td><input type="number" name="attr_roll_bonus_courtier" value='0'></td>
+            <td><input type="number" name="attr_keep_bonus_courtier" value='0'></td>
+            <td><input type="text" name="attr_courtier_Emphases" value=></td>
+            <td><button type='roll' value='/roll [[@{roll_courtier}+@{roll_bonus_courtier}]]d10k[[@{keep_Courtier}+@{keep_bonus_courtier}]]'/></td>
+            <td><button type='roll' value='/roll [[@{roll_courtier}+@{roll_bonus_courtier}]]d10k[[@{keep_Courtier}+@{keep_bonus_courtier}]]!!'/></td>
+            <td><button type='roll' value='/roll [[@{roll_courtier}+@{roll_bonus_courtier}]]d10k[[@{keep_Courtier}+@{keep_bonus_courtier}]]!!<1'/></td>
+        </tr>
+        <tr>
+            <td class="span">Divination</td> 
+            <td><input type="number" name="attr_rank_divination" class="short" value='0'/></td>
+            <td>Intelligence</td>
+            <td><input type="number" name="attr_roll_divination" class="sheet-short" value="@{rank_divination}+@{Intelligence}" disabled="true"/></td>
+            <td><input type="number" name="attr_keep_divination" value="@{Intelligence}" disabled="true"></td>
+            <td><input type="number" name="attr_roll_bonus_divination" value='0'></td>
+            <td><input type="number" name="attr_keep_bonus_divination" value='0'></td>
+            <td><input type="text" name="attr_divination_Emphases" value=></td>
+            <td><button type='roll' value='/roll [[@{roll_divination}+@{roll_bonus_divination}]]d10k[[@{keep_Divination}+@{keep_bonus_divination}]]'/></td>
+            <td><button type='roll' value='/roll [[@{roll_divination}+@{roll_bonus_divination}]]d10k[[@{keep_Divination}+@{keep_bonus_divination}]]!!'/></td>
+            <td><button type='roll' value='/roll [[@{roll_divination}+@{roll_bonus_divination}]]d10k[[@{keep_Divination}+@{keep_bonus_divination}]]!!<1'/></td>
+        </tr>
+        <tr>
+            <td class="span">Etiquette</td> 
+            <td><input type="number" name="attr_rank_etiquette" class="short" value='0'/></td>
+            <td>Awareness</td>
+            <td><input type="number" name="attr_roll_etiquette" class="sheet-short" value="@{rank_etiquette}+@{Awareness}" disabled="true"/></td>
+            <td><input type="number" name="attr_keep_etiquette" value="@{Awareness}" disabled="true"></td>
+            <td><input type="number" name="attr_roll_bonus_etiquette" value='0'></td>
+            <td><input type="number" name="attr_keep_bonus_etiquette" value='0'></td>
+            <td><input type="text" name="attr_etiquette_Emphases" value=></td>
+            <td><button type='roll' value='/roll [[@{roll_etiquette}+@{roll_bonus_etiquette}]]d10k[[@{keep_Etiquette}+@{keep_bonus_etiquette}]]'/></td>
+            <td><button type='roll' value='/roll [[@{roll_etiquette}+@{roll_bonus_etiquette}]]d10k[[@{keep_Etiquette}+@{keep_bonus_etiquette}]]!!'/></td>
+            <td><button type='roll' value='/roll [[@{roll_etiquette}+@{roll_bonus_etiquette}]]d10k[[@{keep_Etiquette}+@{keep_bonus_etiquette}]]!!<1'/></td>
+        </tr>
+        <tr>
+            <td class="span">Games</td> 
+            <td><input type="number" name="attr_rank_games" class="short" value='0'/></td>
+            <td>Awareness</td>
+            <td><input type="number" name="attr_roll_games" class="sheet-short" value="@{rank_games}+@{Awareness}" disabled="true"/></td>
+            <td><input type="number" name="attr_keep_games" value="@{Awareness}" disabled="true"></td>
+            <td><input type="number" name="attr_roll_bonus_games" value='0'></td>
+            <td><input type="number" name="attr_keep_bonus_games" value='0'></td>
+            <td><input type="text" name="attr_games_Emphases" value=></td>
+            <td><button type='roll' value='/roll [[@{roll_games}+@{roll_bonus_games}]]d10k[[@{keep_Games}+@{keep_bonus_games}]]'/></td>
+            <td><button type='roll' value='/roll [[@{roll_games}+@{roll_bonus_games}]]d10k[[@{keep_Games}+@{keep_bonus_games}]]!!'/></td>
+            <td><button type='roll' value='/roll [[@{roll_games}+@{roll_bonus_games}]]d10k[[@{keep_Games}+@{keep_bonus_games}]]!!<1'/></td>
+            <td><input type="text" name="attr_games_type" value=></td>
+
+        </tr>  
+        <tr>
+            <td class="span">Investigation</td> 
+            <td><input type="number" name="attr_rank_investigation" class="short" value='0'/></td>
+            <td>Perception</td>
+            <td><input type="number" name="attr_roll_investigation" class="sheet-short" value="@{rank_investigation}+@{Perception}" disabled="true"/></td>
+            <td><input type="number" name="attr_keep_investigation" value="@{Perception}" disabled="true"></td>
+            <td><input type="number" name="attr_roll_bonus_investigation" value='0'></td>
+            <td><input type="number" name="attr_keep_bonus_investigation" value='0'></td>
+            <td><input type="text" name="attr_investigation_Emphases" value=></td>
+            <td><button type='roll' value='/roll [[@{roll_investigation}+@{roll_bonus_investigation}]]d10k[[@{keep_Investigation}+@{keep_bonus_investigation}]]'/></td>
+            <td><button type='roll' value='/roll [[@{roll_investigation}+@{roll_bonus_investigation}]]d10k[[@{keep_Investigation}+@{keep_bonus_investigation}]]!!'/></td>
+            <td><button type='roll' value='/roll [[@{roll_investigation}+@{roll_bonus_investigation}]]d10k[[@{keep_Investigation}+@{keep_bonus_investigation}]]!!<1'/></td>
+        </tr>
+        <tr>
+            <td class="span">Lore</td> 
+            <td><input type="number" name="attr_rank_lore" class="short" value='0'/></td>
+            <td>Intelligence</td>
+            <td><input type="number" name="attr_roll_lore" class="sheet-short" value="@{rank_lore}+@{Intelligence}" disabled="true"/></td>
+            <td><input type="number" name="attr_keep_lore" value="@{Intelligence}" disabled="true"></td>
+            <td><input type="number" name="attr_roll_bonus_lore" value='0'></td>
+            <td><input type="number" name="attr_keep_bonus_lore" value='0'></td>
+            <td><input type="text" name="attr_lore_Emphases" value=></td>
+            <td><button type='roll' value='/roll [[@{roll_lore}+@{roll_bonus_lore}]]d10k[[@{keep_Lore}+@{keep_bonus_lore}]]'/></td>
+            <td><button type='roll' value='/roll [[@{roll_lore}+@{roll_bonus_lore}]]d10k[[@{keep_Lore}+@{keep_bonus_lore}]]!!'/></td>
+            <td><button type='roll' value='/roll [[@{roll_lore}+@{roll_bonus_lore}]]d10k[[@{keep_Lore}+@{keep_bonus_lore}]]!!<1'/></td>
+            <td><input type="text" name="attr_lore_type" value=></td>
+        </tr>   
+        <tr>
+            <td class="span">Lore</td> 
+            <td><input type="number" name="attr_rank_Lore2" class="short" value='0'/></td>
+            <td>Intelligence</td>
+            <td><input type="number" name="attr_roll_Lore2" class="sheet-short" value="@{rank_Lore2}+@{Intelligence}" disabled="true"/></td>
+            <td><input type="number" name="attr_keep_Lore2" value="@{Intelligence}" disabled="true"></td>
+            <td><input type="number" name="attr_roll_bonus_Lore2" value='0'></td>
+            <td><input type="number" name="attr_keep_bonus_Lore2" value='0'></td>
+            <td><input type="text" name="attr_Lore2_Emphases" value=></td>
+            <td><button type='roll' value='/roll [[@{roll_Lore2}+@{roll_bonus_Lore2}]]d10k[[@{keep_Lore2}+@{keep_bonus_Lore2}]]'/></td>
+            <td><button type='roll' value='/roll [[@{roll_Lore2}+@{roll_bonus_Lore2}]]d10k[[@{keep_Lore2}+@{keep_bonus_Lore2}]]!!'/></td>
+            <td><button type='roll' value='/roll [[@{roll_Lore2}+@{roll_bonus_Lore2}]]d10k[[@{keep_Lore2}+@{keep_bonus_Lore2}]]!!<1'/></td>
+            <td><input type="text" name="attr_Lore2_type" value=></td>
+        </tr>  
+        <tr>
+            <td class="span">Lore</td> 
+            <td><input type="number" name="attr_rank_Lore3" class="short" value='0'/></td>
+            <td>Intelligence</td>
+            <td><input type="number" name="attr_roll_Lore3" class="sheet-short" value="@{rank_Lore3}+@{Intelligence}" disabled="true"/></td>
+            <td><input type="number" name="attr_keep_Lore3" value="@{Intelligence}" disabled="true"></td>
+            <td><input type="number" name="attr_roll_bonus_Lore3" value='0'></td>
+            <td><input type="number" name="attr_keep_bonus_Lore3" value='0'></td>
+            <td><input type="text" name="attr_Lore3_Emphases" value=></td>
+            <td><button type='roll' value='/roll [[@{roll_Lore3}+@{roll_bonus_Lore3}]]d10k[[@{keep_Lore3}+@{keep_bonus_Lore3}]]'/></td>
+            <td><button type='roll' value='/roll [[@{roll_Lore3}+@{roll_bonus_Lore3}]]d10k[[@{keep_Lore3}+@{keep_bonus_Lore3}]]!!'/></td>
+            <td><button type='roll' value='/roll [[@{roll_Lore3}+@{roll_bonus_Lore3}]]d10k[[@{keep_Lore3}+@{keep_bonus_Lore3}]]!!<1'/></td>
+            <td><input type="text" name="attr_Lore3_type" value=></td>
+        </tr>
+        <tr>
+            <td class="span">Medicine</td> 
+            <td><input type="number" name="attr_rank_Medicine" class="short" value='0'/></td>
+            <td>Intelligence</td>
+            <td><input type="number" name="attr_roll_Medicine" class="sheet-short" value="@{rank_Medicine}+@{Intelligence}" disabled="true"/></td>
+            <td><input type="number" name="attr_keep_Medicine" value="@{Intelligence}" disabled="true"></td>
+            <td><input type="number" name="attr_roll_bonus_Medicine" value='0'></td>
+            <td><input type="number" name="attr_keep_bonus_Medicine" value='0'></td>
+            <td><input type="text" name="attr_Medicine_Emphases" value=></td>
+            <td><button type='roll' value='/roll [[@{roll_Medicine}+@{roll_bonus_Medicine}]]d10k[[@{keep_Medicine}+@{keep_bonus_Medicine}]]'/></td>
+            <td><button type='roll' value='/roll [[@{roll_Medicine}+@{roll_bonus_Medicine}]]d10k[[@{keep_Medicine}+@{keep_bonus_Medicine}]]!!'/></td>
+            <td><button type='roll' value='/roll [[@{roll_Medicine}+@{roll_bonus_Medicine}]]d10k[[@{keep_Medicine}+@{keep_bonus_Medicine}]]!!<1'/></td>
+        </tr>
+        <tr>
+            <td class="span">Meditation</td> 
+            <td><input type="number" name="attr_rank_Meditation" class="short" value='0'/></td>
+            <td>Void</td>
+            <td><input type="number" name="attr_roll_Meditation" class="sheet-short" value="@{rank_Meditation}+@{Void}" disabled="true"/></td>
+            <td><input type="number" name="attr_keep_Meditation" value="@{Void}" disabled="true"></td>
+            <td><input type="number" name="attr_roll_bonus_Meditation" value='0'></td>
+            <td><input type="number" name="attr_keep_bonus_Meditation" value='0'></td>
+            <td><input type="text" name="attr_Meditation_Emphases" value=></td>
+            <td><button type='roll' value='/roll [[@{roll_Meditation}+@{roll_bonus_Meditation}]]d10k[[@{keep_Meditation}+@{keep_bonus_Meditation}]]'/></td>
+            <td><button type='roll' value='/roll [[@{roll_Meditation}+@{roll_bonus_Meditation}]]d10k[[@{keep_Meditation}+@{keep_bonus_Meditation}]]!!'/></td>
+            <td><button type='roll' value='/roll [[@{roll_Meditation}+@{roll_bonus_Meditation}]]d10k[[@{keep_Meditation}+@{keep_bonus_Meditation}]]!!<1'/></td>
+        </tr>
+        <tr>
+            <td class="span">Perform</td> 
+            <td><input type="number" name="attr_rank_Perform" class="short" value='0'/></td>
+            <td>Agility</td>
+            <td><input type="number" name="attr_roll_Perform" class="sheet-short" value="@{rank_Perform}+@{Agility}" disabled="true"/></td>
+            <td><input type="number" name="attr_keep_Perform" value="@{Agility}" disabled="true"></td>
+            <td><input type="number" name="attr_roll_bonus_Perform" value='0'></td>
+            <td><input type="number" name="attr_keep_bonus_Perform" value='0'></td>
+            <td><input type="text" name="attr_Perform_Emphases" value=></td>
+            <td><button type='roll' value='/roll [[@{roll_Perform}+@{roll_bonus_Perform}]]d10k[[@{keep_Perform}+@{keep_bonus_Perform}]]'/></td>
+            <td><button type='roll' value='/roll [[@{roll_Perform}+@{roll_bonus_Perform}]]d10k[[@{keep_Perform}+@{keep_bonus_Perform}]]!!'/></td>
+            <td><button type='roll' value='/roll [[@{roll_Perform}+@{roll_bonus_Perform}]]d10k[[@{keep_Perform}+@{keep_bonus_Perform}]]!!<1'/></td>
+            <td><input type="text" name="attr_Perform_type" value=></td>
+        </tr>
+        <tr>
+            <td class="span">Sincerity</td> 
+            <td><input type="number" name="attr_rank_Sincerity" class="short" value='0'/></td>
+            <td>Awareness</td>
+            <td><input type="number" name="attr_roll_Sincerity" class="sheet-short" value="@{rank_Sincerity}+@{Awareness}" disabled="true"/></td>
+            <td><input type="number" name="attr_keep_Sincerity" value="@{Awareness}" disabled="true"></td>
+            <td><input type="number" name="attr_roll_bonus_Sincerity" value='0'></td>
+            <td><input type="number" name="attr_keep_bonus_Sincerity" value='0'></td>
+            <td><input type="text" name="attr_Sincerity_Emphases" value=></td>
+            <td><button type='roll' value='/roll [[@{roll_Sincerity}+@{roll_bonus_Sincerity}]]d10k[[@{keep_Sincerity}+@{keep_bonus_Sincerity}]]'/></td>
+            <td><button type='roll' value='/roll [[@{roll_Sincerity}+@{roll_bonus_Sincerity}]]d10k[[@{keep_Sincerity}+@{keep_bonus_Sincerity}]]!!'/></td>
+            <td><button type='roll' value='/roll [[@{roll_Sincerity}+@{roll_bonus_Sincerity}]]d10k[[@{keep_Sincerity}+@{keep_bonus_Sincerity}]]!!<1'/></td>
+        </tr>
+        <tr>
+            <td class="span">Spellcraft</td> 
+            <td><input type="number" name="attr_rank_Spellcraft" class="short" value='0'/></td>
+            <td>Intelligence</td>
+            <td><input type="number" name="attr_roll_Spellcraft" class="sheet-short" value="@{rank_Spellcraft}+@{Intelligence}" disabled="true"/></td>
+            <td><input type="number" name="attr_keep_Spellcraft" value="@{Intelligence}" disabled="true"></td>
+            <td><input type="number" name="attr_roll_bonus_Spellcraft" value='0'></td>
+            <td><input type="number" name="attr_keep_bonus_Spellcraft" value='0'></td>
+            <td><input type="text" name="attr_Spellcraft_Emphases" value=></td>
+            <td><button type='roll' value='/roll [[@{roll_Spellcraft}+@{roll_bonus_Spellcraft}]]d10k[[@{keep_Spellcraft}+@{keep_bonus_Spellcraft}]]'/></td>
+            <td><button type='roll' value='/roll [[@{roll_Spellcraft}+@{roll_bonus_Spellcraft}]]d10k[[@{keep_Spellcraft}+@{keep_bonus_Spellcraft}]]!!'/></td>
+            <td><button type='roll' value='/roll [[@{roll_Spellcraft}+@{roll_bonus_Spellcraft}]]d10k[[@{keep_Spellcraft}+@{keep_bonus_Spellcraft}]]!!<1'/></td>
+        </tr>
+        <tr>
+            <td class="span">Tea_Ceremony</td> 
+            <td><input type="number" name="attr_rank_Tea_Ceremony" class="short" value='0'/></td>
+            <td>Void</td>
+            <td><input type="number" name="attr_roll_Tea_Ceremony" class="sheet-short" value="@{rank_Tea_Ceremony}+@{Void}" disabled="true"/></td>
+            <td><input type="number" name="attr_keep_Tea_Ceremony" value="@{Void}" disabled="true"></td>
+            <td><input type="number" name="attr_roll_bonus_Tea_Ceremony" value='0'></td>
+            <td><input type="number" name="attr_keep_bonus_Tea_Ceremony" value='0'></td>
+            <td><input type="text" name="attr_Tea_Ceremony_Emphases" value=></td>
+            <td><button type='roll' value='/roll [[@{roll_Tea_Ceremony}+@{roll_bonus_Tea_Ceremony}]]d10k[[@{keep_Tea_Ceremony}+@{keep_bonus_Tea_Ceremony}]]'/></td>
+            <td><button type='roll' value='/roll [[@{roll_Tea_Ceremony}+@{roll_bonus_Tea_Ceremony}]]d10k[[@{keep_Tea_Ceremony}+@{keep_bonus_Tea_Ceremony}]]!!'/></td>
+            <td><button type='roll' value='/roll [[@{roll_Tea_Ceremony}+@{roll_bonus_Tea_Ceremony}]]d10k[[@{keep_Tea_Ceremony}+@{keep_bonus_Tea_Ceremony}]]!!<1'/></td>
+        </tr>  
+    <tr>
+    </fieldset>
+     <fieldset>
+            <h1 class="separator vspace"><span>Bugei Skills</span></h1>
+            <table style='border-collapse: collapse; border-spacing: 0;'>
+        <tr>
+            <td style='font-weight: bold;'>Skill Name</td>
+            <td style='font-weight: bold;'>Rank</td>
+            <td style='font-weight: bold;'>Trait</td>
+            <td style='font-weight: bold;'>Roll</td>
+            <td style='font-weight: bold;'>Keep</td>
+            <td style='font-weight: bold;'>+Roll</td>
+            <td style='font-weight: bold;'>+Keep</td>
+            <td style='font-weight: bold;'>Emphases</td>
+            <td style='font-weight: bold;'>Untrained</td>
+            <td style='font-weight: bold;'>Trained</td>
+            <td style='font-weight: bold;'>Emphasis</td>
+        </tr>
+        <tr>
+            <td class="span">Athletics</td> 
+            <td><input type="number" name="attr_rank_Athletics" class="short" value='0'/></td>
+            <td>Strength</td>
+            <td><input type="number" name="attr_roll_Athletics" class="sheet-short" value="@{rank_Athletics}+@{Strength}" disabled="true"/></td>
+            <td><input type="number" name="attr_keep_Athletics" value="@{Strength}" disabled="true"></td>
+            <td><input type="number" name="attr_roll_bonus_Athletics" value='0'></td>
+            <td><input type="number" name="attr_keep_bonus_Athletics" value='0'></td>
+            <td><input type="text" name="attr_Athletics_Emphases" value=></td>
+            <td><button type='roll' value='/roll [[@{roll_Athletics}+@{roll_bonus_Athletics}]]d10k[[@{keep_Athletics}+@{keep_bonus_Athletics}]]'/></td>
+            <td><button type='roll' value='/roll [[@{roll_Athletics}+@{roll_bonus_Athletics}]]d10k[[@{keep_Athletics}+@{keep_bonus_Athletics}]]!!'/></td>
+            <td><button type='roll' value='/roll [[@{roll_Athletics}+@{roll_bonus_Athletics}]]d10k[[@{keep_Athletics}+@{keep_bonus_Athletics}]]!!<1'/></td>
+        </tr>
+        <tr>
+            <td class="span">Battle</td> 
+            <td><input type="number" name="attr_rank_Battle" class="short" value='0'/></td>
+            <td>Perception</td>
+            <td><input type="number" name="attr_roll_Battle" class="sheet-short" value="@{rank_Battle}+@{Perception}" disabled="true"/></td>
+            <td><input type="number" name="attr_keep_Battle" value="@{Perception}" disabled="true"></td>
+            <td><input type="number" name="attr_roll_bonus_Battle" value='0'></td>
+            <td><input type="number" name="attr_keep_bonus_Battle" value='0'></td>
+            <td><input type="text" name="attr_Battle_Emphases" value=></td>
+            <td><button type='roll' value='/roll [[@{roll_Battle}+@{roll_bonus_Battle}]]d10k[[@{keep_Battle}+@{keep_bonus_Battle}]]'/></td>
+            <td><button type='roll' value='/roll [[@{roll_Battle}+@{roll_bonus_Battle}]]d10k[[@{keep_Battle}+@{keep_bonus_Battle}]]!!'/></td>
+            <td><button type='roll' value='/roll [[@{roll_Battle}+@{roll_bonus_Battle}]]d10k[[@{keep_Battle}+@{keep_bonus_Battle}]]!!<1'/></td>
+        </tr>
+        <tr>
+            <td class="span">Defense</td> 
+            <td><input type="number" name="attr_rank_Defense" class="short" value='0'/></td>
+            <td>Reflexes</td>
+            <td><input type="number" name="attr_roll_Defense" class="sheet-short" value="@{rank_Defense}+@{Reflexes}" disabled="true"/></td>
+            <td><input type="number" name="attr_keep_Defense" value="@{Reflexes}" disabled="true"></td>
+            <td><input type="number" name="attr_roll_bonus_Defense" value='0'></td>
+            <td><input type="number" name="attr_keep_bonus_Defense" value='0'></td>
+            <td><input type="text" name="attr_Defense_Emphases" value=></td>
+            <td><button type='roll' value='/roll [[@{roll_Defense}+@{roll_bonus_Defense}]]d10k[[@{keep_Defense}+@{keep_bonus_Defense}]]'/></td>
+            <td><button type='roll' value='/roll [[@{roll_Defense}+@{roll_bonus_Defense}]]d10k[[@{keep_Defense}+@{keep_bonus_Defense}]]!!'/></td>
+            <td><button type='roll' value='/roll [[@{roll_Defense}+@{roll_bonus_Defense}]]d10k[[@{keep_Defense}+@{keep_bonus_Defense}]]!!<1'/></td>
+        </tr>
+        <tr>
+            <td class="span">Horsemanship</td> 
+            <td><input type="number" name="attr_rank_Horsemanship" class="short" value='0'/></td>
+            <td>Agility</td>
+            <td><input type="number" name="attr_roll_Horsemanship" class="sheet-short" value="@{rank_Horsemanship}+@{Agility}" disabled="true"/></td>
+            <td><input type="number" name="attr_keep_Horsemanship" value="@{Agility}" disabled="true"></td>
+            <td><input type="number" name="attr_roll_bonus_Horsemanship" value='0'></td>
+            <td><input type="number" name="attr_keep_bonus_Horsemanship" value='0'></td>
+            <td><input type="text" name="attr_Horsemanship_Emphases" value=></td>
+            <td><button type='roll' value='/roll [[@{roll_Horsemanship}+@{roll_bonus_Horsemanship}]]d10k[[@{keep_Horsemanship}+@{keep_bonus_Horsemanship}]]'/></td>
+            <td><button type='roll' value='/roll [[@{roll_Horsemanship}+@{roll_bonus_Horsemanship}]]d10k[[@{keep_Horsemanship}+@{keep_bonus_Horsemanship}]]!!'/></td>
+            <td><button type='roll' value='/roll [[@{roll_Horsemanship}+@{roll_bonus_Horsemanship}]]d10k[[@{keep_Horsemanship}+@{keep_bonus_Horsemanship}]]!!<1'/></td>
+        </tr>
+        <tr>
+            <td class="span">Hunting</td> 
+            <td><input type="number" name="attr_rank_Hunting" class="short" value='0'/></td>
+            <td>Perception</td>
+            <td><input type="number" name="attr_roll_Hunting" class="sheet-short" value="@{rank_Hunting}+@{Perception}" disabled="true"/></td>
+            <td><input type="number" name="attr_keep_Hunting" value="@{Perception}" disabled="true"></td>
+            <td><input type="number" name="attr_roll_bonus_Hunting" value='0'></td>
+            <td><input type="number" name="attr_keep_bonus_Hunting" value='0'></td>
+            <td><input type="text" name="attr_Hunting_Emphases" value=></td>
+            <td><button type='roll' value='/roll [[@{roll_Hunting}+@{roll_bonus_Hunting}]]d10k[[@{keep_Hunting}+@{keep_bonus_Hunting}]]'/></td>
+            <td><button type='roll' value='/roll [[@{roll_Hunting}+@{roll_bonus_Hunting}]]d10k[[@{keep_Hunting}+@{keep_bonus_Hunting}]]!!'/></td>
+            <td><button type='roll' value='/roll [[@{roll_Hunting}+@{roll_bonus_Hunting}]]d10k[[@{keep_Hunting}+@{keep_bonus_Hunting}]]!!<1'/></td>
+        </tr>
+        <tr>
+            <td class="span">Iaijutsu</td> 
+            <td><input type="number" name="attr_rank_Iaijutsu" class="short" value='0'/></td>
+            <td>Reflexes</td>
+            <td><input type="number" name="attr_roll_Iaijutsu" class="sheet-short" value="@{rank_Iaijutsu}+@{Reflexes}" disabled="true"/></td>
+            <td><input type="number" name="attr_keep_Iaijutsu" value="@{Reflexes}" disabled="true"></td>
+            <td><input type="number" name="attr_roll_bonus_Iaijutsu" value='0'></td>
+            <td><input type="number" name="attr_keep_bonus_Iaijutsu" value='0'></td>
+            <td><input type="text" name="attr_Iaijutsu_Emphases" value=></td>
+            <td><button type='roll' value='/roll [[@{roll_Iaijutsu}+@{roll_bonus_Iaijutsu}]]d10k[[@{keep_Iaijutsu}+@{keep_bonus_Iaijutsu}]]'/></td>
+            <td><button type='roll' value='/roll [[@{roll_Iaijutsu}+@{roll_bonus_Iaijutsu}]]d10k[[@{keep_Iaijutsu}+@{keep_bonus_Iaijutsu}]]!!'/></td>
+            <td><button type='roll' value='/roll [[@{roll_Iaijutsu}+@{roll_bonus_Iaijutsu}]]d10k[[@{keep_Iaijutsu}+@{keep_bonus_Iaijutsu}]]!!<1'/></td>
+        </tr>
+        <tr>
+            <td class="span">Jiujiutsu</td> 
+            <td><input type="number" name="attr_rank_Jiujiutsu" class="short" value='0'/></td>
+            <td>Agility</td>
+            <td><input type="number" name="attr_roll_Jiujiutsu" class="sheet-short" value="@{rank_Jiujiutsu}+@{Agility}" disabled="true"/></td>
+            <td><input type="number" name="attr_keep_Jiujiutsu" value="@{Agility}" disabled="true"></td>
+            <td><input type="number" name="attr_roll_bonus_Jiujiutsu" value='0'></td>
+            <td><input type="number" name="attr_keep_bonus_Jiujiutsu" value='0'></td>
+            <td><input type="text" name="attr_Jiujiutsu_Emphases" value=></td>
+            <td><button type='roll' name='Jiujitsu_Untrained_roll' value='/roll [[@{roll_Jiujiutsu}+@{roll_bonus_Jiujiutsu}]]d10k[[@{keep_Jiujiutsu}+@{keep_bonus_Jiujiutsu}]]'/></td>
+            <td><button type='roll' name='Jiujitsu_Trained_roll' value='/roll [[@{roll_Jiujiutsu}+@{roll_bonus_Jiujiutsu}]]d10k[[@{keep_Jiujiutsu}+@{keep_bonus_Jiujiutsu}]]!!'/></td>
+            <td><button type='roll' name='Jiujitsu_Emphasis_roll' value='/roll [[@{roll_Jiujiutsu}+@{roll_bonus_Jiujiutsu}]]d10k[[@{keep_Jiujiutsu}+@{keep_bonus_Jiujiutsu}]]!!<1'/></td>
+        </tr>
+        <tr>
+            <td class="span">Chain_Weapons</td> 
+            <td><input type="number" name="attr_rank_Chain_Weapons" class="short" value='0'/></td>
+            <td>Agility</td>
+            <td><input type="number" name="attr_roll_Chain_Weapons" class="sheet-short" value="@{rank_Chain_Weapons}+@{Agility}" disabled="true"/></td>
+            <td><input type="number" name="attr_keep_Chain_Weapons" value="@{Agility}" disabled="true"></td>
+            <td><input type="number" name="attr_roll_bonus_Chain_Weapons" value='0'></td>
+            <td><input type="number" name="attr_keep_bonus_Chain_Weapons" value='0'></td>
+            <td><input type="text" name="attr_Chain_Weapons_Emphases" value=></td>
+            <td><button type='roll' name='Chain_Weapons_Untrained_roll' value='/roll [[@{roll_Chain_Weapons}+@{roll_bonus_Chain_Weapons}]]d10k[[@{keep_Chain_Weapons}+@{keep_bonus_Chain_Weapons}]]'/></td>
+            <td><button type='roll' name='Chain_Weapons_Trained_roll' value='/roll [[@{roll_Chain_Weapons}+@{roll_bonus_Chain_Weapons}]]d10k[[@{keep_Chain_Weapons}+@{keep_bonus_Chain_Weapons}]]!!'/></td>
+            <td><button type='roll' name='Chain_Weapons_Emphasis_roll' value='/roll [[@{roll_Chain_Weapons}+@{roll_bonus_Chain_Weapons}]]d10k[[@{keep_Chain_Weapons}+@{keep_bonus_Chain_Weapons}]]!!<1'/></td>
+        </tr>
+        <tr>
+            <td class="span">Heavy_Weapons</td> 
+            <td><input type="number" name="attr_rank_Heavy_Weapons" class="short" value='0'/></td>
+            <td>Agility</td>
+            <td><input type="number" name="attr_roll_Heavy_Weapons" class="sheet-short" value="@{rank_Heavy_Weapons}+@{Agility}" disabled="true"/></td>
+            <td><input type="number" name="attr_keep_Heavy_Weapons" value="@{Agility}" disabled="true"></td>
+            <td><input type="number" name="attr_roll_bonus_Heavy_Weapons" value='0'></td>
+            <td><input type="number" name="attr_keep_bonus_Heavy_Weapons" value='0'></td>
+            <td><input type="text" name="attr_Heavy_Weapons_Emphases" value=></td>
+            <td><button type='roll' name='Heavy_Weapons_Untrained_roll' value='/roll [[@{roll_Heavy_Weapons}+@{roll_bonus_Heavy_Weapons}]]d10k[[@{keep_Heavy_Weapons}+@{keep_bonus_Heavy_Weapons}]]'/></td>
+            <td><button type='roll' name='Heavy_Weapons_Trained_roll' value='/roll [[@{roll_Heavy_Weapons}+@{roll_bonus_Heavy_Weapons}]]d10k[[@{keep_Heavy_Weapons}+@{keep_bonus_Heavy_Weapons}]]!!'/></td>
+            <td><button type='roll' name='Heavy_Weapons_Emphasis_roll' value='/roll [[@{roll_Heavy_Weapons}+@{roll_bonus_Heavy_Weapons}]]d10k[[@{keep_Heavy_Weapons}+@{keep_bonus_Heavy_Weapons}]]!!<1'/></td>
+        </tr>
+        <tr>
+            <td class="span">Kenjutsu</td> 
+            <td><input type="number" name="attr_rank_Kenjutsu" class="short" value='0'/></td>
+            <td>Agility</td>
+            <td><input type="number" name="attr_roll_Kenjutsu" class="sheet-short" value="@{rank_Kenjutsu}+@{Agility}" disabled="true"/></td>
+            <td><input type="number" name="attr_keep_Kenjutsu" value="@{Agility}" disabled="true"></td>
+            <td><input type="number" name="attr_roll_bonus_Kenjutsu" value='0'></td>
+            <td><input type="number" name="attr_keep_bonus_Kenjutsu" value='0'></td>
+            <td><input type="text" name="attr_Kenjutsu_Emphases" value=></td>
+            <td><button type='roll' name='Kenjutsu_Untrained_roll' value='/roll [[@{roll_Kenjutsu}+@{roll_bonus_Kenjutsu}]]d10k[[@{keep_Kenjutsu}+@{keep_bonus_Kenjutsu}]]'/></td>
+            <td><button type='roll' name='Kenjutsu_Trained_roll' value='/roll [[@{roll_Kenjutsu}+@{roll_bonus_Kenjutsu}]]d10k[[@{keep_Kenjutsu}+@{keep_bonus_Kenjutsu}]]!!'/></td>
+            <td><button type='roll' name='Kenjutsu_Emphasis_roll' value='/roll [[@{roll_Kenjutsu}+@{roll_bonus_Kenjutsu}]]d10k[[@{keep_Kenjutsu}+@{keep_bonus_Kenjutsu}]]!!<1'/></td>
+        </tr>
+        <tr>
+            <td class="span">Knives</td> 
+            <td><input type="number" name="attr_rank_Knives" class="short" value='0'/></td>
+            <td>Agility</td>
+            <td><input type="number" name="attr_roll_Knives" class="sheet-short" value="@{rank_Knives}+@{Agility}" disabled="true"/></td>
+            <td><input type="number" name="attr_keep_Knives" value="@{Agility}" disabled="true"></td>
+            <td><input type="number" name="attr_roll_bonus_Knives" value='0'></td>
+            <td><input type="number" name="attr_keep_bonus_Knives" value='0'></td>
+            <td><input type="text" name="attr_Knives_Emphases" value=></td>
+            <td><button type='roll' name='Knives_Untrained_roll' value='/roll [[@{roll_Knives}+@{roll_bonus_Knives}]]d10k[[@{keep_Knives}+@{keep_bonus_Knives}]]'/></td>
+            <td><button type='roll' name='Knives_Trained_roll' value='/roll [[@{roll_Knives}+@{roll_bonus_Knives}]]d10k[[@{keep_Knives}+@{keep_bonus_Knives}]]!!'/></td>
+            <td><button type='roll' name='Knives_Emphasis_roll' value='/roll [[@{roll_Knives}+@{roll_bonus_Knives}]]d10k[[@{keep_Knives}+@{keep_bonus_Knives}]]!!<1'/></td>
+        </tr>
+        <tr>
+            <td class="span">Kyujutsu</td> 
+            <td><input type="number" name="attr_rank_Kyujutsu" class="short" value='0'/></td>
+            <td>Reflexes</td>
+            <td><input type="number" name="attr_roll_Kyujutsu" class="sheet-short" value="@{rank_Kyujutsu}+@{Reflexes}" disabled="true"/></td>
+            <td><input type="number" name="attr_keep_Kyujutsu" value="@{Reflexes}" disabled="true"></td>
+            <td><input type="number" name="attr_roll_bonus_Kyujutsu" value='0'></td>
+            <td><input type="number" name="attr_keep_bonus_Kyujutsu" value='0'></td>
+            <td><input type="text" name="attr_Kyujutsu_Emphases" value=></td>
+            <td><button type='roll' name='Kyujutsu_Untrained_roll' value='/roll [[@{roll_Kyujutsu}+@{roll_bonus_Kyujutsu}]]d10k[[@{keep_Kyujutsu}+@{keep_bonus_Kyujutsu}]]'/></td>
+            <td><button type='roll' name='Kyujutsu_Trained_roll' value='/roll [[@{roll_Kyujutsu}+@{roll_bonus_Kyujutsu}]]d10k[[@{keep_Kyujutsu}+@{keep_bonus_Kyujutsu}]]!!'/></td>
+            <td><button type='roll' name='Kyujutsu_Emphasis_roll' value='/roll [[@{roll_Kyujutsu}+@{roll_bonus_Kyujutsu}]]d10k[[@{keep_Kyujutsu}+@{keep_bonus_Kyujutsu}]]!!<1'/></td>
+        </tr>
+        <tr>
+            <td class="span">Ninjutsu Ranged</td> 
+            <td><input type="number" name="attr_rank_Ninjutsu_Ranged" class="short" value='0'/></td>
+            <td>Reflexes</td>
+            <td><input type="number" name="attr_roll_Ninjutsu_Ranged" class="sheet-short" value="@{rank_Ninjutsu_Ranged}+@{Reflexes}" disabled="true"/></td>
+            <td><input type="number" name="attr_keep_Ninjutsu_Ranged" value="@{Reflexes}" disabled="true"></td>
+            <td><input type="number" name="attr_roll_bonus_Ninjutsu_Ranged" value='0'></td>
+            <td><input type="number" name="attr_keep_bonus_Ninjutsu_Ranged" value='0'></td>
+            <td><input type="text" name="attr_Ninjutsu_Ranged_Emphases" value=></td>
+            <td><button type='roll' name='Ninjutsu_Ranged_Untrained_roll' value='/roll [[@{roll_Ninjutsu_Ranged}+@{roll_bonus_Ninjutsu_Ranged}]]d10k[[@{keep_Ninjutsu_Ranged}+@{keep_bonus_Ninjutsu_Ranged}]]'/></td>
+            <td><button type='roll' name='Ninjutsu_Ranged_Trained_roll' value='/roll [[@{roll_Ninjutsu_Ranged}+@{roll_bonus_Ninjutsu_Ranged}]]d10k[[@{keep_Ninjutsu_Ranged}+@{keep_bonus_Ninjutsu_Ranged}]]!!'/></td>
+            <td><button type='roll' name='Ninjutsu_Ranged_Emphasis_roll' value='/roll [[@{roll_Ninjutsu_Ranged}+@{roll_bonus_Ninjutsu_Ranged}]]d10k[[@{keep_Ninjutsu_Ranged}+@{keep_bonus_Ninjutsu_Ranged}]]!!<1'/></td>
+        </tr>
+        <tr>
+            <td class="span">Ninjutsu Melee</td> 
+            <td><input type="number" name="attr_rank_Ninjutsu_Melee" class="short" value='0'/></td>
+            <td>Agility</td>
+            <td><input type="number" name="attr_roll_Ninjutsu_Melee" class="sheet-short" value="@{rank_Ninjutsu_Melee}+@{Agility}" disabled="true"/></td>
+            <td><input type="number" name="attr_keep_Ninjutsu_Melee" value="@{Agility}" disabled="true"></td>
+            <td><input type="number" name="attr_roll_bonus_Ninjutsu_Melee" value='0'></td>
+            <td><input type="number" name="attr_keep_bonus_Ninjutsu_Melee" value='0'></td>
+            <td><input type="text" name="attr_Ninjutsu_Melee_Emphases" value=></td>
+            <td><button type='roll' name='Ninjutsu_Melee_Untrained_roll' value='/roll [[@{roll_Ninjutsu_Melee}+@{roll_bonus_Ninjutsu_Melee}]]d10k[[@{keep_Ninjutsu_Melee}+@{keep_bonus_Ninjutsu_Melee}]]'/></td>
+            <td><button type='roll' name='Ninjutsu_Melee_Trained_roll' value='/roll [[@{roll_Ninjutsu_Melee}+@{roll_bonus_Ninjutsu_Melee}]]d10k[[@{keep_Ninjutsu_Melee}+@{keep_bonus_Ninjutsu_Melee}]]!!'/></td>
+            <td><button type='roll' name='Ninjutsu_Melee_Emphasis_roll' value='/roll [[@{roll_Ninjutsu_Melee}+@{roll_bonus_Ninjutsu_Melee}]]d10k[[@{keep_Ninjutsu_Melee}+@{keep_bonus_Ninjutsu_Melee}]]!!<1'/></td>
+        </tr>
+        <tr>
+            <td class="span">Spears</td> 
+            <td><input type="number" name="attr_rank_Spears" class="short" value='0'/></td>
+            <td>Agility</td>
+            <td><input type="number" name="attr_roll_Spears" class="sheet-short" value="@{rank_Spears}+@{Agility}" disabled="true"/></td>
+            <td><input type="number" name="attr_keep_Spears" value="@{Agility}" disabled="true"></td>
+            <td><input type="number" name="attr_roll_bonus_Spears" value='0'></td>
+            <td><input type="number" name="attr_keep_bonus_Spears" value='0'></td>
+            <td><input type="text" name="attr_Spears_Emphases" value=></td>
+            <td><button type='roll' name='Spears_Untrained_roll' value='/roll [[@{roll_Spears}+@{roll_bonus_Spears}]]d10k[[@{keep_Spears}+@{keep_bonus_Spears}]]'/></td>
+            <td><button type='roll' name='Spears_Trained_roll' value='/roll [[@{roll_Spears}+@{roll_bonus_Spears}]]d10k[[@{keep_Spears}+@{keep_bonus_Spears}]]!!'/></td>
+            <td><button type='roll' name='Spears_Emphasis_roll' value='/roll [[@{roll_Spears}+@{roll_bonus_Spears}]]d10k[[@{keep_Spears}+@{keep_bonus_Spears}]]!!<1'/></td>
+        </tr>
+        <tr>
+            <td class="span">Staves</td> 
+            <td><input type="number" name="attr_rank_Staves" class="short" value='0'/></td>
+            <td>Agility</td>
+            <td><input type="number" name="attr_roll_Staves" class="sheet-short" value="@{rank_Staves}+@{Agility}" disabled="true"/></td>
+            <td><input type="number" name="attr_keep_Staves" value="@{Agility}" disabled="true"></td>
+            <td><input type="number" name="attr_roll_bonus_Staves" value='0'></td>
+            <td><input type="number" name="attr_keep_bonus_Staves" value='0'></td>
+            <td><input type="text" name="attr_Staves_Emphases" value=></td>
+            <td><button type='roll' name='Staves_Untrained_roll' value='/roll [[@{roll_Staves}+@{roll_bonus_Staves}]]d10k[[@{keep_Staves}+@{keep_bonus_Staves}]]'/></td>
+            <td><button type='roll' name='Staves_Trained_roll' value='/roll [[@{roll_Staves}+@{roll_bonus_Staves}]]d10k[[@{keep_Staves}+@{keep_bonus_Staves}]]!!'/></td>
+            <td><button type='roll' name='Staves_Emphasis_roll' value='/roll [[@{roll_Staves}+@{roll_bonus_Staves}]]d10k[[@{keep_Staves}+@{keep_bonus_Staves}]]!!<1'/></td>
+        </tr>
+        <tr>
+            <td class="span">WarFan</td> 
+            <td><input type="number" name="attr_rank_WarFan" class="short" value='0'/></td>
+            <td>Agility</td>
+            <td><input type="number" name="attr_roll_WarFan" class="sheet-short" value="@{rank_WarFan}+@{Agility}" disabled="true"/></td>
+            <td><input type="number" name="attr_keep_WarFan" value="@{Agility}" disabled="true"></td>
+            <td><input type="number" name="attr_roll_bonus_WarFan" value='0'></td>
+            <td><input type="number" name="attr_keep_bonus_WarFan" value='0'></td>
+            <td><input type="text" name="attr_WarFan_Emphases" value=></td>
+            <td><button type='roll' name='WarFan_Untrained_roll' value='/roll [[@{roll_WarFan}+@{roll_bonus_WarFan}]]d10k[[@{keep_WarFan}+@{keep_bonus_WarFan}]]'/></td>
+            <td><button type='roll' name='WarFan_Trained_roll' value='/roll [[@{roll_WarFan}+@{roll_bonus_WarFan}]]d10k[[@{keep_WarFan}+@{keep_bonus_WarFan}]]!!'/></td>
+            <td><button type='roll' name='WarFan_Emphasis_roll' value='/roll [[@{roll_WarFan}+@{roll_bonus_WarFan}]]d10k[[@{keep_WarFan}+@{keep_bonus_WarFan}]]!!<1'/></td>
+        </tr>
+    </table>    
+    </fieldset>
+     <fieldset>
+            <h1 class="separator vspace"><span>Merchant Skills</span></h1>
+            <table style='border-collapse: collapse; border-spacing: 0;'>
+        <tr>
+            <td style='font-weight: bold;'>Skill Name</td>
+            <td style='font-weight: bold;'>Rank</td>
+            <td style='font-weight: bold;'>Trait</td>
+            <td style='font-weight: bold;'>Roll</td>
+            <td style='font-weight: bold;'>Keep</td>
+            <td style='font-weight: bold;'>+Roll</td>
+            <td style='font-weight: bold;'>+Keep</td>
+            <td style='font-weight: bold;'>Emphases</td>
+            <td style='font-weight: bold;'>Untrained</td>
+            <td style='font-weight: bold;'>Trained</td>
+            <td style='font-weight: bold;'>Emphasis</td>
+            <td style='font-weight: bold;'>Sub-Type</td>
+        </tr>
+    <tr>
+            <td class="span">AnimalHandling</td> 
+            <td><input type="number" name="attr_rank_AnimalHandling" class="short" value='0'/></td>
+            <td>Awareness</td>
+            <td><input type="number" name="attr_roll_AnimalHandling" class="sheet-short" value="@{rank_AnimalHandling}+@{Awareness}" disabled="true"/></td>
+            <td><input type="number" name="attr_keep_AnimalHandling" value="@{Awareness}" disabled="true"></td>
+            <td><input type="number" name="attr_roll_bonus_AnimalHandling" value='0'></td>
+            <td><input type="number" name="attr_keep_bonus_AnimalHandling" value='0'></td>
+            <td><input type="text" name="attr_AnimalHandling_Emphases" value=></td>
+            <td><button type='roll' value='/roll [[@{roll_AnimalHandling}+@{roll_bonus_AnimalHandling}]]d10k[[@{keep_AnimalHandling}+@{keep_bonus_AnimalHandling}]]'/></td>
+            <td><button type='roll' value='/roll [[@{roll_AnimalHandling}+@{roll_bonus_AnimalHandling}]]d10k[[@{keep_AnimalHandling}+@{keep_bonus_AnimalHandling}]]!!'/></td>
+            <td><button type='roll' value='/roll [[@{roll_AnimalHandling}+@{roll_bonus_AnimalHandling}]]d10k[[@{keep_AnimalHandling}+@{keep_bonus_AnimalHandling}]]!!<1'/></td>
+    </tr>
+    <tr>
+            <td class="span">Commerce</td> 
+            <td><input type="number" name="attr_rank_Commerce" class="short" value='0'/></td>
+            <td>Intelligence</td>
+            <td><input type="number" name="attr_roll_Commerce" class="sheet-short" value="@{rank_Commerce}+@{Intelligence}" disabled="true"/></td>
+            <td><input type="number" name="attr_keep_Commerce" value="@{Intelligence}" disabled="true"></td>
+            <td><input type="number" name="attr_roll_bonus_Commerce" value='0'></td>
+            <td><input type="number" name="attr_keep_bonus_Commerce" value='0'></td>
+            <td><input type="text" name="attr_Commerce_Emphases" value=></td>
+            <td><button type='roll' value='/roll [[@{roll_Commerce}+@{roll_bonus_Commerce}]]d10k[[@{keep_Commerce}+@{keep_bonus_Commerce}]]'/></td>
+            <td><button type='roll' value='/roll [[@{roll_Commerce}+@{roll_bonus_Commerce}]]d10k[[@{keep_Commerce}+@{keep_bonus_Commerce}]]!!'/></td>
+            <td><button type='roll' value='/roll [[@{roll_Commerce}+@{roll_bonus_Commerce}]]d10k[[@{keep_Commerce}+@{keep_bonus_Commerce}]]!!<1'/></td>
+    </tr>
+    <tr>
+            <td class="span">Craft</td> 
+            <td><input type="number" name="attr_rank_Craft" class="short" value='0'/></td>
+            <td>Intelligence</td>
+            <td><input type="number" name="attr_roll_Craft" class="sheet-short" value="@{rank_Craft}+@{Intelligence}" disabled="true"/></td>
+            <td><input type="number" name="attr_keep_Craft" value="@{Intelligence}" disabled="true"></td>
+            <td><input type="number" name="attr_roll_bonus_Craft" value='0'></td>
+            <td><input type="number" name="attr_keep_bonus_Craft" value='0'></td>
+            <td><input type="text" name="attr_Craft_Emphases" value=></td>
+            <td><button type='roll' value='/roll [[@{roll_Craft}+@{roll_bonus_Craft}]]d10k[[@{keep_Craft}+@{keep_bonus_Craft}]]'/></td>
+            <td><button type='roll' value='/roll [[@{roll_Craft}+@{roll_bonus_Craft}]]d10k[[@{keep_Craft}+@{keep_bonus_Craft}]]!!'/></td>
+            <td><button type='roll' value='/roll [[@{roll_Craft}+@{roll_bonus_Craft}]]d10k[[@{keep_Craft}+@{keep_bonus_Craft}]]!!<1'/></td>
+            <td><input type="text" name="attr_Craft_type" value=></td>
+    </tr>
+    <tr>
+            <td class="span">Engineering</td> 
+            <td><input type="number" name="attr_rank_Engineering" class="short" value='0'/></td>
+            <td>Intelligence</td>
+            <td><input type="number" name="attr_roll_Engineering" class="sheet-short" value="@{rank_Engineering}+@{Intelligence}" disabled="true"/></td>
+            <td><input type="number" name="attr_keep_Engineering" value="@{Intelligence}" disabled="true"></td>
+            <td><input type="number" name="attr_roll_bonus_Engineering" value='0'></td>
+            <td><input type="number" name="attr_keep_bonus_Engineering" value='0'></td>
+            <td><input type="text" name="attr_Engineering_Emphases" value=></td>
+            <td><button type='roll' value='/roll [[@{roll_Engineering}+@{roll_bonus_Engineering}]]d10k[[@{keep_Engineering}+@{keep_bonus_Engineering}]]'/></td>
+            <td><button type='roll' value='/roll [[@{roll_Engineering}+@{roll_bonus_Engineering}]]d10k[[@{keep_Engineering}+@{keep_bonus_Engineering}]]!!'/></td>
+            <td><button type='roll' value='/roll [[@{roll_Engineering}+@{roll_bonus_Engineering}]]d10k[[@{keep_Engineering}+@{keep_bonus_Engineering}]]!!<1'/></td>
+    </tr>
+    <tr>
+            <td class="span">Sailing</td> 
+            <td><input type="number" name="attr_rank_Sailing" class="short" value='0'/></td>
+            <td>Agility</td>
+            <td><input type="number" name="attr_roll_Sailing" class="sheet-short" value="@{rank_Sailing}+@{Agility}" disabled="true"/></td>
+            <td><input type="number" name="attr_keep_Sailing" value="@{Agility}" disabled="true"></td>
+            <td><input type="number" name="attr_roll_bonus_Sailing" value='0'></td>
+            <td><input type="number" name="attr_keep_bonus_Sailing" value='0'></td>
+            <td><input type="text" name="attr_Sailing_Emphases" value=></td>
+            <td><button type='roll' value='/roll [[@{roll_Sailing}+@{roll_bonus_Sailing}]]d10k[[@{keep_Sailing}+@{keep_bonus_Sailing}]]'/></td>
+            <td><button type='roll' value='/roll [[@{roll_Sailing}+@{roll_bonus_Sailing}]]d10k[[@{keep_Sailing}+@{keep_bonus_Sailing}]]!!'/></td>
+            <td><button type='roll' value='/roll [[@{roll_Sailing}+@{roll_bonus_Sailing}]]d10k[[@{keep_Sailing}+@{keep_bonus_Sailing}]]!!<1'/></td>
+    </tr>
+    <tr>
+            <td class="span">Sailing</td> 
+            <td><input type="number" name="attr_rank_Sailing2" class="short" value='0'/></td>
+            <td>Intelligence</td>
+            <td><input type="number" name="attr_roll_Sailing2" class="sheet-short" value="@{rank_Sailing2}+@{Intelligence}" disabled="true"/></td>
+            <td><input type="number" name="attr_keep_Sailing2" value="@{Intelligence}" disabled="true"></td>
+            <td><input type="number" name="attr_roll_bonus_Sailing" value='0'></td>
+            <td><input type="number" name="attr_keep_bonus_Sailing" value='0'></td>
+            <td><input type="text" name="attr_Sailing_Emphases" value=></td>
+            <td><button type='roll' value='/roll [[@{roll_Sailing2}+@{roll_bonus_Sailing2}]]d10k[[@{keep_Sailing2}+@{keep_bonus_Sailing2}]]'/></td>
+            <td><button type='roll' value='/roll [[@{roll_Sailing2}+@{roll_bonus_Sailing2}]]d10k[[@{keep_Sailing2}+@{keep_bonus_Sailing2}]]!!'/></td>
+            <td><button type='roll' value='/roll [[@{roll_Sailing2}+@{roll_bonus_Sailing2}]]d10k[[@{keep_Sailing2}+@{keep_bonus_Sailing2}]]!!<1'/></td>
+    </tr>
+    </fieldset>
+    <fieldset>
+            <h1 class="separator vspace"><span>Low Skills</span></h1>
+            <table style='border-collapse: collapse; border-spacing: 0;'>
+        <tr>
+            <td style='font-weight: bold;'>Skill Name</td>
+            <td style='font-weight: bold;'>Rank</td>
+            <td style='font-weight: bold;'>Trait</td>
+            <td style='font-weight: bold;'>Roll</td>
+            <td style='font-weight: bold;'>Keep</td>
+            <td style='font-weight: bold;'>+Roll</td>
+            <td style='font-weight: bold;'>+Keep</td>
+            <td style='font-weight: bold;'>Emphases</td>
+            <td style='font-weight: bold;'>Untrained</td>
+            <td style='font-weight: bold;'>Trained</td>
+            <td style='font-weight: bold;'>Emphasis</td>
+        </tr>
+    <tr>
+            <td class="span">Forgery</td> 
+            <td><input type="number" name="attr_rank_Forgery" class="short" value='0'/></td>
+            <td>Agility</td>
+            <td><input type="number" name="attr_roll_Forgery" class="sheet-short" value="@{rank_Forgery}+@{Agility}" disabled="true"/></td>
+            <td><input type="number" name="attr_keep_Forgery" value="@{Agility}" disabled="true"></td>
+            <td><input type="number" name="attr_roll_bonus_Forgery" value='0'></td>
+            <td><input type="number" name="attr_keep_bonus_Forgery" value='0'></td>
+            <td><input type="text" name="attr_Forgery_Emphases" value=></td>
+            <td><button type='roll' value='/roll [[@{roll_Forgery}+@{roll_bonus_Forgery}]]d10k[[@{keep_Forgery}+@{keep_bonus_Forgery}]]'/></td>
+            <td><button type='roll' value='/roll [[@{roll_Forgery}+@{roll_bonus_Forgery}]]d10k[[@{keep_Forgery}+@{keep_bonus_Forgery}]]!!'/></td>
+            <td><button type='roll' value='/roll [[@{roll_Forgery}+@{roll_bonus_Forgery}]]d10k[[@{keep_Forgery}+@{keep_bonus_Forgery}]]!!<1'/></td>
+    </tr>
+    <tr>
+            <td class="span">Intimidation</td> 
+            <td><input type="number" name="attr_rank_Intimidation" class="short" value='0'/></td>
+            <td>Awareness</td>
+            <td><input type="number" name="attr_roll_Intimidation" class="sheet-short" value="@{rank_Intimidation}+@{Awareness}" disabled="true"/></td>
+            <td><input type="number" name="attr_keep_Intimidation" value="@{Awareness}" disabled="true"></td>
+            <td><input type="number" name="attr_roll_bonus_Intimidation" value='0'></td>
+            <td><input type="number" name="attr_keep_bonus_Intimidation" value='0'></td>
+            <td><input type="text" name="attr_Intimidation_Emphases" value=></td>
+            <td><button type='roll' value='/roll [[@{roll_Intimidation}+@{roll_bonus_Intimidation}]]d10k[[@{keep_Intimidation}+@{keep_bonus_Intimidation}]]'/></td>
+            <td><button type='roll' value='/roll [[@{roll_Intimidation}+@{roll_bonus_Intimidation}]]d10k[[@{keep_Intimidation}+@{keep_bonus_Intimidation}]]!!'/></td>
+            <td><button type='roll' value='/roll [[@{roll_Intimidation}+@{roll_bonus_Intimidation}]]d10k[[@{keep_Intimidation}+@{keep_bonus_Intimidation}]]!!<1'/></td>
+    </tr>
+    <tr>
+            <td class="span">Sleight of Hand</td> 
+            <td><input type="number" name="attr_rank_SleightofHand" class="short" value='0'/></td>
+            <td>Agility</td>
+            <td><input type="number" name="attr_roll_SleightofHand" class="sheet-short" value="@{rank_SleightofHand}+@{Agility}" disabled="true"/></td>
+            <td><input type="number" name="attr_keep_SleightofHand" value="@{Agility}" disabled="true"></td>
+            <td><input type="number" name="attr_roll_bonus_SleightofHand" value='0'></td>
+            <td><input type="number" name="attr_keep_bonus_SleightofHand" value='0'></td>
+            <td><input type="text" name="attr_SleightofHand_Emphases" value=></td>
+            <td><button type='roll' value='/roll [[@{roll_SleightofHand}+@{roll_bonus_SleightofHand}]]d10k[[@{keep_SleightofHand}+@{keep_bonus_SleightofHand}]]'/></td>
+            <td><button type='roll' value='/roll [[@{roll_SleightofHand}+@{roll_bonus_SleightofHand}]]d10k[[@{keep_SleightofHand}+@{keep_bonus_SleightofHand}]]!!'/></td>
+            <td><button type='roll' value='/roll [[@{roll_SleightofHand}+@{roll_bonus_SleightofHand}]]d10k[[@{keep_SleightofHand}+@{keep_bonus_SleightofHand}]]!!<1'/></td>
+    </tr>
+    <tr>
+            <td class="span">Stealth</td> 
+            <td><input type="number" name="attr_rank_Stealth" class="short" value='0'/></td>
+            <td>Agility</td>
+            <td><input type="number" name="attr_roll_Stealth" class="sheet-short" value="@{rank_Stealth}+@{Agility}" disabled="true"/></td>
+            <td><input type="number" name="attr_keep_Stealth" value="@{Agility}" disabled="true"></td>
+            <td><input type="number" name="attr_roll_bonus_Stealth" value='0'></td>
+            <td><input type="number" name="attr_keep_bonus_Stealth" value='0'></td>
+            <td><input type="text" name="attr_Stealth_Emphases" value=></td>
+            <td><button type='roll' value='/roll [[@{roll_Stealth}+@{roll_bonus_Stealth}]]d10k[[@{keep_Stealth}+@{keep_bonus_Stealth}]]'/></td>
+            <td><button type='roll' value='/roll [[@{roll_Stealth}+@{roll_bonus_Stealth}]]d10k[[@{keep_Stealth}+@{keep_bonus_Stealth}]]!!'/></td>
+            <td><button type='roll' value='/roll [[@{roll_Stealth}+@{roll_bonus_Stealth}]]d10k[[@{keep_Stealth}+@{keep_bonus_Stealth}]]!!<1'/></td>
+    </tr>
+    <tr>
+            <td class="span">Temptation</td> 
+            <td><input type="number" name="attr_rank_Temptation" class="short" value='0'/></td>
+            <td>Awareness</td>
+            <td><input type="number" name="attr_roll_Temptation" class="sheet-short" value="@{rank_Temptation}+@{Awareness}" disabled="true"/></td>
+            <td><input type="number" name="attr_keep_Temptation" value="@{Awareness}" disabled="true"></td>
+            <td><input type="number" name="attr_roll_bonus_Temptation" value='0'></td>
+            <td><input type="number" name="attr_keep_bonus_Temptation" value='0'></td>
+            <td><input type="text" name="attr_Temptation_Emphases" value=></td>
+            <td><button type='roll' value='/roll [[@{roll_Temptation}+@{roll_bonus_Temptation}]]d10k[[@{keep_Temptation}+@{keep_bonus_Temptation}]]'/></td>
+            <td><button type='roll' value='/roll [[@{roll_Temptation}+@{roll_bonus_Temptation}]]d10k[[@{keep_Temptation}+@{keep_bonus_Temptation}]]!!'/></td>
+            <td><button type='roll' value='/roll [[@{roll_Temptation}+@{roll_bonus_Temptation}]]d10k[[@{keep_Temptation}+@{keep_bonus_Temptation}]]!!<1'/></td>
+    </tr>
+    </fieldset>      
+</div>
+
+<div class="tab-content Equipment-tab">
+        <fieldset>
+            <h1 class="separator vspace"><span>Melee Weapons</span></h1>
+            <table style='border-collapse: collapse; border-spacing: 0;'>
+            <table style='border-collapse: collapse; border-spacing: 0;'>
+    <tr>
+            <td style='font-weight: bold;'>Weapon</td>
+            <td style='font-weight: bold;'>Skill</td>
+            <td style='font-weight: bold;'>Untrained Attack</td>
+            <td style='font-weight: bold;'>Trained Attack</td>
+            <td style='font-weight: bold;'>Emphasis Attack</td>
+            <td style='font-weight: bold;'>Weapon Damage Roll</td>
+            <td style='font-weight: bold;'>Weapon Damage Keep</td>
+            <td style='font-weight: bold;'>Notes</td>
+   </tr>
+   
+    <fieldset class="repeating_weapons">
+    <tr>
+        <td><input type="text" name="attr_Weapon" class="sheet-short"></td>
+        <td><select class="narrow" name="attr_WeaponSkill">
+                     <option value="Jiujiutsu">Jiujiutsu</option>
+                     <option value="Chain_Weapons">Chain Weapons</option>
+                     <option value="Heavy_Weapons">Heavy Weapons</option>
+                     <option value="Kenjutsu">Kenjutsu</option>
+                     <option value="Knives">Knives</option>
+                     <option value="Kyujutsu">Kyujutsu</option>
+                     <option value="Ninjutsu_Ranged">Ninjutsu (Ranged)</option>
+                     <option value="Ninjutsu_Melee">Ninjutsu (Melee)</option>
+                     <option value="Ninjutsu_Melee">Ninjutsu (Melee)</option>
+                     <option value="Spears">Spears</option>
+                     <option value="Staves">Staves</option>
+                     <option value="WarFan">War Fan</option>
+                     </select></td>
+        <td><button type="roll" name="roll_untrained_attack" value="#[[@{WeaponSkill}&_Untrained_roll]]"></button></td>
+        <td><button type="roll" name="roll_untrained_attack" value="#[[@{WeaponSkill}&_Trained_roll]]"></button></td>
+        <td><button type="roll" name="roll_untrained_attack" value="#[[@{WeaponSkill}&_Emphasis_roll]]"></button></td>
+        <td><input type="number" name="attr_WeaponDamageRoll" class="sheet-short" value="1"></td>
+        <td><input type="number" name="attr_WeaponDamageKeep" class="sheet-short" value="1"></td>
+        <td><input type="text" name="attr_Notes" class="sheet-short"></td>
+        <td><button type="roll" name="roll_damage1" value="/roll [[@{WeaponDamageRoll}+@{Strength}]]d10k[[@{WeaponDamageKeep}]]!!">Damage</button></td>
+    </tr>
+   </table> </fieldset>
+    <fieldset>
+            <h1 class="separator vspace"><span>Bows</span></h1>
+            <table style='border-collapse: collapse; border-spacing: 0;'>
+            <table style='border-collapse: collapse; border-spacing: 0;'>
+    <tr>
+            <td style='font-weight: bold;'>Bow</td>
+            <td style='font-weight: bold;'>Skill</td>
+            <td style='font-weight: bold;'>Strength</td>
+            <td style='font-weight: bold;'>Untrained Attack</td>
+            <td style='font-weight: bold;'>Trained Attack</td>
+            <td style='font-weight: bold;'>Emphasis Attack</td>
+            <td style='font-weight: bold;'>Arrow</td>
+            <td style='font-weight: bold;'>Arrow Damage Roll</td>
+            <td style='font-weight: bold;'>Arrow Damage Keep</td>
+            <td style='font-weight: bold;'>Notes</td>
+   </tr>
+    <fieldset class="repeating_ranged_weapons">
+    <tr>
+        <td><input type="text" name="attr_ranged_Weapon" class="sheet-short"></td>
+        <td><input type="text" class="narrow" name="attr_ranged_WeaponSkill" value="Kyujutsu" disabled='true'></td>
+        <td><input type="number" name="attr_bow_Strength" class="sheet-short"></td>
+        <td><button type="roll" name="roll_attack" value="#Kyujutsu_Ranged_Untrained_roll"></button></td>
+        <td><button type="roll" name="roll_attack" value="#Kyujutsu_Ranged_Trained_roll"></button></td>
+        <td><button type="roll" name="roll_attack" value="#Kyujutsu_Ranged_Emphasis_roll"></button></td>
+        <td><select class="narrow" name="attr_ArrowType">
+             <option value="ArmorPiercing">Armor Piercing</option>
+             <option value="FleshCutter">Flesh Cutter</option>
+             <option value="HummingBulb">Humming Bulb</option>
+             <option value="RopeCutter">Rope Cutter</option>
+             <option value="WillowLeaf">Willow Leaf</option>
+             </select></td>
+        <td><input type="text" name="attr_Notes" class="sheet-short"></td>
+        <td><button type="roll" name="roll_damage1" value="/roll [[@{arrow_roll}+min(@{Strength},@{bow_Strength})]]d10k[[@{arrow_keep}]]!!">Damage</button></td>
+    </tr>
+    </table>
+    
+    <fieldset class="sheet-3colrow">
+        <fieldset class="sheet-col">
+            <tr><td style='font-weight: bold;'>Armor Piercing</td></tr>
+            <tr><td style='font-weight: bold;'>Flesh Cutter</td></tr>
+            <tr style='font-weight: bold;'>Humming Bulb</tr>
+            <tr style='font-weight: bold;'>Rope Cutter</tr>
+            <tr style='font-weight: bold;'>Willow Leaf</tr>
+        </fieldset>
+        <fieldset class="sheet-col">    
+            <div class="dots">
+                    <input type="radio" name="attr_arrow_roll" value="1" checked="checked" />
+                    <input type="radio" name="attr_arrow_roll" value="2" /><span></span>
+                    <input type="radio" name="attr_arrow_roll" value="0" /><span></span>
+                    <input type="radio" name="attr_arrow_roll" value="1" /><span></span>
+                    <input type="radio" name="attr_arrow_roll" value="2" /><span></span>
+            </div>
+        </fieldset>
+        <fieldset class="sheet-col">    
+            <div class="dots">
+                    <input type="radio" name="attr_arrow_keep" value="1" checked="checked" />
+                    <input type="radio" name="attr_arrow_keep" value="2" /><span></span>
+                    <input type="radio" name="attr_arrow_keep" value="0" /><span></span>
+                    <input type="radio" name="attr_arrow_keep" value="1" /><span></span>
+                    <input type="radio" name="attr_arrow_keep" value="2" /><span></span>
+            </div>
+        </fieldset>
+    </fieldset>
+    
+    <div class="sheet-2colrow">
+    <div class="sheet-col">
+<h4>Gear</h4><table style='border-collapse: collapse; border-spacing: 0;'>
+    <tr>
+            <td style='background-color: #26ADE4; color: #FFF; font-weight: bold;'>Description</td>
+            <td style='background-color: #26ADE4; color: #FFF; font-weight: bold;'>Weight</td>
+            <td style='background-color: #26ADE4; color: #FFF; font-weight: bold;'>Location</td>
+    </tr>
+    <tr>
+            <td><input type="text" name="attr_geardesc"></td>
+            <td><input type="text" name="attr_gearweigh" class="sheet-short"></td>
+            <td><input type="text" name="attr_gearloc" class=""></td>
+    </tr>
+</table>
+<fieldset name="repeating_gear" class="repeating_gear"><table style='border-collapse: collapse; border-spacing: 0;'>
+        <tr>
+            <td><input type="text" name="attr_geardesc"></td>
+            <td><input type="text" name="attr_gearweigh" class="sheet-short"></td>
+            <td><input type="text" name="attr_gearloc" class=""></td>
+    </tr>
+</table></fieldset><br>
+Current weight:<input type="number" name="attr_gearweighttotal" class="sheet-nobut"><br>
+<b>Notes</b><textarea name="attr_gearnotes"></textarea>
+
+</div>

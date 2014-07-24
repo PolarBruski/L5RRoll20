@@ -1,0 +1,293 @@
+<div class="bio sheet-3colrow">
+    <div class="sheet-col">
+        <label><span>Name</span> <input type="text" name="attr_Name" /></label>
+        <label>
+            <span>Clan:</span>
+            <select name="attr_Clan">
+                <option value="Crab">Crab</option>
+                <option value="Crane">Crane</option>
+                <option value="Dragon">Dragon</option>
+                <option value="Lion">Lion</option>
+                <option value="Mantis">Mantis</option>
+                <option value="Phoenix">Phoenix</option>
+                <option value="Scorpion">Scorpion</option>
+                <option value="Spider">Spider</option>
+                <option value="Unicorn">Unicorn</option>
+                <option value="Misc">Misc</option>
+            </select>
+            </label>
+        <label><span>School</span> <input type="text" name="attr_School" /></label>
+    </div>
+     <div class="sheet-col">
+        <label style=display:inline><span>Rank</span></label> <input  type="number" name="attr_Rank" />
+        <div><label style=display:inline><span>Experience</span></label> <input type="number" name="attr_Experience" /></div>
+        <div><label style=display:inline><span>Insight</span></label> <input type="number" disabled="true" name="attr_Insight" value="(@{Air} + @{Water} + @{Fire} + @{Earth} + @{Void} )"/></div>
+    </div>
+    <div class="sheet-col center">
+        <img src="http://i.imgur.com/tv2Gvag.png" class="banner" />
+    </div>
+</div>
+
+<div class="center">
+    <input type="radio" class="tab" name="attr_tab" value="statistics" checked="checked" /><span title="Traits"></span>
+    <input type="radio" class="tab" name="attr_tab" value="skills" /><span title="Skills"></span>
+    <input type="radio" class="tab" name="attr_tab" value="techniques" /><span title="Techniques"></span>
+    <input type="radio" class="tab" name="attr_tab" value="background" /><span title="Background"></span>
+
+
+<div class="tab-content statistics-tab">
+    <h1 class="separator"><span></span></h1>
+    
+<div class="center">
+    <div class="sheet-6colrow">
+        <div class="sheet-col" style=background-color:#B4C8DB;>
+            <div class="attribute">
+                <img src="http://fc03.deviantart.net/fs71/f/2011/163/b/0/air_ring_by_exahyl-d3is15c.png"/>
+                <h3 class="attribute">Air</h3>
+            </div>
+            <div class="attribute">
+                <input type="number" name="attr_Air"/>
+                <button type='roll' name='roll_Air' value='@{name} rolls Air [[@{Air}d10!!]]'></button><br/>
+            </div>
+            <div class="attribute">
+                <p></ladel><span>Reflexes</span></p>
+                <input type="number" name="attr_Reflexes" />
+                <button type='roll' name='roll_Reflexes' value='@{name} rolls Reflexes [[@{Reflexes}d10!!]]'></button><br/>
+            </div>
+            <div class="attribute">
+                <p></ladel><span>Awareness</span></p>
+                <input type="number" name="attr_Awareness" />
+                <button type='roll' name='roll_Awareness' value='@{name} rolls Awareness [[@{Awareness}d10!!]]'></button><br/>
+            </div>
+        </div>
+        <div class="sheet-col" style=background-color:#B39C85;>
+            <div class="attribute">
+                <img src="http://fc04.deviantart.net/fs70/f/2011/163/8/3/earth_by_exahyl-d3is114.png"/>
+                <h3 class="attribute">Earth</h3>
+                
+            </div>
+             <div class="attribute">
+                <input type="number" name="attr_Earth"/>
+                <button type='roll' name='roll_Earth' value='@{name} rolls Earth [[@{Earth}d10!!]]'></button><br/>
+            </div>
+            <div class="attribute">
+                <p></ladel><span>Stamina</span></p>
+                <input type="number" name="attr_Stamina" />
+                <button type='roll' name='roll_Stamina' value='@{name} rolls Stamina [[@{Stamina}d10!!]]'></button><br/>
+            </div>
+            <div class="attribute">
+                <p></ladel><span>Willpower</span></p>
+                <input type="number" name="attr_Willpower" />
+                <button type='roll' name='roll_Willpower' value='@{name} rolls Willpower [[@{Willpower}d10!!]]'></button><br/>
+            </div>
+        </div>
+        <div class="sheet-col" style=background-color:#EBA93C;>
+            <div class="attribute">
+                 <img src="http://fc00.deviantart.net/fs70/f/2011/163/2/d/fire_ring_by_exahyl-d3is13z.png"/>
+                 <h3 class="attribute">Fire</h3>
+            </div>
+             <div class="attribute">
+                <input type="number" name="attr_Fire"/>
+                <button type='roll' name='roll_Fire' value='@{name} rolls Fire [[@{Fire}d10!!]]'></button><br/>
+            </div>
+            <div class="attribute">
+                <p></ladel><span>Agility</span></p>
+                <input type="number" name="attr_Agility" />
+                <button type='roll' name='roll_Agility' value='@{name} rolls Agility [[@{Agility}d10!!]]'></button><br/>
+            </div>
+            <div class="attribute">
+                <p></ladel><span>Intelligence</span></p>
+                <input type="number" name="attr_Intelligence" />
+                <button type='roll' name='roll_Intelligence' value='@{name} rolls Intelligence [[@{Intelligence}d10!!]]'></button><br/>
+            </div>
+        </div>
+        <div class="sheet-col" style=background-color:#98ADDA;>
+            <div class="attribute">
+                 <img src="http://fc06.deviantart.net/fs71/f/2011/163/d/e/water_ring_by_exahyl-d3is12g.png"/>
+                 <h3 class="attribute">Water</h3>
+            </div>
+             <div class="attribute">
+                <input type="number" name="attr_Water" />
+                <button type='roll' name='roll_Water' value='@{name} rolls Water [[@{Water}d10!!]]'></button><br/>
+            </div>
+            <div class="attribute">
+                <p></ladel><span>Strength</span></p>
+                <input type="number" name="attr_Strength" />
+                <button type='roll' name='roll_Strength' value='@{name} rolls Strength [[@{Strength}d10!!]]'></button><br/>
+            </div>
+            <div class="attribute">
+                <p></ladel><span>Perception</span></p>
+                <input type="number" name="attr_Perception" />
+                <button type='roll' name='roll_Perception' value='@{name} rolls Perception [[@{Perception}d10!!]]'></button><br/>
+            </div>
+        </div>
+        <div class="sheet-col" style=background-color:#BDA7A8;>
+            <div class="attribute">
+                 <img src="http://fc01.deviantart.net/fs71/f/2011/163/4/1/void_by_exahyl-d3is16h.png"/>
+                 <h3 class="attribute">Void</h3>
+                 </div>
+             <div class="attribute">
+                <input type="number" name="attr_Void" />
+                <button type='roll' name='roll_Void' value='@{name} rolls Void [[@{Void}d10!!]]'></button><br/>
+            </div>
+            <div class="attribute">
+                <p></ladel><span>Void Spent</span></p>
+                <input type="number" name="attr_Voidspent" />
+            </div>
+            <div class="sheet-col">
+            <div class="attribute">
+                 
+            </div>
+        </div>
+    </div>
+</div>
+    
+    <h1 class="separator"><span></span></h1>
+    
+    <div class="sheet-3colrow">
+        <div class="sheet-col">
+            <h3 class="ability">Honor</h3>
+            <input type="number" name="attr_HonorRank" />
+            <div class="ability">
+                <div class="dots">
+                    <input type="checkbox" name="attr_Honor_max" value="1" /><span></span>
+                    <input type="radio" name="attr_Honor" value="0" checked="checked" />
+                    <input type="radio" name="attr_Honor" value="1" /><span></span>
+                    <input type="radio" name="attr_Honor" value="2" /><span></span>
+                    <input type="radio" name="attr_Honor" value="3" /><span></span>
+                    <input type="radio" name="attr_Honor" value="4" /><span></span>
+                    <input type="radio" name="attr_Honor" value="5" /><span></span>
+                    <input type="radio" name="attr_Honor" value="6" /><span></span>
+                    <input type="radio" name="attr_Honor" value="7" /><span></span>
+                    <input type="radio" name="attr_Honor" value="8" /><span></span>
+                    <input type="radio" name="attr_Honor" value="9" /><span></span>
+                    <input type="radio" name="attr_Honor" value="10" /><span></span>
+                </div>
+            </div>
+            
+            <h3 class="ability">Glory</h3>
+            <input type="number" name="attr_GloryRank" />
+            <div class="ability">
+                <div class="dots">
+                    <input type="checkbox" name="attr_Glory_max" value="1" /><span></span>
+                    <input type="radio" name="attr_Glory" value="0" checked="checked" />
+                    <input type="radio" name="attr_Glory" value="1" /><span></span>
+                    <input type="radio" name="attr_Glory" value="2" /><span></span>
+                    <input type="radio" name="attr_Glory" value="3" /><span></span>
+                    <input type="radio" name="attr_Glory" value="4" /><span></span>
+                    <input type="radio" name="attr_Glory" value="5" /><span></span>
+                    <input type="radio" name="attr_Glory" value="6" /><span></span>
+                    <input type="radio" name="attr_Glory" value="7" /><span></span>
+                    <input type="radio" name="attr_Glory" value="8" /><span></span>
+                    <input type="radio" name="attr_Glory" value="9" /><span></span>
+                    <input type="radio" name="attr_Glory" value="10" /><span></span>
+                </div>
+            </div>
+            
+            <h3 class="ability">Status</h3>
+            <input type="number" name="attr_StatusRank" />
+            <div class="ability">
+                <div class="dots">
+                    <input type="checkbox" name="attr_Status_max" value="1" /><span></span>
+                    <input type="radio" name="attr_Status" value="0" checked="checked" />
+                    <input type="radio" name="attr_Status" value="1" /><span></span>
+                    <input type="radio" name="attr_Status" value="2" /><span></span>
+                    <input type="radio" name="attr_Status" value="3" /><span></span>
+                    <input type="radio" name="attr_Status" value="4" /><span></span>
+                    <input type="radio" name="attr_Status" value="5" /><span></span>
+                    <input type="radio" name="attr_Status" value="6" /><span></span>
+                    <input type="radio" name="attr_Status" value="7" /><span></span>
+                    <input type="radio" name="attr_Status" value="8" /><span></span>
+                    <input type="radio" name="attr_Status" value="9" /><span></span>
+                    <input type="radio" name="attr_Status" value="10" /><span></span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="sheet-col">
+            <table class=borderedtable>
+                <tr>
+                    <td>Initiative</td>
+                    <td></td>
+                    <td>Armor TN</td>
+                    <td></td>
+                    <td>Armor</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Insight Rank / Reflexes</td>
+                    <td></td>
+                    <td>Base TN</td>
+                    <td><input type="number" disabled="true" name="attr_BaseTN" value="(((@{Reflexes}) * 5) + 5)"/></td>
+                    <td>Type/Bonus</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Modifiers</td>
+                    <td></td>
+                    <td>Modifiers</td>
+                    <td><input type="number" name="attr_ArmorMod"</td>
+                    <td>Quality</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Current initiative</td>
+                    <td></td>
+                    <td>Current TN</td>
+                    <td><input type="number" disabled="true" name="attr_CurrentTN" value="(@{BaseTN}+@{ArmorMod})"/></td>
+                    <td>Notes</td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <h1 class="separator"><span></span></h1>
+    
+    <div class="sheet-3colrow">
+        <div class="sheet-col">
+            <h1 class="separator"><span></span></h1>
+            <textarea name="attr_AnimaLong" class="four-lines"></textarea>
+            
+            
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="tab-content background-tab">
+    <div class="sheet-2colrow">
+        <div class="sheet-col">
+            <h3>Background</h3>
+            <textarea name="attr_Background" class="four-lines"></textarea>        
+
+        </div>
+    </div>
+</div>
+
+<div class="tab-content skills-tab">
+    <h3>Skills</h3>
+         <h1 class="separator vspace"><span>Skills</span></h1>
+             <span class="span-header" style="width: 300px">Name</span>
+             <span class="span-header" style="width: 40px">Rank</span>
+             <span class="span-header center" style="width: 80px">Trait</span>
+             <span class="span-header center" style="width: 50px">Roll</span>
+             <span class="span-header center" style="width: 200px">Emphases/Masteries</span>
+             <fieldset class="repeating_combos">
+                 <div class="skill">
+                     <input type="text" name="attr_SkillName" />
+                     <input type="Number" class="narrow"  name="attr_SkillRank" />
+                     <select class="narrow" name="attr_Skilltrait">
+                         <option value="Reflexes">Reflexes</option>
+                         <option value="Awareness">Awareness</option>
+                         <option value="Agility">Agility</option>
+                         <option value="Intelligence">Intelligence</option>
+                         <option value="Stamina">Stamina</option>
+                         <option value="Willpower">Willpower</option>
+                         <option value="Strength">Strength</option>
+                         <option value="Perception">Perception</option>
+                         </select>
+                     <input type="text" disabled="true" class="narrow" name="attr_SkillRoll" value=/>
+                     <input type="text" name="SkillEmphases" />
+                 </div>
+             </fieldset>       
+</div>

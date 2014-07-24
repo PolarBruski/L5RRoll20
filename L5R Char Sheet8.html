@@ -1,0 +1,1632 @@
+<div class="bio sheet-2colrow">
+    <div class="sheet-col" style="width:355px">
+        <table>
+            <tr>
+               <td><label>Name:</label></td>
+               <td><label><input type="text" class="regular" name="attr_Name" /></label></td>
+               <td></td>
+               <td><label>Rank:</label></td>
+               <td><input  type="number" disabled="true" name="attr_Rank" value="round(((@{Insight} - 112) / 25))" /></td>
+            </tr>
+            <tr>
+               <td> <label>Clan:</label></td>
+               <td><label>
+                <select  class="regular" name="attr_Clan">
+                    <option value=""></option>
+                    <option value="Crab">Crab</option>
+                    <option value="Crane">Crane</option>
+                    <option value="Dragon">Dragon</option>
+                    <option value="Lion">Lion</option>
+                    <option value="Mantis">Mantis</option>
+                    <option value="Phoenix">Phoenix</option>
+                    <option value="Scorpion">Scorpion</option>
+                    <option value="Spider">Spider</option>
+                    <option value="Unicorn">Unicorn</option>
+                    <option value="Crab">Ronin</option>
+                    <option value="Misc">Misc</option>
+                </select>
+                </label></td>
+                <td></td>
+                <td><div><label>Experience:</label></td>
+                <td><input type="number"  value='40' name="attr_Experience" /></div></td>
+            </tr>
+            <tr>
+                <td><label>Family:</label></td>
+                <td><label> <input  class="regular" type="text" name="attr_Family" /></label></td>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td><div><label>Insight:</label></td>
+                <td><input type="number" disabled="true" name="attr_Insight" value="(((@{Air} + @{Water} + @{Fire} + @{Earth} + @{Void}) * 10 ) + (@{rank_acting} + @{rank_artisan} + @{rank_calligraphy} + @{rank_courtier} + @{rank_divination} + @{rank_etiquette} + @{rank_games} + @{rank_investigation} + @{rank_lore} + @{rank_Lore2} + @{rank_Lore3} + @{rank_Medicine} + @{rank_Meditation} + @{rank_Perform} + @{rank_Sincerity} + @{rank_Spellcraft} + @{rank_Tea_Ceremony} + @{rank_Athletics} + @{rank_Battle} + @{rank_Defense} + @{rank_Horsemanship} + @{rank_Hunting} + @{rank_Iaijutsu} + @{rank_Jiujiutsu} + @{rank_Chain_Weapons}  + @{rank_Heavy_Weapons} + @{rank_Kenjutsu} + @{rank_Knives} + @{rank_Kyujutsu} + @{rank_Ninjutsu_Ranged} + @{rank_Spears} + @{rank_Staves} + @{rank_WarFan} + @{rank_AnimalHandling} + @{rank_Commerce} + @{rank_Craft} + @{rank_Engineering} + @{rank_Sailing} + @{rank_Forgery} + @{rank_Intimidation} + @{rank_SleightofHand} + @{rank_Stealth} + @{rank_Temptation}))"/></div></td>
+            </tr>
+            <tr>
+                <td><label>School:</label></td>
+                <td><label> <input type="text"  class="regular" name="attr_School" /></label></td>
+                <td></td>
+                <td><label>School Rank:</label></td>
+                <td><input type="number" name="attr_SchoolRank" /></td>
+            </tr>  
+        </table>
+    </div>
+    <div class="sheet-col">
+        <img src="http://i.imgur.com/tv2Gvag.png" style="max-height: 160px;float:right;" />
+    </div>
+</div>
+
+<div class="center">
+    <input type="radio" class="tab" name="attr_tab" value="traits" checked="checked" /><span title="Traits"></span>
+    <input type="radio" class="tab" name="attr_tab" value="skills" /><span title="Skills"></span>
+    <input type="radio" class="tab" name="attr_tab" value="weapons" /><span title="Weapons"></span>
+    <input type="radio" class="tab" name="attr_tab" value="spells" /><span title="Spells"></span>
+<p></p>
+
+<div class="tab-content traits-tab">
+    <h1 class="separator"><span></span></h1>
+<div class="center">
+    <div class="sheet-6colrow">
+        <div class="sheet-col" style=background-color:#B4C8DB;>
+            <p></p>
+            <div class="attribute">
+                <img src="http://fc03.deviantart.net/fs71/f/2011/163/b/0/air_ring_by_exahyl-d3is15c.png" style="max-height: 100px;"/>
+                <h3 class="attribute">Air</h3>
+            </div>
+            <div class="attribute">
+                <input type="number"  value='2' name="attr_Air"/>
+                <button type='roll' name='roll_Air' value='@{name} rolls Air [[@{Air}d10!!]]'></button><br/>
+            </div>
+            <div class="attribute">
+                <p><span>Reflexes</span></p>
+                <input type="number"  value='2' name="attr_Reflexes" />
+                <button type='roll' name='roll_Reflexes' value='@{name} rolls Reflexes [[@{Reflexes}d10!!]]'></button><br/>
+            </div>
+            <div class="attribute">
+                <p></label><span>Awareness</span></p>
+                <input type="number"  value='2' name="attr_Awareness" />
+                <button type='roll' name='roll_Awareness' value='@{name} rolls Awareness [[@{Awareness}d10!!]]'></button><br/>
+            </div>
+            <p></p>
+        </div>
+        <div class="sheet-col" style=background-color:#B39C85;>
+            <p></p>
+            <div class="attribute">
+                <img src="http://fc04.deviantart.net/fs70/f/2011/163/8/3/earth_by_exahyl-d3is114.png" style="max-height: 100px;"/>
+                <h3 class="attribute">Earth</h3>
+                
+            </div>
+             <div class="attribute">
+                <input type="number"  value='2' name="attr_Earth"/>
+                <button type='roll' name='roll_Earth' value='@{name} rolls Earth [[@{Earth}d10!!]]'></button><br/>
+            </div>
+            <div class="attribute">
+                <p></ladel><span>Stamina</span></p>
+                <input type="number"  value='2' name="attr_Stamina" />
+                <button type='roll' name='roll_Stamina' value='@{name} rolls Stamina [[@{Stamina}d10!!]]'></button><br/>
+            </div>
+            <div class="attribute">
+                <p></ladel><span>Willpower</span></p>
+                <input type="number"  value='2' name="attr_Willpower" />
+                <button type='roll' name='roll_Willpower' value='@{name} rolls Willpower [[@{Willpower}d10!!]]'></button><br/>
+            </div>
+            <p></p>
+        </div>
+        <div class="sheet-col" style=background-color:#EBA93C;>
+            <p></p>
+            <div class="attribute">
+                 <img src="http://fc00.deviantart.net/fs70/f/2011/163/2/d/fire_ring_by_exahyl-d3is13z.png" style="max-height: 100px;"/>
+                 <h3 class="attribute">Fire</h3>
+            </div>
+             <div class="attribute">
+                <input type="number"  value='2' name="attr_Fire"/>
+                <button type='roll' name='roll_Fire' value='@{name} rolls Fire [[@{Fire}d10!!]]'></button><br/>
+            </div>
+            <div class="attribute">
+                <p></ladel><span>Agility</span></p>
+                <input type="number"  value='2' name="attr_Agility" />
+                <button type='roll' name='roll_Agility' value='@{name} rolls Agility [[@{Agility}d10!!]]'></button><br/>
+            </div>
+            <div class="attribute">
+                <p></ladel><span>Intelligence</span></p>
+                <input type="number"  value='2' name="attr_Intelligence" />
+                <button type='roll' name='roll_Intelligence' value='@{name} rolls Intelligence [[@{Intelligence}d10!!]]'></button><br/>
+            </div>
+            <p></p>
+        </div>
+        <div class="sheet-col" style=background-color:#98ADDA;>
+            <p></p>
+            <div class="attribute">
+                 <img src="http://fc06.deviantart.net/fs71/f/2011/163/d/e/water_ring_by_exahyl-d3is12g.png" style="max-height: 100px;"/>
+                 <h3 class="attribute">Water</h3>
+            </div>
+             <div class="attribute">
+                <input type="number"  value='2' name="attr_Water" />
+                <button type='roll' name='roll_Water' value='@{name} rolls Water [[@{Water}d10!!]]'></button><br/>
+            </div>
+            <div class="attribute">
+                <p></ladel><span>Strength</span></p>
+                <input type="number"  value='2' name="attr_Strength" />
+                <button type='roll' name='roll_Strength' value='@{name} rolls Strength [[@{Strength}d10!!]]'></button><br/>
+            </div>
+            <div class="attribute">
+                <p></ladel><span>Perception</span></p>
+                <input type="number"  value='2' name="attr_Perception" />
+                <button type='roll' name='roll_Perception' value='@{name} rolls Perception [[@{Perception}d10!!]]'></button><br/>
+            </div>
+            <p></p>
+        </div>
+        <div class="sheet-col" style=background-color:#BDA7A8;>
+            <p></p>
+            <div class="attribute">
+                 <img src="http://fc01.deviantart.net/fs71/f/2011/163/4/1/void_by_exahyl-d3is16h.png" style="max-height: 100px;"/>
+                 <h3 class="attribute">Void</h3>
+                 </div>
+             <div class="attribute">
+                <input type="number"  value='2' name="attr_Void" />
+                <button type='roll' name='roll_Void' value='@{name} rolls Void [[@{Void}d10!!]]'></button><br/>
+            </div>
+            <div class="attribute">
+                <p></ladel><span>Void Spent</span></p>
+                <input type="number"  value='0' name="attr_Voidspent" />
+            </div>
+            <div class="sheet-col">
+            <div class="attribute">
+            
+            <p></p>
+            </div>
+        </div>
+    </div>
+</div>
+<p></p>    
+<h1 class="separator"><span></span></h1>
+<div class="sheet-3colrow">
+     <div class="sheet-col">
+        <table class="skills">
+            <tr>
+                <td>Sex:</td>
+                <td><input  type="text" class="narrow" style=display:inline name="attr_Sex" /></td>
+                <td>Age:</td>
+                <td><input type="text" class="narrow" style=display:inline name="attr_Age" /></td>
+            </tr>
+            <tr>
+                <td>Height:</td>
+                <td><input type="text" class="narrow" style=display:inline name="attr_Height" /></td>
+                <td>Weight:</td>
+                <td> <input type="text" class="narrow" style=display:inline name="attr_Weight" /></td>
+            </tr>
+            <tr>
+                <td>Hair:</td>
+                <td><input type="text" class="narrow" style=display:inline name="attr_Hair" /></td>
+                <td>Eyes:</td>
+                <td><input type="text" class="narrow" style=display:inline name="attr_Eyes" /></td>
+            </tr>
+            <tr>
+                <td>Father:</td>
+                <td><input type="text" class="narrow" style=display:inline name="attr_Father" /></td>
+                <td></td>
+                <td><input type="text" class="narrow" style=display:inline name="attr_Father2" /></td>
+            </tr>
+            <tr>
+                <td>Mother:</td>
+                <td><input type="text" class="narrow" style=display:inline name="attr_Mother" /></td>
+                <td></td>
+                <td><input type="text" class="narrow" style=display:inline name="attr_Mother2" /></td>
+            </tr>
+        </table>
+        <br><br><br>
+        <div class="attributes">
+        <table class="skills">
+            <tr>
+                <th></th>
+                <th>TN</th>
+                <th></th>
+                <th>Armor</th>
+            </tr>
+            <tr>
+                <td>Base</td>
+                <td><input type="number" disabled="true" name="attr_BaseTN" value="(((@{Reflexes}) * 5) + 5)"/></td>
+                <td>Type</td>
+                <td><input type="text" class="narrow" name="attr_ArmorType"></td>
+            </tr>
+            <tr>
+                <td>Armor+</td>
+                <td><input type="number" name="attr_ArmorBonus"></td>
+                <td>Reduction</td>
+                <td><div style="text-align: Right;"><input type="number" name="attr_ArmorReduction"></div></td>
+            </tr>
+            <tr>
+                <td>Current</td>
+                <td><input type="number" disabled="true" name="attr_CurrentTN" value="(@{BaseTN}+@{ArmorBonus})"/></td>
+                <td>Notes</td>
+                <td><input type="text" class="narrow" name="attr_ArmorNotes"></td>
+            </tr>
+        </table>
+        </div>
+     </div>
+     
+     <div class="sheet-col">
+         <div class="skills"><h3 class="ability">Honor<input type="number" name="attr_HonorRank" /></h3></div>
+         <div class="dots">
+             <input type="checkbox" name="attr_Honor_max" value="1" /><span></span>
+             <input type="radio" name="attr_Honor" value="0" checked="checked" />
+             <input type="radio" name="attr_Honor" value="1" /><span></span>
+             <input type="radio" name="attr_Honor" value="2" /><span></span>
+             <input type="radio" name="attr_Honor" value="3" /><span></span>
+             <input type="radio" name="attr_Honor" value="4" /><span></span>
+             <input type="radio" name="attr_Honor" value="5" /><span></span>
+             <input type="radio" name="attr_Honor" value="6" /><span></span>
+             <input type="radio" name="attr_Honor" value="7" /><span></span>
+             <input type="radio" name="attr_Honor" value="8" /><span></span>
+             <input type="radio" name="attr_Honor" value="9" /><span></span>
+             <input type="radio" name="attr_Honor" value="10" /><span></span>
+         </div>
+            
+         <div class="skills"><h3 class="ability">Glory     <input type="number" name="attr_GloryRank" /></h3></div>
+         <div class="dots">
+             <input type="checkbox" name="attr_Glory_max" value="1" /><span></span>
+             <input type="radio" name="attr_Glory" value="0" checked="checked" />
+             <input type="radio" name="attr_Glory" value="1" /><span></span>
+             <input type="radio" name="attr_Glory" value="2" /><span></span>
+             <input type="radio" name="attr_Glory" value="3" /><span></span>
+             <input type="radio" name="attr_Glory" value="4" /><span></span>
+             <input type="radio" name="attr_Glory" value="5" /><span></span>
+             <input type="radio" name="attr_Glory" value="6" /><span></span>
+             <input type="radio" name="attr_Glory" value="7" /><span></span>
+             <input type="radio" name="attr_Glory" value="8" /><span></span>
+             <input type="radio" name="attr_Glory" value="9" /><span></span>
+             <input type="radio" name="attr_Glory" value="10" /><span></span>
+         </div>
+            
+         <div class="skills"><h3 class="ability">Status     <input type="number" name="attr_StatusRank" /></h3></div>
+         <div class="dots">
+             <input type="checkbox" name="attr_Status_max" value="1" /><span></span>
+             <input type="radio" name="attr_Status" value="0" checked="checked" />
+             <input type="radio" name="attr_Status" value="1" /><span></span>
+             <input type="radio" name="attr_Status" value="2" /><span></span>
+             <input type="radio" name="attr_Status" value="3" /><span></span>
+             <input type="radio" name="attr_Status" value="4" /><span></span>
+             <input type="radio" name="attr_Status" value="5" /><span></span>
+             <input type="radio" name="attr_Status" value="6" /><span></span>
+             <input type="radio" name="attr_Status" value="7" /><span></span>
+             <input type="radio" name="attr_Status" value="8" /><span></span>
+             <input type="radio" name="attr_Status" value="9" /><span></span>
+             <input type="radio" name="attr_Status" value="10" /><span></span>
+         </div>
+                
+         <div class="skills"><h3 class="ability">Taint     <input type="number" name="attr_TaintRank" /></h3></div>
+         <div class="dots">
+             <input type="checkbox" name="attr_Taint_max" value="1" /><span></span>
+             <input type="radio" name="attr_Taint" value="0" checked="checked" />
+             <input type="radio" name="attr_Taint" value="1" /><span></span>
+             <input type="radio" name="attr_Taint" value="2" /><span></span>
+             <input type="radio" name="attr_Taint" value="3" /><span></span>
+             <input type="radio" name="attr_Taint" value="4" /><span></span>
+             <input type="radio" name="attr_Taint" value="5" /><span></span>
+             <input type="radio" name="attr_Taint" value="6" /><span></span>
+             <input type="radio" name="attr_Taint" value="7" /><span></span>
+             <input type="radio" name="attr_Taint" value="8" /><span></span>
+             <input type="radio" name="attr_Taint" value="9" /><span></span>
+             <input type="radio" name="attr_Taint" value="10" /><span></span>
+         </div>
+         <br>
+         <div class="attributes">
+        <table class="skills">
+            <tr>
+                <th>    <button type='roll' name='roll_Initiative' value='@{name} rolls Initiative [[(@{BaseInitiative})d10k@{reflexes}!! + @{InitiativeMod}]]'></button></th>
+                <th>Initiative</th>
+                <th></th>
+                <th>Wound Heal</th>
+            </tr>
+            <tr>
+                <td>Base</td>
+                <td><input type="number" disabled="true" name="attr_BaseInitiative" value="(@{Reflexes}+@{Rank})k(@{Reflexes})" /></td>
+                <td>Base</td>
+                <td><input type="number" disabled="true" class="narrow" name="attr_WoundHealBase" value="((@{attr_Strength)*2)+(@attr_Rank))"></td>
+            </tr>
+            <tr>
+                <td>Modifier</td>
+                <td><input type="number" name="attr_InitiativeMod"></td>
+                <td>Modifier</td>
+                <td><input type="number" value="0" name="attr_HealMod"></td>
+            </tr>
+            <tr>
+                <td>Current</td>
+                <td><input type="number" name="attr_Initiative"/>
+                </td>
+                <td>Current</td>
+                <td><input type="number" disabled="true"  name="attr_WoundHeal" value="(@{attr_WoundHealBase}+(@attr_HealMod))"/></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+        </div>
+         
+         
+        </div>
+        <div class="sheet-col">
+             <table class="skills" style='border-collapse: collapse; border-spacing: 0;font-weight: bold;'>
+                 <tr>
+                     <td><h3>Wounds</h3></td>
+                     <td></td>
+                     <td><input type="number" name="attr_Wounds"/></td>
+                 </tr>
+                 <tr>
+                     <td>Healthy</td><td> (+0)</td>
+                 <td><input type="number" name="attr_Healthy" value="@{Earth}*5" disabled="true"/></td>
+                 </tr>
+                 <tr>
+                     <td>Nicked</td><td> (+3)</td>
+                     <td><input type="number" name="attr_Nicked" value="@{Earth}*7" disabled="true"/></td></td>
+                 </tr>
+                 <tr>
+                     <td>Grazed</td><td> (+5)</td>
+                     <td><input type="number" name="attr_Grazed" value="@{Earth}*9" disabled="true"/></td>
+                 </tr>
+                 <tr>
+                     <td>Hurt</td><td> (+10)</td>
+                     <td><input type="number" name="attr_Hurt" value="@{Earth}*11" disabled="true"/></td>
+                 </tr>
+                 <tr>
+                     <td>Injured</td><td> (+15)</td>
+                     <td><input type="number" name="attr_Injured" value="@{Earth}*13" disabled="true"/></td>
+                 </tr>
+                 <tr>
+                     <td>Crippled</td><td> (+20)</td>
+                     <td><input type="number" name="attr_Crippled" value="@{Earth}*15" disabled="true"/></td>
+                 </tr>
+                 <tr>
+                     <td>Down</td><td> (+40)</td>
+                     <td><input type="number" name="attr_Down" value="@{Earth}*17" disabled="true"/></td>
+                 </tr>
+                 <tr>
+                     <td>Out</td><td></td>
+                     <td><input type="number" name="attr_Out" value="@{Earth}*19" disabled="true"/></td>
+                 </tr>
+             </table>
+         </div>
+        
+         </div>
+     </div>
+     <p></p>
+     <p></p>
+     <h1 class="separator"><span></span></h1>
+     <div class="sheet-3colrow">
+         <div class="sheet-col">
+             <h3> School Techniques</h3>
+             <textarea name="attr_Description" class="four-lines"></textarea>
+         </div>
+         <div class="sheet-col">
+             <h3> Advantages</h3>
+             <textarea name="attr_Advantages" class="four-lines"></textarea>
+         </div>
+         <div class="sheet-col">
+             <h3> Disadvantages</h3>
+             <textarea name="attr_Disadvantages" class="four-lines"></textarea>    
+         </div>
+     </div>
+     <h3>Background</h3>
+            <textarea name="attr_Background" class="four-lines"></textarea>
+    <h3>Notes</h3>
+            <textarea name="attr_Notes"></textarea>
+</div>
+
+
+
+<div class="tab-content skills-tab">
+     <table>   <fieldset>
+            <h1><span>High Skills</span></h1>
+            U = Untrained Roll | T = Trained Roll | E = Emphasis Roll
+            <p></p>
+            <table class="skills"style="border-collapse:collapse;border-spacing:0">
+        <tr>
+            <td style="font-weight:bold">Skill Name</td>
+            <td style="font-weight:bold">Rank</td>
+            <td style="font-weight:bold">Trait</td>
+            <td style="font-weight:bold">+Roll</td>
+            <td style="font-weight:bold">+Keep</td>
+            <td style="font-weight:bold">Emphases</td>
+            <td style="font-weight:bold">U</td>
+            <td style="font-weight:bold">T</td>
+            <td style="font-weight:bold">E</td>
+            <td style="font-weight:bold">Sub-Type</td>
+        </tr>
+        <tr>
+            <td>Acting</td> 
+            <td><input type="number" name="attr_rank_acting" value="0"></td>
+            <td><select class="regular" name="attr_Attr_Acting">
+             <option value="@{Awareness}">Awareness</option>
+             <option value="@{Agility}">Agility</option>
+             <option value="@{Intelligence}">Intelligence</option>
+             <option value="@{Perception}">Perception</option>
+             <option value="@{Reflexes}">Reflexes</option>
+             <option value="@{Stamina}">Stamina</option>
+             <option value="@{Strength}">Strength</option>
+             <option value="@{Willpower}">Willpower</option>
+             </select></td>
+            <input type="hidden" name="attr_roll_acting" value="@{rank_acting}+@{Attr_Acting}" disabled>
+            <input type="hidden" name="attr_keep_acting" value="@{Attr_Acting}" disabled>
+            <td><input type="number" name="attr_roll_bonus_acting" value="0"></td>
+            <td><input type="number" name="attr_keep_bonus_acting" value="0"></td>
+            <td><input type="text" name="attr_acting_Emphases" value=""></td>
+            <td><button type="roll" value='@{name} rolls untrained Acting\n/r [[@{roll_acting}+@{roll_bonus_acting}]]d10k[[@{keep_acting}+@{keep_bonus_acting}]]'></button></td>
+            <td><button type="roll" value="@{name} rolls Acting\n/r [[@{roll_acting}+@{roll_bonus_acting}]]d10k[[@{keep_acting}+@{keep_bonus_acting}]]!!"></button></td>
+            <td><button type="roll" value="@{name} rolls Acting with @{acting_Emphases} Emphasis\n/r [[@{roll_acting}+@{roll_bonus_acting}]]d10k[[@{keep_acting}+@{keep_bonus_acting}]]!!r1"></button></td>
+        </tr>
+        <tr>
+            <td>Artisan</td> 
+            <td><input type="number" name="attr_rank_artisan" value="0"></td>
+            <td><select class="regular" name="attr_Attr_Artisan">
+             <option value="@{Awareness}">Awareness</option>
+             <option value="@{Agility}">Agility</option>
+             <option value="@{Intelligence}">Intelligence</option>
+             <option value="@{Perception}">Perception</option>
+             <option value="@{Reflexes}">Reflexes</option>
+             <option value="@{Stamina}">Stamina</option>
+             <option value="@{Strength}">Strength</option>
+             <option value="@{Willpower}">Willpower</option>
+             </select></td>
+            <input type="hidden" name="attr_roll_artisan" value="@{rank_artisan}+@{Attr_Artisan}" disabled>
+            <input type="hidden" name="attr_keep_artisan" value="@{Attr_Artisan}" disabled>
+            <td><input type="number" name="attr_roll_bonus_artisan" value="0"></td>
+            <td><input type="number" name="attr_keep_bonus_artisan" value="0"></td>
+            <td><input type="text" name="attr_artisan_Emphases" value=""></td>
+            <td><button type="roll" value="@{name} rolls untrained Artisan\n/r  [[@{roll_artisan}+@{roll_bonus_artisan}]]d10k[[@{keep_Artisan}+@{keep_bonus_artisan}]]"></button></td>
+            <td><button type="roll" value="@{name} rolls Artisan\n/r  [[@{roll_artisan}+@{roll_bonus_artisan}]]d10k[[@{keep_Artisan}+@{keep_bonus_artisan}]]!!"></button></td>
+            <td><button type="roll" value="@{name} rolls Artisan with @{artisan_Emphases} Emphasis\n/r  [[@{roll_artisan}+@{roll_bonus_artisan}]]d10k[[@{keep_Artisan}+@{keep_bonus_artisan}]]!!r1"></button></td>
+            <td><input type="text" class="regular"  name="attr_artisan_type" value=""></td>
+        </tr>
+        <tr>
+            <td>Calligraphy</td> 
+            <td><input type="number" name="attr_rank_calligraphy" value="0"></td>
+            <td><select class="regular" name="attr_Attr_Calligraphy">
+             <option value="@{Intelligence}">Intelligence</option>
+             <option value="@{Agility}">Agility</option>
+             <option value="@{Awareness}">Awareness</option>
+             <option value="@{Perception}">Perception</option>
+             <option value="@{Reflexes}">Reflexes</option>
+             <option value="@{Stamina}">Stamina</option>
+             <option value="@{Strength}">Strength</option>
+             <option value="@{Willpower}">Willpower</option>
+             </select></td>
+            <input type="hidden" name="attr_roll_calligraphy" value="@{rank_calligraphy}+@{Attr_Calligraphy}" disabled>
+            <input type="hidden" name="attr_keep_calligraphy" value="@{Attr_Calligraphy}" disabled>
+            <td><input type="number" name="attr_roll_bonus_calligraphy" value="0"></td>
+            <td><input type="number" name="attr_keep_bonus_calligraphy" value="0"></td>
+            <td><input type="text" name="attr_calligraphy_Emphases" value=""></td>
+            <td><button type="roll" value="@{name} rolls untrained Calligraphy\n/r  [[@{roll_calligraphy}+@{roll_bonus_calligraphy}]]d10k[[@{keep_Calligraphy}+@{keep_bonus_calligraphy}]]"></button></td>
+            <td><button type="roll" value="@{name} rolls Calligraphy\n/r  [[@{roll_calligraphy}+@{roll_bonus_calligraphy}]]d10k[[@{keep_Calligraphy}+@{keep_bonus_calligraphy}]]!!"></button></td>
+            <td><button type="roll" value="@{name} rolls Calligraphy with @{calligraphy_Emphases} Emphasis\n/r  [[@{roll_calligraphy}+@{roll_bonus_calligraphy}]]d10k[[@{keep_Calligraphy}+@{keep_bonus_calligraphy}]]!!r1"></button></td>
+        </tr>  
+        <tr>
+            <td>Courtier</td> 
+            <td><input type="number" name="attr_rank_courtier" value="0"></td>
+            <td><select class="regular" name="attr_Attr_Courtier">
+             <option value="@{Awareness}">Awareness</option>
+             <option value="@{Agility}">Agility</option>
+             <option value="@{Intelligence}">Intelligence</option>
+             <option value="@{Perception}">Perception</option>
+             <option value="@{Reflexes}">Reflexes</option>
+             <option value="@{Stamina}">Stamina</option>
+             <option value="@{Strength}">Strength</option>
+             <option value="@{Willpower}">Willpower</option>
+             </select></td>
+            <input type="hidden" name="attr_roll_courtier" value="@{rank_courtier}+@{Attr_Courtier}" disabled>
+            <input type="hidden" name="attr_keep_courtier" value="@{Attr_Courtier}" disabled>
+            <td><input type="number" name="attr_roll_bonus_courtier" value="0"></td>
+            <td><input type="number" name="attr_keep_bonus_courtier" value="0"></td>
+            <td><input type="text" name="attr_courtier_Emphases" value=""></td>
+            <td><button type="roll" value="@{name} rolls untrained Courtier\n/r  [[@{roll_courtier}+@{roll_bonus_courtier}]]d10k[[@{keep_Courtier}+@{keep_bonus_courtier}]]"></button></td>
+            <td><button type="roll" value="@{name} rolls Courtier\n/r  [[@{roll_courtier}+@{roll_bonus_courtier}]]d10k[[@{keep_Courtier}+@{keep_bonus_courtier}]]!!"></button></td>
+            <td><button type="roll" value="@{name} rolls Courtier with @{courtier_Emphases} Emphasis\n/r  [[@{roll_courtier}+@{roll_bonus_courtier}]]d10k[[@{keep_Courtier}+@{keep_bonus_courtier}]]!!r1"></button></td>
+        </tr>
+        <tr>
+            <td>Divination</td> 
+            <td><input type="number" name="attr_rank_divination" value="0"></td>
+            <td><select class="regular" name="attr_Attr_Divination">
+             <option value="@{Intelligence}">Intelligence</option>
+             <option value="@{Agility}">Agility</option>
+             <option value="@{Awareness}">Awareness</option>
+             <option value="@{Perception}">Perception</option>
+             <option value="@{Reflexes}">Reflexes</option>
+             <option value="@{Stamina}">Stamina</option>
+             <option value="@{Strength}">Strength</option>
+             <option value="@{Willpower}">Willpower</option>
+             </select></td>
+            <input type="hidden" name="attr_roll_divination" value="@{rank_divination}+@{Attr_Divination}" disabled>
+            <input type="hidden" name="attr_keep_divination" value="@{Attr_Divination}" disabled>
+            <td><input type="number" name="attr_roll_bonus_divination" value="0"></td>
+            <td><input type="number" name="attr_keep_bonus_divination" value="0"></td>
+            <td><input type="text" name="attr_divination_Emphases" value=""></td>
+            <td><button type="roll" value="@{name} rolls untrained Divination\n/r  [[@{roll_divination}+@{roll_bonus_divination}]]d10k[[@{keep_Divination}+@{keep_bonus_divination}]]"></button></td>
+            <td><button type="roll" value="@{name} rolls Divination\n/r  [[@{roll_divination}+@{roll_bonus_divination}]]d10k[[@{keep_Divination}+@{keep_bonus_divination}]]!!"></button></td>
+            <td><button type="roll" value="@{name} rolls Divination with @{divination_Emphases} Emphasis\n/r  [[@{roll_divination}+@{roll_bonus_divination}]]d10k[[@{keep_Divination}+@{keep_bonus_divination}]]!!r1"></button></td>
+        </tr>
+        <tr>
+            <td>Etiquette</td> 
+            <td><input type="number" name="attr_rank_etiquette" value="0"></td>
+            <td><select class="regular" name="attr_Attr_Etiquette">
+             <option value="@{Awareness}">Awareness</option>
+             <option value="@{Agility}">Agility</option>
+             <option value="@{Intelligence}">Intelligence</option>
+             <option value="@{Perception}">Perception</option>
+             <option value="@{Reflexes}">Reflexes</option>
+             <option value="@{Stamina}">Stamina</option>
+             <option value="@{Strength}">Strength</option>
+             <option value="@{Willpower}">Willpower</option>
+             </select></td>
+            <input type="hidden" name="attr_roll_etiquette" value="@{rank_etiquette}+@{Attr_Etiquette}" disabled>
+            <input type="hidden" name="attr_keep_etiquette" value="@{Attr_Etiquette}" disabled>
+            <td><input type="number" name="attr_roll_bonus_etiquette" value="0"></td>
+            <td><input type="number" name="attr_keep_bonus_etiquette" value="0"></td>
+            <td><input type="text" name="attr_etiquette_Emphases" value=""></td>
+            <td><button type="roll" value="@{name} rolls untrained Etiquette\n/r  [[@{roll_etiquette}+@{roll_bonus_etiquette}]]d10k[[@{keep_Etiquette}+@{keep_bonus_etiquette}]]"></button></td>
+            <td><button type="roll" value="@{name} rolls Etiquette\n/r  [[@{roll_etiquette}+@{roll_bonus_etiquette}]]d10k[[@{keep_Etiquette}+@{keep_bonus_etiquette}]]!!"></button></td>
+            <td><button type="roll" value="@{name} rolls Etiquette with @{etiquette_Emphases} Emphasis\n/r  [[@{roll_etiquette}+@{roll_bonus_etiquette}]]d10k[[@{keep_Etiquette}+@{keep_bonus_etiquette}]]!!r1"></button></td>
+        </tr>
+        <tr>
+            <td>Games</td> 
+            <td><input type="number" name="attr_rank_games" value="0"></td>
+            <td><select class="regular" name="attr_Attr_Games">
+             <option value="@{Awareness}">Awareness</option>
+             <option value="@{Agility}">Agility</option>
+             <option value="@{Intelligence}">Intelligence</option>
+             <option value="@{Perception}">Perception</option>
+             <option value="@{Reflexes}">Reflexes</option>
+             <option value="@{Stamina}">Stamina</option>
+             <option value="@{Strength}">Strength</option>
+             <option value="@{Void}">Void</option>
+             <option value="@{Willpower}">Willpower</option>
+             </select></td>
+            <input type="hidden" name="attr_roll_games" value="@{rank_games}+@{Attr_Games}" disabled>
+            <input type="hidden" name="attr_keep_games" value="@{Attr_Games}" disabled>
+            <td><input type="number" name="attr_roll_bonus_games" value="0"></td>
+            <td><input type="number" name="attr_keep_bonus_games" value="0"></td>
+            <td><input type="text" name="attr_games_Emphases" value=""></td>
+            <td><button type="roll" value="@{name} rolls untrained Games\n/r  [[@{roll_games}+@{roll_bonus_games}]]d10k[[@{keep_Games}+@{keep_bonus_games}]]"></button></td>
+            <td><button type="roll" value="@{name} rolls Games\n/r  [[@{roll_games}+@{roll_bonus_games}]]d10k[[@{keep_Games}+@{keep_bonus_games}]]!!"></button></td>
+            <td><button type="roll" value="@{name} rolls Games with @{games_Emphases} Emphasis\n/r  [[@{roll_games}+@{roll_bonus_games}]]d10k[[@{keep_Games}+@{keep_bonus_games}]]!!r1"></button></td>
+            <td><input type="text" class="regular"  name="attr_games_type" value=""></td>
+
+        </tr>  
+        <tr>
+            <td>Investigation</td> 
+            <td><input type="number" name="attr_rank_investigation" value="0"></td>
+            <td><select class="regular" name="attr_Attr_Investigation">
+             <option value="@{Perception}">Perception</option>
+             <option value="@{Agility}">Agility</option>
+    		 <option value="@{Awareness}">Awareness</option>
+             <option value="@{Intelligence}">Intelligence</option>
+             <option value="@{Reflexes}">Reflexes</option>
+             <option value="@{Stamina}">Stamina</option>
+             <option value="@{Strength}">Strength</option>
+			 <option value="@{Void}">Void</option>
+             <option value="@{Willpower}">Willpower</option>
+             </select></td>
+            <input type="hidden" name="attr_roll_investigation" value="@{rank_investigation}+@{Attr_Investigation}" disabled>
+            <input type="hidden" name="attr_keep_investigation" value="@{Attr_Investigation}" disabled>
+            <td><input type="number" name="attr_roll_bonus_investigation" value="0"></td>
+            <td><input type="number" name="attr_keep_bonus_investigation" value="0"></td>
+            <td><input type="text" name="attr_investigation_Emphases" value=""></td>
+            <td><button type="roll" value="@{name} rolls untrained Investigation\n/r  [[@{roll_investigation}+@{roll_bonus_investigation}]]d10k[[@{keep_Investigation}+@{keep_bonus_investigation}]]"></button></td>
+            <td><button type="roll" value="@{name} rolls Investigation\n/r  [[@{roll_investigation}+@{roll_bonus_investigation}]]d10k[[@{keep_Investigation}+@{keep_bonus_investigation}]]!!"></button></td>
+            <td><button type="roll" value="@{name} rolls Investigation with @{Investigation_Emphases} Emphasis\n/r  [[@{roll_investigation}+@{roll_bonus_investigation}]]d10k[[@{keep_Investigation}+@{keep_bonus_investigation}]]!!r1"></button></td>
+        </tr>
+        <tr>
+            <td>Lore</td> 
+            <td><input type="number" name="attr_rank_lore" value="0"></td>
+            <td><select class="regular" name="attr_Attr_Lore">
+             <option value="@{Intelligence}">Intelligence</option>
+             <option value="@{Agility}">Agility</option>
+			 <option value="@{Awareness}">Awareness</option>
+             <option value="@{Perception}">Perception</option>
+             <option value="@{Reflexes}">Reflexes</option>
+             <option value="@{Stamina}">Stamina</option>
+             <option value="@{Strength}">Strength</option>
+			 <option value="@{Void}">Void</option>
+             <option value="@{Willpower}">Willpower</option>
+             </select></td>
+            <input type="hidden" name="attr_roll_lore" value="@{rank_lore}+@{Attr_Lore}" disabled>
+            <input type="hidden" name="attr_keep_lore" value="@{Attr_Lore}" disabled>
+            <td><input type="number" name="attr_roll_bonus_lore" value="0"></td>
+            <td><input type="number" name="attr_keep_bonus_lore" value="0"></td>
+            <td><input type="text" name="attr_lore_Emphases" value=""></td>
+            <td><button type="roll" value="@{name} rolls untrained Lore\n/r  [[@{roll_lore}+@{roll_bonus_lore}]]d10k[[@{keep_Lore}+@{keep_bonus_lore}]]"></button></td>
+            <td><button type="roll" value="@{name} rolls Lore\n/r  [[@{roll_lore}+@{roll_bonus_lore}]]d10k[[@{keep_Lore}+@{keep_bonus_lore}]]!!"></button></td>
+            <td><button type="roll" value="@{name} rolls Lore with @{Lore_Emphases} Emphasis\n/r  [[@{roll_lore}+@{roll_bonus_lore}]]d10k[[@{keep_Lore}+@{keep_bonus_lore}]]!!r1"></button></td>
+            <td><input type="text" class="regular"  name="attr_lore_type" value=""></td>
+        </tr>   
+        <tr>
+            <td>Lore</td> 
+            <td><input type="number" name="attr_rank_Lore2" value="0"></td>
+            <td><select class="regular" name="attr_Attr_Lore2">
+             <option value="@{Intelligence}">Intelligence</option>
+             <option value="@{Agility}">Agility</option>
+			 <option value="@{Awareness}">Awareness</option>
+             <option value="@{Perception}">Perception</option>
+             <option value="@{Reflexes}">Reflexes</option>
+             <option value="@{Stamina}">Stamina</option>
+             <option value="@{Strength}">Strength</option>
+			 <option value="@{Void}">Void</option>
+             <option value="@{Willpower}">Willpower</option>
+             </select></td>
+            <input type="hidden" name="attr_roll_Lore2" value="@{rank_Lore2}+@{Attr_Lore2}" disabled>
+            <input type="hidden" name="attr_keep_Lore2" value="@{Attr_Lore2}" disabled>
+            <td><input type="number" name="attr_roll_bonus_Lore2" value="0"></td>
+            <td><input type="number" name="attr_keep_bonus_Lore2" value="0"></td>
+            <td><input type="text" name="attr_Lore2_Emphases" value=""></td>
+            <td><button type="roll" value="@{name} rolls untrained Lore\n/r  [[@{roll_Lore2}+@{roll_bonus_Lore2}]]d10k[[@{keep_Lore2}+@{keep_bonus_Lore2}]]"></button></td>
+            <td><button type="roll" value="@{name} rolls Lore\n/r  [[@{roll_Lore2}+@{roll_bonus_Lore2}]]d10k[[@{keep_Lore2}+@{keep_bonus_Lore2}]]!!"></button></td>
+            <td><button type="roll" value="@{name} rolls Lore with @{Lore2_Emphases} Emphasis\n/r  [[@{roll_Lore2}+@{roll_bonus_Lore2}]]d10k[[@{keep_Lore2}+@{keep_bonus_Lore2}]]!!r1"></button></td>
+            <td><input type="text" class="regular"  name="attr_Lore2_type" value=""></td>
+        </tr>  
+        <tr>
+            <td>Lore</td> 
+            <td><input type="number" name="attr_rank_Lore3" value="0"></td>
+            <td><select class="regular" name="attr_Attr_Lore3">
+             <option value="@{Intelligence}">Intelligence</option>
+             <option value="@{Agility}">Agility</option>
+			 <option value="@{Awareness}">Awareness</option>
+             <option value="@{Perception}">Perception</option>
+             <option value="@{Reflexes}">Reflexes</option>
+             <option value="@{Stamina}">Stamina</option>
+             <option value="@{Strength}">Strength</option>
+			 <option value="@{Void}">Void</option>
+             <option value="@{Willpower}">Willpower</option>
+             </select></td>
+            <input type="hidden" name="attr_roll_Lore3" value="@{rank_Lore3}+@{Attr_Lore3}" disabled>
+            <input type="hidden" name="attr_keep_Lore3" value="@{Attr_Lore3}" disabled>
+            <td><input type="number" name="attr_roll_bonus_Lore3" value="0"></td>
+            <td><input type="number" name="attr_keep_bonus_Lore3" value="0"></td>
+            <td><input type="text" name="attr_Lore3_Emphases" value=""></td>
+            <td><button type="roll" value="@{name} rolls untrained Lore\n/r  [[@{roll_Lore3}+@{roll_bonus_Lore3}]]d10k[[@{keep_Lore3}+@{keep_bonus_Lore3}]]"></button></td>
+            <td><button type="roll" value="@{name} rolls Lore\n/r  [[@{roll_Lore3}+@{roll_bonus_Lore3}]]d10k[[@{keep_Lore3}+@{keep_bonus_Lore3}]]!!"></button></td>
+            <td><button type="roll" value="@{name} rolls Lore with @{Lore3_Emphases} Emphasis\n/r  [[@{roll_Lore3}+@{roll_bonus_Lore3}]]d10k[[@{keep_Lore3}+@{keep_bonus_Lore3}]]!!r1"></button></td>
+            <td><input type="text" class="regular"  name="attr_Lore3_type" value=""></td>
+        </tr>
+        <tr>
+            <td>Medicine</td> 
+            <td><input type="number" name="attr_rank_Medicine" value="0"></td>
+            <td><select class="regular" name="attr_Attr_Medicine">
+             <option value="@{Intelligence}">Intelligence</option>
+             <option value="@{Agility}">Agility</option>
+			 <option value="@{Awareness}">Awareness</option>
+             <option value="@{Perception}">Perception</option>
+             <option value="@{Reflexes}">Reflexes</option>
+             <option value="@{Stamina}">Stamina</option>
+             <option value="@{Strength}">Strength</option>
+			 <option value="@{Void}">Void</option>
+             <option value="@{Willpower}">Willpower</option>
+             </select></td>
+            <input type="hidden" name="attr_roll_Medicine" value="@{rank_Medicine}+@{Attr_Medicine}" disabled>
+            <input type="hidden" name="attr_keep_Medicine" value="@{Attr_Medicine}" disabled>
+            <td><input type="number" name="attr_roll_bonus_Medicine" value="0"></td>
+            <td><input type="number" name="attr_keep_bonus_Medicine" value="0"></td>
+            <td><input type="text" name="attr_Medicine_Emphases" value=""></td>
+            <td><button type="roll" value="@{name} rolls untrained Medicine\n/r  [[@{roll_Medicine}+@{roll_bonus_Medicine}]]d10k[[@{keep_Medicine}+@{keep_bonus_Medicine}]]"></button></td>
+            <td><button type="roll" value="@{name} rolls Medicine\n/r  [[@{roll_Medicine}+@{roll_bonus_Medicine}]]d10k[[@{keep_Medicine}+@{keep_bonus_Medicine}]]!!"></button></td>
+            <td><button type="roll" value="@{name} rolls Medicine with @{Medicine_Emphases} Emphasis\n/r  [[@{roll_Medicine}+@{roll_bonus_Medicine}]]d10k[[@{keep_Medicine}+@{keep_bonus_Medicine}]]!!r1"></button></td>
+        </tr>
+        <tr>
+            <td>Meditation</td> 
+            <td><input type="number" name="attr_rank_Meditation" value="0"></td>
+            <td><select class="regular" name="attr_Attr_Meditation">
+			 <option value="@{Void}">Void</option>
+             <option value="@{Agility}">Agility</option>
+             <option value="@{Awareness}">Awareness</option>
+             <option value="@{Intelligence}">Intelligence</option>
+             <option value="@{Perception}">Perception</option>
+             <option value="@{Reflexes}">Reflexes</option>
+             <option value="@{Stamina}">Stamina</option>
+             <option value="@{Strength}">Strength</option>
+             <option value="@{Willpower}">Willpower</option>
+             </select></td>
+            <input type="hidden" name="attr_roll_Meditation" value="@{rank_Meditation}+@{Attr_Meditation}" disabled>
+            <input type="hidden" name="attr_keep_Meditation" value="@{Attr_Meditation}" disabled>
+            <td><input type="number" name="attr_roll_bonus_Meditation" value="0"></td>
+            <td><input type="number" name="attr_keep_bonus_Meditation" value="0"></td>
+            <td><input type="text" name="attr_Meditation_Emphases" value=""></td>
+            <td><button type="roll" value="@{name} rolls untrained Meditation\n/r  [[@{roll_Meditation}+@{roll_bonus_Meditation}]]d10k[[@{keep_Meditation}+@{keep_bonus_Meditation}]]"></button></td>
+            <td><button type="roll" value="@{name} rolls Meditation\n/r  [[@{roll_Meditation}+@{roll_bonus_Meditation}]]d10k[[@{keep_Meditation}+@{keep_bonus_Meditation}]]!!"></button></td>
+            <td><button type="roll" value="@{name} rolls Meditation with @{Meditation_Emphases} Emphasis\n/r  [[@{roll_Meditation}+@{roll_bonus_Meditation}]]d10k[[@{keep_Meditation}+@{keep_bonus_Meditation}]]!!r1"></button></td>
+        </tr>
+        <tr>
+            <td>Perform</td> 
+            <td><input type="number" name="attr_rank_Perform" value="0"></td>
+            <td><select class="regular" name="attr_Attr_Perform">
+             <option value="@{Agility}">Agility</option>
+             <option value="@{Awareness}">Awareness</option>
+             <option value="@{Intelligence}">Intelligence</option>
+             <option value="@{Perception}">Perception</option>
+             <option value="@{Reflexes}">Reflexes</option>
+             <option value="@{Stamina}">Stamina</option>
+             <option value="@{Strength}">Strength</option>
+			 <option value="@{Void}">Void</option>
+             <option value="@{Willpower}">Willpower</option>
+             </select></td>
+            <input type="hidden" name="attr_roll_Perform" value="@{rank_Perform}+@{Attr_Perform}" disabled>
+            <input type="hidden" name="attr_keep_Perform" value="@{Attr_Perform}" disabled>
+            <td><input type="number" name="attr_roll_bonus_Perform" value="0"></td>
+            <td><input type="number" name="attr_keep_bonus_Perform" value="0"></td>
+            <td><input type="text" name="attr_Perform_Emphases" value=""></td>
+            <td><button type="roll" value="@{name} rolls untrained Perform\n/r  [[@{roll_Perform}+@{roll_bonus_Perform}]]d10k[[@{keep_Perform}+@{keep_bonus_Perform}]]"></button></td>
+            <td><button type="roll" value="@{name} rolls Perform\n/r  [[@{roll_Perform}+@{roll_bonus_Perform}]]d10k[[@{keep_Perform}+@{keep_bonus_Perform}]]!!"></button></td>
+            <td><button type="roll" value="@{name} rolls Perform with @{Perform_Emphases} Emphasis\n/r  [[@{roll_Perform}+@{roll_bonus_Perform}]]d10k[[@{keep_Perform}+@{keep_bonus_Perform}]]!!r1"></button></td>
+            <td><input type="text" class="regular"  name="attr_Perform_type" value=""></td>
+        </tr>
+        <tr>
+            <td>Sincerity</td> 
+            <td><input type="number" name="attr_rank_Sincerity" value="0"></td>
+            <td><select class="regular" name="attr_Attr_Sincerity">
+             <option value="@{Awareness}">Awareness</option>
+             <option value="@{Agility}">Agility</option>
+             <option value="@{Intelligence}">Intelligence</option>
+             <option value="@{Perception}">Perception</option>
+             <option value="@{Reflexes}">Reflexes</option>
+             <option value="@{Stamina}">Stamina</option>
+             <option value="@{Strength}">Strength</option>
+			 <option value="@{Void}">Void</option>
+             <option value="@{Willpower}">Willpower</option>
+             </select></td>
+            <input type="hidden" name="attr_roll_Sincerity" value="@{rank_Sincerity}+@{Attr_Sincerity}" disabled>
+            <input type="hidden" name="attr_keep_Sincerity" value="@{Attr_Sincerity}" disabled>
+            <td><input type="number" name="attr_roll_bonus_Sincerity" value="0"></td>
+            <td><input type="number" name="attr_keep_bonus_Sincerity" value="0"></td>
+            <td><input type="text" name="attr_Sincerity_Emphases" value=""></td>
+            <td><button type="roll" value="@{name} rolls untrained Sincerity\n/r  [[@{roll_Sincerity}+@{roll_bonus_Sincerity}]]d10k[[@{keep_Sincerity}+@{keep_bonus_Sincerity}]]"></button></td>
+            <td><button type="roll" value="@{name} rolls Sincerity\n/r  [[@{roll_Sincerity}+@{roll_bonus_Sincerity}]]d10k[[@{keep_Sincerity}+@{keep_bonus_Sincerity}]]!!"></button></td>
+            <td><button type="roll" value="@{name} rolls Sincerity with @{Sincerity_Emphases} Emphasis\n/r  [[@{roll_Sincerity}+@{roll_bonus_Sincerity}]]d10k[[@{keep_Sincerity}+@{keep_bonus_Sincerity}]]!!r1"></button></td>
+        </tr>
+        <tr>
+            <td>Spellcraft</td> 
+            <td><input type="number" name="attr_rank_Spellcraft" value="0"></td>
+            <td><select class="regular" name="attr_Attr_Spellcraft">
+             <option value="@{Intelligence}">Intelligence</option>
+             <option value="@{Agility}">Agility</option>
+			 <option value="@{Awareness}">Awareness</option>
+             <option value="@{Perception}">Perception</option>
+             <option value="@{Reflexes}">Reflexes</option>
+             <option value="@{Stamina}">Stamina</option>
+             <option value="@{Strength}">Strength</option>
+			 <option value="@{Void}">Void</option>
+             <option value="@{Willpower}">Willpower</option>
+             </select></td>
+            <input type="hidden" name="attr_roll_Spellcraft" value="@{rank_Spellcraft}+@{Attr_Spellcraft}" disabled>
+            <input type="hidden" name="attr_keep_Spellcraft" value="@{Attr_Spellcraft}" disabled>
+            <td><input type="number" name="attr_roll_bonus_Spellcraft" value="0"></td>
+            <td><input type="number" name="attr_keep_bonus_Spellcraft" value="0"></td>
+            <td><input type="text" name="attr_Spellcraft_Emphases" value=""></td>
+            <td><button type="roll" value="@{name} rolls untrained Spellcraft\n/r  [[@{roll_Spellcraft}+@{roll_bonus_Spellcraft}]]d10k[[@{keep_Spellcraft}+@{keep_bonus_Spellcraft}]]"></button></td>
+            <td><button type="roll" value="@{name} rolls Spellcraft\n/r  [[@{roll_Spellcraft}+@{roll_bonus_Spellcraft}]]d10k[[@{keep_Spellcraft}+@{keep_bonus_Spellcraft}]]!!"></button></td>
+            <td><button type="roll" value="@{name} rolls Spellcraft with @{Spellcraft_Emphases} Emphasis\n/r  [[@{roll_Spellcraft}+@{roll_bonus_Spellcraft}]]d10k[[@{keep_Spellcraft}+@{keep_bonus_Spellcraft}]]!!r1"></button></td>
+        </tr>
+        <tr>
+            <td>Tea Ceremony</td> 
+            <td><input type="number" name="attr_rank_Tea_Ceremony" value="0"></td>
+            <td><select class="regular" name="attr_Attr_Tea_Ceremony">
+			 <option value="@{Void}">Void</option>
+             <option value="@{Agility}">Agility</option>
+             <option value="@{Awareness}">Awareness</option>
+             <option value="@{Intelligence}">Intelligence</option>
+             <option value="@{Perception}">Perception</option>
+             <option value="@{Reflexes}">Reflexes</option>
+             <option value="@{Stamina}">Stamina</option>
+             <option value="@{Strength}">Strength</option>
+             <option value="@{Willpower}">Willpower</option>
+             </select></td>
+            <input type="hidden" name="attr_roll_Tea_Ceremony" value="@{rank_Tea_Ceremony}+@{Attr_Tea_Ceremony}" disabled>
+            <input type="hidden" name="attr_keep_Tea_Ceremony" value="@{Attr_Tea_Ceremony}" disabled>
+            <td><input type="number" name="attr_roll_bonus_Tea_Ceremony" value="0"></td>
+            <td><input type="number" name="attr_keep_bonus_Tea_Ceremony" value="0"></td>
+            <td><input type="text" name="attr_Tea_Ceremony_Emphases" value=""></td>
+            <td><button type="roll" value="@{name} rolls untrained Tea Ceremony\n/r  [[@{roll_Tea_Ceremony}+@{roll_bonus_Tea_Ceremony}]]d10k[[@{keep_Tea_Ceremony}+@{keep_bonus_Tea_Ceremony}]]"></button></td>
+            <td><button type="roll" value="@{name} rolls Tea Ceremony\n/r  [[@{roll_Tea_Ceremony}+@{roll_bonus_Tea_Ceremony}]]d10k[[@{keep_Tea_Ceremony}+@{keep_bonus_Tea_Ceremony}]]!!"></button></td>
+            <td><button type="roll" value="@{name} rolls Tea Ceremony with @{Tea_Ceremony_Emphases} Emphasis\n/r  [[@{roll_Tea_Ceremony}+@{roll_bonus_Tea_Ceremony}]]d10k[[@{keep_Tea_Ceremony}+@{keep_bonus_Tea_Ceremony}]]!!r1"></button></td>
+        </tr>  
+    <tr>
+    </tr></table></fieldset>
+     <table><fieldset>
+            <h1><span>Bugei Skills</span></h1>
+            <table class="skills" style="border-collapse:collapse;border-spacing:0">
+        <tr>
+            <td style="font-weight:bold">Skill Name</td>
+            <td style="font-weight:bold">Rank</td>
+            <td style="font-weight:bold">Trait</td>
+            <td style="font-weight:bold">+Roll</td>
+            <td style="font-weight:bold">+Keep</td>
+            <td style="font-weight:bold">Emphases</td>
+            <td style="font-weight:bold;font-size:9px">U</td>
+            <td style="font-weight:bold;font-size:9px">T</td>
+            <td style="font-weight:bold;font-size:9px">E</td>
+            <td style="font-weight:bold">Sub-Type</td>
+        </tr>
+        <tr>
+            <td>Athletics</td> 
+            <td><input type="number" name="attr_rank_Athletics" value="0"></td>
+            <td><select class="regular" name="attr_Attr_Athletics">
+             <option value="@{Strength}">Strength</option>
+             <option value="@{Agility}">Agility</option>
+             <option value="@{Awareness}">Awareness</option>
+             <option value="@{Intelligence}">Intelligence</option>
+             <option value="@{Perception}">Perception</option>
+			 <option value="@{Reflexes}">Reflexes</option>
+             <option value="@{Stamina}">Stamina</option>
+			 <option value="@{Void}">Void</option>
+             <option value="@{Willpower}">Willpower</option>
+             </select></td>
+            <input type="hidden" name="attr_roll_Athletics" value="@{rank_Athletics}+@{Attr_Athletics}" disabled>
+            <input type="hidden" name="attr_keep_Athletics" value="@{Attr_Athletics}" disabled>
+            <td><input type="number" name="attr_roll_bonus_Athletics" value="0"></td>
+            <td><input type="number" name="attr_keep_bonus_Athletics" value="0"></td>
+            <td><input type="text" name="attr_Athletics_Emphases" value=""></td>
+            <td><button type="roll" value="@{name} rolls untrained Athletics\n/r  [[@{roll_Athletics}+@{roll_bonus_Athletics}]]d10k[[@{keep_Athletics}+@{keep_bonus_Athletics}]]"></button></td>
+            <td><button type="roll" value="@{name} rolls Athletics\n/r  [[@{roll_Athletics}+@{roll_bonus_Athletics}]]d10k[[@{keep_Athletics}+@{keep_bonus_Athletics}]]!!"></button></td>
+            <td><button type="roll" value="@{name} rolls Athletics with @{Athletics_Emphases} Emphasis\n/r  [[@{roll_Athletics}+@{roll_bonus_Athletics}]]d10k[[@{keep_Athletics}+@{keep_bonus_Athletics}]]!!r1"></button></td>
+        </tr>
+        <tr>
+            <td>Battle</td> 
+            <td><input type="number" name="attr_rank_Battle" value="0"></td>
+            <td><select class="regular" name="attr_Attr_Battle">
+             <option value="@{Perception}">Perception</option>
+             <option value="@{Agility}">Agility</option>
+             <option value="@{Awareness}">Awareness</option>
+             <option value="@{Intelligence}">Intelligence</option>
+			 <option value="@{Reflexes}">Reflexes</option>
+             <option value="@{Stamina}">Stamina</option>
+             <option value="@{Strength}">Strength</option>
+			 <option value="@{Void}">Void</option>
+             <option value="@{Willpower}">Willpower</option>
+             </select></td>
+            <input type="hidden" name="attr_roll_Battle" value="@{rank_Battle}+@{Attr_Battle}" disabled>
+            <input type="hidden" name="attr_keep_Battle" value="@{Attr_Battle}" disabled>
+            <td><input type="number" name="attr_roll_bonus_Battle" value="0"></td>
+            <td><input type="number" name="attr_keep_bonus_Battle" value="0"></td>
+            <td><input type="text" name="attr_Battle_Emphases" value=""></td>
+            <td><button type="roll" value="@{name} rolls untrained Battle\n/r  [[@{roll_Battle}+@{roll_bonus_Battle}]]d10k[[@{keep_Battle}+@{keep_bonus_Battle}]]"></button></td>
+            <td><button type="roll" value="@{name} rolls Battle\n/r  [[@{roll_Battle}+@{roll_bonus_Battle}]]d10k[[@{keep_Battle}+@{keep_bonus_Battle}]]!!"></button></td>
+            <td><button type="roll" value="@{name} rolls Battle with @{Battle_Emphases} Emphasis\n/r  [[@{roll_Battle}+@{roll_bonus_Battle}]]d10k[[@{keep_Battle}+@{keep_bonus_Battle}]]!!r1"></button></td>
+        </tr>
+        <tr>
+            <td>Defense</td> 
+            <td><input type="number" name="attr_rank_Defense" value="0"></td>
+            <td><select class="regular" name="attr_Attr_Defense">
+             <option value="@{Reflexes}">Reflexes</option>
+             <option value="@{Awareness}">Awareness</option>
+             <option value="@{Intelligence}">Intelligence</option>
+             <option value="@{Perception}">Perception</option>
+             <option value="@{Agility}">Agility</option>
+             <option value="@{Stamina}">Stamina</option>
+             <option value="@{Strength}">Strength</option>
+			 <option value="@{Void}">Void</option>
+             <option value="@{Willpower}">Willpower</option>
+             </select></td>
+            <input type="hidden" name="attr_roll_Defense" value="@{rank_Defense}+@{Attr_Defense}" disabled>
+            <input type="hidden" name="attr_keep_Defense" value="@{Attr_Defense}" disabled>
+            <td><input type="number" name="attr_roll_bonus_Defense" value="0"></td>
+            <td><input type="number" name="attr_keep_bonus_Defense" value="0"></td>
+            <td><input type="text" name="attr_Defense_Emphases" value=""></td>
+            <td><button type="roll" value="@{name} rolls untrained Defense\n/r  [[@{roll_Defense}+@{roll_bonus_Defense}]]d10k[[@{keep_Defense}+@{keep_bonus_Defense}]]"></button></td>
+            <td><button type="roll" value="@{name} rolls Defense\n/r  [[@{roll_Defense}+@{roll_bonus_Defense}]]d10k[[@{keep_Defense}+@{keep_bonus_Defense}]]!!"></button></td>
+            <td><button type="roll" value="@{name} rolls Defense with @{Defense_Emphases} Emphasis\n/r  [[@{roll_Defense}+@{roll_bonus_Defense}]]d10k[[@{keep_Defense}+@{keep_bonus_Defense}]]!!r1"></button></td>
+        </tr>
+        <tr>
+            <td>Horsemanship</td> 
+            <td><input type="number" name="attr_rank_Horsemanship" value="0"></td>
+            <td><select class="regular" name="attr_Attr_Horsemanship">
+             <option value="@{Agility}">Agility</option>
+             <option value="@{Awareness}">Awareness</option>
+             <option value="@{Intelligence}">Intelligence</option>
+             <option value="@{Perception}">Perception</option>
+             <option value="@{Reflexes}">Reflexes</option>
+             <option value="@{Stamina}">Stamina</option>
+             <option value="@{Strength}">Strength</option>
+			 <option value="@{Void}">Void</option>
+             <option value="@{Willpower}">Willpower</option>
+             </select></td>
+            <input type="hidden" name="attr_roll_Horsemanship" value="@{rank_Horsemanship}+@{Attr_Horsemanship}" disabled>
+            <input type="hidden" name="attr_keep_Horsemanship" value="@{Attr_Horsemanship}" disabled>
+            <td><input type="number" name="attr_roll_bonus_Horsemanship" value="0"></td>
+            <td><input type="number" name="attr_keep_bonus_Horsemanship" value="0"></td>
+            <td><input type="text" name="attr_Horsemanship_Emphases" value=""></td>
+            <td><button type="roll" value="@{name} rolls untrained Horsemanship\n/r  [[@{roll_Horsemanship}+@{roll_bonus_Horsemanship}]]d10k[[@{keep_Horsemanship}+@{keep_bonus_Horsemanship}]]"></button></td>
+            <td><button type="roll" value="@{name} rolls Horsemanship\n/r  [[@{roll_Horsemanship}+@{roll_bonus_Horsemanship}]]d10k[[@{keep_Horsemanship}+@{keep_bonus_Horsemanship}]]!!"></button></td>
+            <td><button type="roll" value="@{name} rolls Horsemanship with @{Horsemanship_Emphases} Emphasis\n/r  [[@{roll_Horsemanship}+@{roll_bonus_Horsemanship}]]d10k[[@{keep_Horsemanship}+@{keep_bonus_Horsemanship}]]!!r1"></button></td>
+        </tr>
+        <tr>
+            <td>Hunting</td> 
+            <td><input type="number" name="attr_rank_Hunting" value="0"></td>
+            <td><select class="regular" name="attr_Attr_Hunting">
+             <option value="@{Perception}">Perception</option>
+             <option value="@{Agility}">Agility</option>
+             <option value="@{Awareness}">Awareness</option>
+             <option value="@{Intelligence}">Intelligence</option>
+			 <option value="@{Reflexes}">Reflexes</option>
+             <option value="@{Stamina}">Stamina</option>
+             <option value="@{Strength}">Strength</option>
+			 <option value="@{Void}">Void</option>
+             <option value="@{Willpower}">Willpower</option>
+             </select></td>
+            <input type="hidden" name="attr_roll_Hunting" value="@{rank_Hunting}+@{Attr_Hunting}" disabled>
+            <input type="hidden" name="attr_keep_Hunting" value="@{Attr_Hunting}" disabled>
+            <td><input type="number" name="attr_roll_bonus_Hunting" value="0"></td>
+            <td><input type="number" name="attr_keep_bonus_Hunting" value="0"></td>
+            <td><input type="text" name="attr_Hunting_Emphases" value=""></td>
+            <td><button type="roll" value="@{name} rolls untrained Hunting\n/r  [[@{roll_Hunting}+@{roll_bonus_Hunting}]]d10k[[@{keep_Hunting}+@{keep_bonus_Hunting}]]"></button></td>
+            <td><button type="roll" value="@{name} rolls Hunting\n/r  [[@{roll_Hunting}+@{roll_bonus_Hunting}]]d10k[[@{keep_Hunting}+@{keep_bonus_Hunting}]]!!"></button></td>
+            <td><button type="roll" value="@{name} rolls Hunting with @{Hunting_Emphases} Emphasis\n/r  [[@{roll_Hunting}+@{roll_bonus_Hunting}]]d10k[[@{keep_Hunting}+@{keep_bonus_Hunting}]]!!r1"></button></td>
+        </tr>
+        <tr>
+            <td>Iaijutsu</td> 
+            <td><input type="number" name="attr_rank_Iaijutsu" value="0"></td>
+            <td><select class="regular" name="attr_Attr_Iaijutsu">
+             <option value="@{Reflexes}">Reflexes</option>
+             <option value="@{Awareness}">Awareness</option>
+             <option value="@{Intelligence}">Intelligence</option>
+             <option value="@{Perception}">Perception</option>
+             <option value="@{Agility}">Agility</option>
+             <option value="@{Stamina}">Stamina</option>
+             <option value="@{Strength}">Strength</option>
+			 <option value="@{Void}">Void</option>
+             <option value="@{Willpower}">Willpower</option>
+             </select></td>
+            <input type="hidden" name="attr_roll_Iaijutsu" value="@{rank_Iaijutsu}+@{Attr_Iaijutsu}" disabled>
+            <input type="hidden" name="attr_keep_Iaijutsu" value="@{Attr_Iaijutsu}" disabled>
+            <td><input type="number" name="attr_roll_bonus_Iaijutsu" value="0"></td>
+            <td><input type="number" name="attr_keep_bonus_Iaijutsu" value="0"></td>
+            <td><input type="text" name="attr_Iaijutsu_Emphases" value=""></td>
+            <td><button type="roll" value="@{name} rolls untrained Iaijutsu\n/r  [[@{roll_Iaijutsu}+@{roll_bonus_Iaijutsu}]]d10k[[@{keep_Iaijutsu}+@{keep_bonus_Iaijutsu}]]"></button></td>
+            <td><button type="roll" value="@{name} rolls Iaijutsu\n/r  [[@{roll_Iaijutsu}+@{roll_bonus_Iaijutsu}]]d10k[[@{keep_Iaijutsu}+@{keep_bonus_Iaijutsu}]]!!"></button></td>
+            <td><button type="roll" value="@{name} rolls Iaijutsu with @{Iaijutsu_Emphases} Emphasis\n/r  [[@{roll_Iaijutsu}+@{roll_bonus_Iaijutsu}]]d10k[[@{keep_Iaijutsu}+@{keep_bonus_Iaijutsu}]]!!r1"></button></td>
+        </tr>
+        <tr>
+            <td>Jiujiutsu</td> 
+            <td><input type="number" name="attr_rank_Jiujiutsu" value="0"></td>
+            <td><select class="regular" name="attr_Attr_Jiujiutsu">
+             <option value="@{Agility}">Agility</option>
+             <option value="@{Awareness}">Awareness</option>
+             <option value="@{Intelligence}">Intelligence</option>
+             <option value="@{Perception}">Perception</option>
+             <option value="@{Reflexes}">Reflexes</option>
+             <option value="@{Stamina}">Stamina</option>
+             <option value="@{Strength}">Strength</option>
+			 <option value="@{Void}">Void</option>
+             <option value="@{Willpower}">Willpower</option>
+             </select></td>
+            <input type="hidden" name="attr_roll_Jiujiutsu" value="@{rank_Jiujiutsu}+@{Attr_Jiujiutsu}" disabled>
+            <input type="hidden" name="attr_keep_Jiujiutsu" value="@{Attr_Jiujiutsu}" disabled>
+            <td><input type="number" name="attr_roll_bonus_Jiujiutsu" value="0"></td>
+            <td><input type="number" name="attr_keep_bonus_Jiujiutsu" value="0"></td>
+            <td><input type="text" name="attr_Jiujiutsu_Emphases" value=""></td>
+            <td><button type="roll" name="Jiujitsu_Untrained_roll" value="@{name} rolls untrained Jiujiutsu\n/r  [[@{roll_Jiujiutsu}+@{roll_bonus_Jiujiutsu}]]d10k[[@{keep_Jiujiutsu}+@{keep_bonus_Jiujiutsu}]]"></button></td>
+            <td><button type="roll" name="Jiujitsu_Trained_roll" value="@{name} rolls Jiujiutsu\n/r  [[@{roll_Jiujiutsu}+@{roll_bonus_Jiujiutsu}]]d10k[[@{keep_Jiujiutsu}+@{keep_bonus_Jiujiutsu}]]!!"></button></td>
+            <td><button type="roll" name="Jiujitsu_Emphasis_roll" value="@{name} rolls Jiujiutsu with @{Jiujiutsu_Emphases} Emphasis\n/r  [[@{roll_Jiujiutsu}+@{roll_bonus_Jiujiutsu}]]d10k[[@{keep_Jiujiutsu}+@{keep_bonus_Jiujiutsu}]]!!r1"></button></td>
+        </tr>
+        <tr>
+            <td>Chain Weapons</td> 
+            <td><input type="number" name="attr_rank_Chain_Weapons" value="0"></td>
+            <td><select class="regular" name="attr_Attr_Chain_Weapons">
+             <option value="@{Agility}">Agility</option>
+             <option value="@{Awareness}">Awareness</option>
+             <option value="@{Intelligence}">Intelligence</option>
+             <option value="@{Perception}">Perception</option>
+             <option value="@{Reflexes}">Reflexes</option>
+             <option value="@{Stamina}">Stamina</option>
+             <option value="@{Strength}">Strength</option>
+			 <option value="@{Void}">Void</option>
+             <option value="@{Willpower}">Willpower</option>
+             </select></td>
+            <input type="hidden" name="attr_roll_Chain_Weapons" value="@{rank_Chain_Weapons}+@{Attr_Chain_Weapons}" disabled>
+            <input type="hidden" name="attr_keep_Chain_Weapons" value="@{Attr_Chain_Weapons}" disabled>
+            <td><input type="number" name="attr_roll_bonus_Chain_Weapons" value="0"></td>
+            <td><input type="number" name="attr_keep_bonus_Chain_Weapons" value="0"></td>
+            <td><input type="text" name="attr_Chain_Weapons_Emphases" value=""></td>
+            <td><button type="roll" name="Chain_Weapons_Untrained_roll" value="@{name} rolls untrained Chain Weapons\n/r  [[@{roll_Chain_Weapons}+@{roll_bonus_Chain_Weapons}]]d10k[[@{keep_Chain_Weapons}+@{keep_bonus_Chain_Weapons}]]"></button></td>
+            <td><button type="roll" name="Chain_Weapons_Trained_roll" value="@{name} rolls Chain Weapons\n/r  [[@{roll_Chain_Weapons}+@{roll_bonus_Chain_Weapons}]]d10k[[@{keep_Chain_Weapons}+@{keep_bonus_Chain_Weapons}]]!!"></button></td>
+            <td><button type="roll" name="Chain_Weapons_Emphasis_roll" value="@{name} rolls Chain Weapons with @{Chain_Weapons_Emphases} Emphasis\n/r  [[@{roll_Chain_Weapons}+@{roll_bonus_Chain_Weapons}]]d10k[[@{keep_Chain_Weapons}+@{keep_bonus_Chain_Weapons}]]!!r1"></button></td>
+        </tr>
+        <tr>
+            <td>Heavy Weapons</td> 
+            <td><input type="number" name="attr_rank_Heavy_Weapons" value="0"></td>
+            <td><select class="regular" name="attr_Attr_Heavy_Weapons">
+             <option value="@{Agility}">Agility</option>
+             <option value="@{Awareness}">Awareness</option>
+             <option value="@{Intelligence}">Intelligence</option>
+             <option value="@{Perception}">Perception</option>
+             <option value="@{Reflexes}">Reflexes</option>
+             <option value="@{Stamina}">Stamina</option>
+             <option value="@{Strength}">Strength</option>
+			 <option value="@{Void}">Void</option>
+             <option value="@{Willpower}">Willpower</option>
+             </select></td>
+            <input type="hidden" name="attr_roll_Heavy_Weapons" value="@{rank_Heavy_Weapons}+@{Attr_Heavy_Weapons}" disabled>
+            <input type="hidden" name="attr_keep_Heavy_Weapons" value="@{Attr_Heavy_Weapons}" disabled>
+            <td><input type="number" name="attr_roll_bonus_Heavy_Weapons" value="0"></td>
+            <td><input type="number" name="attr_keep_bonus_Heavy_Weapons" value="0"></td>
+            <td><input type="text" name="attr_Heavy_Weapons_Emphases" value=""></td>
+            <td><button type="roll" name="Heavy_Weapons_Untrained_roll" value="@{name} rolls untrained Heavy Weapons\n/r  [[@{roll_Heavy_Weapons}+@{roll_bonus_Heavy_Weapons}]]d10k[[@{keep_Heavy_Weapons}+@{keep_bonus_Heavy_Weapons}]]"></button></td>
+            <td><button type="roll" name="Heavy_Weapons_Trained_roll" value="@{name} rolls Heavy Weapons\n/r  [[@{roll_Heavy_Weapons}+@{roll_bonus_Heavy_Weapons}]]d10k[[@{keep_Heavy_Weapons}+@{keep_bonus_Heavy_Weapons}]]!!"></button></td>
+            <td><button type="roll" name="Heavy_Weapons_Emphasis_roll" value="@{name} rolls Heavy Weapons with @{Heavy_Weapons_Emphases} Emphasis\n/r  [[@{roll_Heavy_Weapons}+@{roll_bonus_Heavy_Weapons}]]d10k[[@{keep_Heavy_Weapons}+@{keep_bonus_Heavy_Weapons}]]!!r1"></button></td>
+        </tr>
+        <tr>
+            <td>Kenjutsu</td> 
+            <td><input type="number" name="attr_rank_Kenjutsu" value="0"></td>
+            <td><select class="regular" name="attr_Attr_Kenjutsu">
+             <option value="@{Agility}">Agility</option>
+             <option value="@{Awareness}">Awareness</option>
+             <option value="@{Intelligence}">Intelligence</option>
+             <option value="@{Perception}">Perception</option>
+             <option value="@{Reflexes}">Reflexes</option>
+             <option value="@{Stamina}">Stamina</option>
+             <option value="@{Strength}">Strength</option>
+			 <option value="@{Void}">Void</option>
+             <option value="@{Willpower}">Willpower</option>
+             </select></td>
+            <input type="hidden" name="attr_roll_Kenjutsu" value="@{rank_Kenjutsu}+@{Attr_Kenjutsu}" disabled>
+            <input type="hidden" name="attr_keep_Kenjutsu" value="@{Attr_Kenjutsu}" disabled>
+            <td><input type="number" name="attr_roll_bonus_Kenjutsu" value="0"></td>
+            <td><input type="number" name="attr_keep_bonus_Kenjutsu" value="0"></td>
+            <td><input type="text" name="attr_Kenjutsu_Emphases" value=""></td>
+            <td><button type="roll" name="Kenjutsu_Untrained_roll" value="@{name} rolls untrained Kenjutsu\n/r  [[@{roll_Kenjutsu}+@{roll_bonus_Kenjutsu}]]d10k[[@{keep_Kenjutsu}+@{keep_bonus_Kenjutsu}]]"></button></td>
+            <td><button type="roll" name="Kenjutsu_Trained_roll" value="@{name} rolls Kenjutsu\n/r  [[@{roll_Kenjutsu}+@{roll_bonus_Kenjutsu}]]d10k[[@{keep_Kenjutsu}+@{keep_bonus_Kenjutsu}]]!!"></button></td>
+            <td><button type="roll" name="Kenjutsu_Emphasis_roll" value="@{name} rolls Kenjutsu with @{Kenjutsu_Emphases} Emphasis\n/r  [[@{roll_Kenjutsu}+@{roll_bonus_Kenjutsu}]]d10k[[@{keep_Kenjutsu}+@{keep_bonus_Kenjutsu}]]!!r1"></button></td>
+        </tr>
+        <tr>
+            <td>Knives</td> 
+            <td><input type="number" name="attr_rank_Knives" value="0"></td>
+            <td><select class="regular" name="attr_Attr_Knives">
+             <option value="@{Agility}">Agility</option>
+             <option value="@{Awareness}">Awareness</option>
+             <option value="@{Intelligence}">Intelligence</option>
+             <option value="@{Perception}">Perception</option>
+             <option value="@{Reflexes}">Reflexes</option>
+             <option value="@{Stamina}">Stamina</option>
+             <option value="@{Strength}">Strength</option>
+			 <option value="@{Void}">Void</option>
+             <option value="@{Willpower}">Willpower</option>
+             </select></td>
+            <input type="hidden" name="attr_roll_Knives" value="@{rank_Knives}+@{Attr_Knives}" disabled>
+            <input type="hidden" name="attr_keep_Knives" value="@{Attr_Knives}" disabled>
+            <td><input type="number" name="attr_roll_bonus_Knives" value="0"></td>
+            <td><input type="number" name="attr_keep_bonus_Knives" value="0"></td>
+            <td><input type="text" name="attr_Knives_Emphases" value=""></td>
+            <td><button type="roll" name="Knives_Untrained_roll" value="@{name} rolls untrained Knives\n/r  [[@{roll_Knives}+@{roll_bonus_Knives}]]d10k[[@{keep_Knives}+@{keep_bonus_Knives}]]"></button></td>
+            <td><button type="roll" name="Knives_Trained_roll" value="@{name} rolls Knives\n/r  [[@{roll_Knives}+@{roll_bonus_Knives}]]d10k[[@{keep_Knives}+@{keep_bonus_Knives}]]!!"></button></td>
+            <td><button type="roll" name="Knives_Emphasis_roll" value="@{name} rolls Knives with @{Knives_Emphases} Emphasis\n/r  [[@{roll_Knives}+@{roll_bonus_Knives}]]d10k[[@{keep_Knives}+@{keep_bonus_Knives}]]!!r1"></button></td>
+        </tr>
+        <tr>
+            <td>Kyujutsu</td> 
+            <td><input type="number" name="attr_rank_Kyujutsu" value="0"></td>
+            <td><select class="regular" name="attr_Attr_Kyujutsu">
+             <option value="@{Reflexes}">Reflexes</option>
+             <option value="@{Awareness}">Awareness</option>
+             <option value="@{Intelligence}">Intelligence</option>
+             <option value="@{Perception}">Perception</option>
+             <option value="@{Agility}">Agility</option>
+             <option value="@{Stamina}">Stamina</option>
+             <option value="@{Strength}">Strength</option>
+			 <option value="@{Void}">Void</option>
+             <option value="@{Willpower}">Willpower</option>
+             </select></td>
+            <input type="hidden" name="attr_roll_Kyujutsu" value="@{rank_Kyujutsu}+@{Attr_Kyujutsu}" disabled>
+            <input type="hidden" name="attr_keep_Kyujutsu" value="@{Attr_Kyujutsu}" disabled>
+            <td><input type="number" name="attr_roll_bonus_Kyujutsu" value="0"></td>
+            <td><input type="number" name="attr_keep_bonus_Kyujutsu" value="0"></td>
+            <td><input type="text" name="attr_Kyujutsu_Emphases" value=""></td>
+            <td><button type="roll" name="Kyujutsu_Untrained_roll" value="@{name} rolls untrained Kyujutsu\n/r  [[@{roll_Kyujutsu}+@{roll_bonus_Kyujutsu}]]d10k[[@{keep_Kyujutsu}+@{keep_bonus_Kyujutsu}]]"></button></td>
+            <td><button type="roll" name="Kyujutsu_Trained_roll" value="@{name} rolls Kyujutsu\n/r  [[@{roll_Kyujutsu}+@{roll_bonus_Kyujutsu}]]d10k[[@{keep_Kyujutsu}+@{keep_bonus_Kyujutsu}]]!!"></button></td>
+            <td><button type="roll" name="Kyujutsu_Emphasis_roll" value="@{name} rolls Kyujutsu with @{Kyujutsu_Emphases} Emphasis\n/r  [[@{roll_Kyujutsu}+@{roll_bonus_Kyujutsu}]]d10k[[@{keep_Kyujutsu}+@{keep_bonus_Kyujutsu}]]!!r1"></button></td>
+        </tr>
+        <tr>
+            <td>Ninjutsu Ranged</td> 
+            <td><input type="number" name="attr_rank_Ninjutsu_Ranged" value="0"></td>
+            <td><select class="regular" name="attr_Attr_Ninjutsu_Ranged">
+             <option value="@{Reflexes}">Reflexes</option>
+             <option value="@{Awareness}">Awareness</option>
+             <option value="@{Intelligence}">Intelligence</option>
+             <option value="@{Perception}">Perception</option>
+             <option value="@{Agility}">Agility</option>
+             <option value="@{Stamina}">Stamina</option>
+             <option value="@{Strength}">Strength</option>
+			 <option value="@{Void}">Void</option>
+             <option value="@{Willpower}">Willpower</option>
+             </select></td>
+            <input type="hidden" name="attr_roll_Ninjutsu_Ranged" value="@{rank_Ninjutsu_Ranged}+@{Ninjutsu_Ranged}" disabled>
+            <input type="hidden" name="attr_keep_Ninjutsu_Ranged" value="@{Ninjutsu_Ranged}" disabled>
+            <td><input type="number" name="attr_roll_bonus_Ninjutsu_Ranged" value="0"></td>
+            <td><input type="number" name="attr_keep_bonus_Ninjutsu_Ranged" value="0"></td>
+            <td><input type="text" name="attr_Ninjutsu_Ranged_Emphases" value=""></td>
+            <td><button type="roll" name="Ninjutsu_Ranged_Untrained_roll" value="@{name} rolls untrained Ninjutsu Ranged\n/r  [[@{roll_Ninjutsu_Ranged}+@{roll_bonus_Ninjutsu_Ranged}]]d10k[[@{keep_Ninjutsu_Ranged}+@{keep_bonus_Ninjutsu_Ranged}]]"></button></td>
+            <td><button type="roll" name="Ninjutsu_Ranged_Trained_roll" value="@{name} rolls Ninjutsu Ranged\n/r  [[@{roll_Ninjutsu_Ranged}+@{roll_bonus_Ninjutsu_Ranged}]]d10k[[@{keep_Ninjutsu_Ranged}+@{keep_bonus_Ninjutsu_Ranged}]]!!"></button></td>
+            <td><button type="roll" name="Ninjutsu_Ranged_Emphasis_roll" value="@{name} rolls Ninjutsu Ranged with @{Ninjutsu_Ranged_Emphases} Emphasis\n/r  [[@{roll_Ninjutsu_Ranged}+@{roll_bonus_Ninjutsu_Ranged}]]d10k[[@{keep_Ninjutsu_Ranged}+@{keep_bonus_Ninjutsu_Ranged}]]!!r1"></button></td>
+        </tr>
+        <tr>
+            <td>Ninjutsu Melee</td> 
+            <td><input type="number" name="attr_rank_Ninjutsu_Melee" value="0"></td>
+            <td><select class="regular" name="attr_Attr_Ninjutsu_Melee">
+             <option value="@{Agility}">Agility</option>
+             <option value="@{Awareness}">Awareness</option>
+             <option value="@{Intelligence}">Intelligence</option>
+             <option value="@{Perception}">Perception</option>
+             <option value="@{Reflexes}">Reflexes</option>
+             <option value="@{Stamina}">Stamina</option>
+             <option value="@{Strength}">Strength</option>
+			 <option value="@{Void}">Void</option>
+             <option value="@{Willpower}">Willpower</option>
+             </select></td>
+            <input type="hidden" name="attr_roll_Ninjutsu_Melee" value="@{rank_Ninjutsu_Melee}+@{Ninjutsu_Melee}" disabled>
+            <input type="hidden" name="attr_keep_Ninjutsu_Melee" value="@{Ninjutsu_Melee}" disabled>
+            <td><input type="number" name="attr_roll_bonus_Ninjutsu_Melee" value="0"></td>
+            <td><input type="number" name="attr_keep_bonus_Ninjutsu_Melee" value="0"></td>
+            <td><input type="text" name="attr_Ninjutsu_Melee_Emphases" value=""></td>
+            <td><button type="roll" name="Ninjutsu_Melee_Untrained_roll" value="@{name} rolls untrained Ninjutsu Melee\n/r  [[@{roll_Ninjutsu_Melee}+@{roll_bonus_Ninjutsu_Melee}]]d10k[[@{keep_Ninjutsu_Melee}+@{keep_bonus_Ninjutsu_Melee}]]"></button></td>
+            <td><button type="roll" name="Ninjutsu_Melee_Trained_roll" value="@{name} rolls Ninjutsu Melee\n/r  [[@{roll_Ninjutsu_Melee}+@{roll_bonus_Ninjutsu_Melee}]]d10k[[@{keep_Ninjutsu_Melee}+@{keep_bonus_Ninjutsu_Melee}]]!!"></button></td>
+            <td><button type="roll" name="Ninjutsu_Melee_Emphasis_roll" value="@{name} rolls Ninjutsu Melee with @{Ninjutsu_Melee_Emphases} Emphasis\n/r  [[@{roll_Ninjutsu_Melee}+@{roll_bonus_Ninjutsu_Melee}]]d10k[[@{keep_Ninjutsu_Melee}+@{keep_bonus_Ninjutsu_Melee}]]!!r1"></button></td>
+        </tr>
+        <tr>
+            <td>Spears</td> 
+            <td><input type="number" name="attr_rank_Spears" value="0"></td>
+            <td><select class="regular" name="attr_Attr_Spears">
+             <option value="@{Agility}">Agility</option>
+             <option value="@{Awareness}">Awareness</option>
+             <option value="@{Intelligence}">Intelligence</option>
+             <option value="@{Perception}">Perception</option>
+             <option value="@{Reflexes}">Reflexes</option>
+             <option value="@{Stamina}">Stamina</option>
+             <option value="@{Strength}">Strength</option>
+			 <option value="@{Void}">Void</option>
+             <option value="@{Willpower}">Willpower</option>
+             </select></td>
+            <input type="hidden" name="attr_roll_Spears" value="@{rank_Spears}+@{Attr_Spears}" disabled>
+            <input type="hidden" name="attr_keep_Spears" value="@{Attr_Spears}" disabled>
+            <td><input type="number" name="attr_roll_bonus_Spears" value="0"></td>
+            <td><input type="number" name="attr_keep_bonus_Spears" value="0"></td>
+            <td><input type="text" name="attr_Spears_Emphases" value=""></td>
+            <td><button type="roll" name="Spears_Untrained_roll" value="@{name} rolls untrained Spears\n/r  [[@{roll_Spears}+@{roll_bonus_Spears}]]d10k[[@{keep_Spears}+@{keep_bonus_Spears}]]"></button></td>
+            <td><button type="roll" name="Spears_Trained_roll" value="@{name} rolls Spears\n/r  [[@{roll_Spears}+@{roll_bonus_Spears}]]d10k[[@{keep_Spears}+@{keep_bonus_Spears}]]!!"></button></td>
+            <td><button type="roll" name="Spears_Emphasis_roll" value="@{name} rolls Spears with @{Spears_Emphases} Emphasis\n/r  [[@{roll_Spears}+@{roll_bonus_Spears}]]d10k[[@{keep_Spears}+@{keep_bonus_Spears}]]!!r1"></button></td>
+        </tr>
+        <tr>
+            <td>Staves</td> 
+            <td><input type="number" name="attr_rank_Staves" value="0"></td>
+            <td><select class="regular" name="attr_Attr_Staves">
+             <option value="@{Agility}">Agility</option>
+             <option value="@{Awareness}">Awareness</option>
+             <option value="@{Intelligence}">Intelligence</option>
+             <option value="@{Perception}">Perception</option>
+             <option value="@{Reflexes}">Reflexes</option>
+             <option value="@{Stamina}">Stamina</option>
+             <option value="@{Strength}">Strength</option>
+			 <option value="@{Void}">Void</option>
+             <option value="@{Willpower}">Willpower</option>
+             </select></td>
+            <input type="hidden" name="attr_roll_Staves" value="@{rank_Staves}+@{Attr_Staves}" disabled>
+            <input type="hidden" name="attr_keep_Staves" value="@{Attr_Staves}" disabled>
+            <td><input type="number" name="attr_roll_bonus_Staves" value="0"></td>
+            <td><input type="number" name="attr_keep_bonus_Staves" value="0"></td>
+            <td><input type="text" name="attr_Staves_Emphases" value=""></td>
+            <td><button type="roll" name="Staves_Untrained_roll" value="@{name} rolls untrained Staves\n/r  [[@{roll_Staves}+@{roll_bonus_Staves}]]d10k[[@{keep_Staves}+@{keep_bonus_Staves}]]"></button></td>
+            <td><button type="roll" name="Staves_Trained_roll" value="@{name} rolls Staves\n/r  [[@{roll_Staves}+@{roll_bonus_Staves}]]d10k[[@{keep_Staves}+@{keep_bonus_Staves}]]!!"></button></td>
+            <td><button type="roll" name="Staves_Emphasis_roll" value="@{name} rolls Staves with @{Staves_Emphases} Emphasis\n/r  [[@{roll_Staves}+@{roll_bonus_Staves}]]d10k[[@{keep_Staves}+@{keep_bonus_Staves}]]!!r1"></button></td>
+        </tr>
+        <tr>
+            <td>WarFan</td> 
+            <td><input type="number" name="attr_rank_WarFan" value="0"></td>
+            <td><select class="regular" name="attr_Attr_WarFan">
+             <option value="@{Agility}">Agility</option>
+             <option value="@{Awareness}">Awareness</option>
+             <option value="@{Intelligence}">Intelligence</option>
+             <option value="@{Perception}">Perception</option>
+             <option value="@{Reflexes}">Reflexes</option>
+             <option value="@{Stamina}">Stamina</option>
+             <option value="@{Strength}">Strength</option>
+			 <option value="@{Void}">Void</option>
+             <option value="@{Willpower}">Willpower</option>
+             </select></td>
+            <input type="hidden" name="attr_roll_WarFan" value="@{rank_WarFan}+@{Attr_WarFan}" disabled>
+            <input type="hidden" name="attr_keep_WarFan" value="@{Attr_WarFan}" disabled>
+            <td><input type="number" name="attr_roll_bonus_WarFan" value="0"></td>
+            <td><input type="number" name="attr_keep_bonus_WarFan" value="0"></td>
+            <td><input type="text" name="attr_WarFan_Emphases" value=""></td>
+            <td><button type="roll" name="WarFan_Untrained_roll" value="@{name} rolls untrained WarFan\n/r  [[@{roll_WarFan}+@{roll_bonus_WarFan}]]d10k[[@{keep_WarFan}+@{keep_bonus_WarFan}]]"></button></td>
+            <td><button type="roll" name="WarFan_Trained_roll" value="@{name} rolls WarFan\n/r  [[@{roll_WarFan}+@{roll_bonus_WarFan}]]d10k[[@{keep_WarFan}+@{keep_bonus_WarFan}]]!!"></button></td>
+            <td><button type="roll" name="WarFan_Emphasis_roll" value="@{name} rolls WarFan with @{WarFan_Emphases} Emphasis\n/r  [[@{roll_WarFan}+@{roll_bonus_WarFan}]]d10k[[@{keep_WarFan}+@{keep_bonus_WarFan}]]!!r1"></button></td>
+        </tr>
+    </table>    
+    </fieldset>
+     <table><fieldset>
+            <h1><span>Merchant Skills</span></h1>
+            <table class="skills" style="border-collapse:collapse;border-spacing:0">
+        <tr>
+            <td style="font-weight:bold">Skill Name</td>
+            <td style="font-weight:bold">Rank</td>
+            <td style="font-weight:bold">Trait</td>
+            <td style="font-weight:bold">+Roll</td>
+            <td style="font-weight:bold">+Keep</td>
+            <td style="font-weight:bold">Emphases</td>
+            <td style="font-weight:bold;font-size:9px">U</td>
+            <td style="font-weight:bold;font-size:9px">T</td>
+            <td style="font-weight:bold;font-size:9px">E</td>
+            <td style="font-weight:bold">Sub-Type</td>
+        </tr>
+    <tr>
+            <td>Animal Handling</td> 
+            <td><input type="number" name="attr_rank_AnimalHandling" value="0"></td>
+            <td><select class="regular" name="attr_Attr_AnimalHandling">
+             <option value="@{Awareness}">Awareness</option>
+             <option value="@{Agility}">Agility</option>
+             <option value="@{Intelligence}">Intelligence</option>
+             <option value="@{Perception}">Perception</option>
+             <option value="@{Reflexes}">Reflexes</option>
+             <option value="@{Stamina}">Stamina</option>
+             <option value="@{Strength}">Strength</option>
+			 <option value="@{Void}">Void</option>
+             <option value="@{Willpower}">Willpower</option>
+             </select></td>
+            <input type="hidden" name="attr_roll_AnimalHandling" value="@{rank_AnimalHandling}+@{Attr_AnimalHandling}" disabled>
+            <input type="hidden" name="attr_keep_AnimalHandling" value="@{Attr_AnimalHandling}" disabled>
+            <td><input type="number" name="attr_roll_bonus_AnimalHandling" value="0"></td>
+            <td><input type="number" name="attr_keep_bonus_AnimalHandling" value="0"></td>
+            <td><input type="text" name="attr_AnimalHandling_Emphases" value=""></td>
+            <td><button type="roll" value="@{name} rolls untrained Animal Handling\n/r  [[@{roll_AnimalHandling}+@{roll_bonus_AnimalHandling}]]d10k[[@{keep_AnimalHandling}+@{keep_bonus_AnimalHandling}]]"></button></td>
+            <td><button type="roll" value="@{name} rolls Animal Handling\n/r  [[@{roll_AnimalHandling}+@{roll_bonus_AnimalHandling}]]d10k[[@{keep_AnimalHandling}+@{keep_bonus_AnimalHandling}]]!!"></button></td>
+            <td><button type="roll" value="@{name} rolls Animal Handling with @{Animal_Handling_Emphases} Emphasis\n/r  [[@{roll_AnimalHandling}+@{roll_bonus_AnimalHandling}]]d10k[[@{keep_AnimalHandling}+@{keep_bonus_AnimalHandling}]]!!r1"></button></td>
+    </tr>
+    <tr>
+            <td>Commerce</td> 
+            <td><input type="number" name="attr_rank_Commerce" value="0"></td>
+            <td><select class="regular" name="attr_Attr_Commerce">
+             <option value="@{Intelligence}">Intelligence</option>
+             <option value="@{Agility}">Agility</option>
+			 <option value="@{Awareness}">Awareness</option>
+             <option value="@{Perception}">Perception</option>
+             <option value="@{Reflexes}">Reflexes</option>
+             <option value="@{Stamina}">Stamina</option>
+             <option value="@{Strength}">Strength</option>
+			 <option value="@{Void}">Void</option>
+             <option value="@{Willpower}">Willpower</option>
+             </select></td>
+            <input type="hidden" name="attr_roll_Commerce" value="@{rank_Commerce}+@{Attr_Commerce}" disabled>
+            <input type="hidden" name="attr_keep_Commerce" value="@{Attr_Commerce}" disabled>
+            <td><input type="number" name="attr_roll_bonus_Commerce" value="0"></td>
+            <td><input type="number" name="attr_keep_bonus_Commerce" value="0"></td>
+            <td><input type="text" name="attr_Commerce_Emphases" value=""></td>
+            <td><button type="roll" value="@{name} rolls untrained Commerce\n/r  [[@{roll_Commerce}+@{roll_bonus_Commerce}]]d10k[[@{keep_Commerce}+@{keep_bonus_Commerce}]]"></button></td>
+            <td><button type="roll" value="@{name} rolls Commerce\n/r  [[@{roll_Commerce}+@{roll_bonus_Commerce}]]d10k[[@{keep_Commerce}+@{keep_bonus_Commerce}]]!!"></button></td>
+            <td><button type="roll" value="@{name} rolls Commerce with @{Commerce_Emphases} Emphasis\n/r  [[@{roll_Commerce}+@{roll_bonus_Commerce}]]d10k[[@{keep_Commerce}+@{keep_bonus_Commerce}]]!!r1"></button></td>
+    </tr>
+    <tr>
+            <td>Craft</td> 
+            <td><input type="number" name="attr_rank_Craft" value="0"></td>
+            <td><select class="regular" name="attr_Attr_Craft">
+             <option value="@{Intelligence}">Intelligence</option>
+             <option value="@{Agility}">Agility</option>
+			 <option value="@{Awareness}">Awareness</option>
+             <option value="@{Perception}">Perception</option>
+             <option value="@{Reflexes}">Reflexes</option>
+             <option value="@{Stamina}">Stamina</option>
+             <option value="@{Strength}">Strength</option>
+			 <option value="@{Void}">Void</option>
+             <option value="@{Willpower}">Willpower</option>
+             </select></td>
+            <input type="hidden" name="attr_roll_Craft" value="@{rank_Craft}+@{Attr_Craft}" disabled>
+            <input type="hidden" name="attr_keep_Craft" value="@{Attr_Craft}" disabled>
+            <td><input type="number" name="attr_roll_bonus_Craft" value="0"></td>
+            <td><input type="number" name="attr_keep_bonus_Craft" value="0"></td>
+            <td><input type="text" name="attr_Craft_Emphases" value=""></td>
+            <td><button type="roll" value="@{name} rolls untrained Craft\n/r  [[@{roll_Craft}+@{roll_bonus_Craft}]]d10k[[@{keep_Craft}+@{keep_bonus_Craft}]]"></button></td>
+            <td><button type="roll" value="@{name} rolls Craft\n/r  [[@{roll_Craft}+@{roll_bonus_Craft}]]d10k[[@{keep_Craft}+@{keep_bonus_Craft}]]!!"></button></td>
+            <td><button type="roll" value="@{name} rolls Craft with @{Craft_Emphases} Emphasis\n/r  [[@{roll_Craft}+@{roll_bonus_Craft}]]d10k[[@{keep_Craft}+@{keep_bonus_Craft}]]!!r1"></button></td>
+            <td><input type="text" class="regular" name="attr_Craft_type" value=""></td>
+    </tr>
+    <tr>
+            <td>Engineering</td> 
+            <td><input type="number" name="attr_rank_Engineering" value="0"></td>
+            <td><select class="regular" name="attr_Attr_Engineering">
+             <option value="@{Intelligence}">Intelligence</option>
+             <option value="@{Agility}">Agility</option>
+			 <option value="@{Awareness}">Awareness</option>
+             <option value="@{Perception}">Perception</option>
+             <option value="@{Reflexes}">Reflexes</option>
+             <option value="@{Stamina}">Stamina</option>
+             <option value="@{Strength}">Strength</option>
+			 <option value="@{Void}">Void</option>
+             <option value="@{Willpower}">Willpower</option>
+             </select></td>
+            <input type="hidden" name="attr_roll_Engineering" value="@{rank_Engineering}+@{Attr_Engineering}" disabled>
+            <input type="hidden" name="attr_keep_Engineering" value="@{Attr_Engineering}" disabled>
+            <td><input type="number" name="attr_roll_bonus_Engineering" value="0"></td>
+            <td><input type="number" name="attr_keep_bonus_Engineering" value="0"></td>
+            <td><input type="text" name="attr_Engineering_Emphases" value=""></td>
+            <td><button type="roll" value="@{name} rolls untrained Engineering\n/r  [[@{roll_Engineering}+@{roll_bonus_Engineering}]]d10k[[@{keep_Engineering}+@{keep_bonus_Engineering}]]"></button></td>
+            <td><button type="roll" value="@{name} rolls Engineering\n/r  [[@{roll_Engineering}+@{roll_bonus_Engineering}]]d10k[[@{keep_Engineering}+@{keep_bonus_Engineering}]]!!"></button></td>
+            <td><button type="roll" value="@{name} rolls Engineering with @{Engineering_Emphases} Emphasis\n/r  [[@{roll_Engineering}+@{roll_bonus_Engineering}]]d10k[[@{keep_Engineering}+@{keep_bonus_Engineering}]]!!r1"></button></td>
+    </tr>
+    <tr>
+            <td>Sailing</td> 
+            <td><input type="number" name="attr_rank_Sailing" value="0"></td>
+            <td><select class="regular" name="attr_Attr_Sailing">
+             <option value="@{Agility}">Agility</option>
+             <option value="@{Awareness}">Awareness</option>
+             <option value="@{Intelligence}">Intelligence</option>
+             <option value="@{Perception}">Perception</option>
+             <option value="@{Reflexes}">Reflexes</option>
+             <option value="@{Stamina}">Stamina</option>
+             <option value="@{Strength}">Strength</option>
+			 <option value="@{Void}">Void</option>
+             <option value="@{Willpower}">Willpower</option>
+             </select></td>
+            <input type="hidden" name="attr_roll_Sailing" value="@{rank_Sailing}+@{Attr_Sailing}" disabled>
+            <input type="hidden" name="attr_keep_Sailing" value="@{Attr_Sailing}" disabled>
+            <td><input type="number" name="attr_roll_bonus_Sailing" value="0"></td>
+            <td><input type="number" name="attr_keep_bonus_Sailing" value="0"></td>
+            <td><input type="text" name="attr_Sailing_Emphases" value=""></td>
+            <td><button type="roll" value="@{name} rolls untrained Sailing\n/r  [[@{roll_Sailing}+@{roll_bonus_Sailing}]]d10k[[@{keep_Sailing}+@{keep_bonus_Sailing}]]"></button></td>
+            <td><button type="roll" value="@{name} rolls Sailing\n/r  [[@{roll_Sailing}+@{roll_bonus_Sailing}]]d10k[[@{keep_Sailing}+@{keep_bonus_Sailing}]]!!"></button></td>
+            <td><button type="roll" value="@{name} rolls Sailing with @{Sailing_Emphases} Emphasis\n/r  [[@{roll_Sailing}+@{roll_bonus_Sailing}]]d10k[[@{keep_Sailing}+@{keep_bonus_Sailing}]]!!r1"></button></td>
+    </tr>
+    </table></fieldset>
+    <table><fieldset>
+            <h1><span>Low Skills</span></h1>
+            <table class="skills" style="border-collapse:collapse;border-spacing:0">
+        <tr>
+            <td style="font-weight:bold">Skill Name</td>
+            <td style="font-weight:bold">Rank</td>
+            <td style="font-weight:bold">Trait</td>
+            <td style="font-weight:bold">+Roll</td>
+            <td style="font-weight:bold">+Keep</td>
+            <td style="font-weight:bold">Emphases</td>
+            <td style="font-weight:bold;font-size:9px">U</td>
+            <td style="font-weight:bold;font-size:9px">T</td>
+            <td style="font-weight:bold;font-size:9px">E</td>
+            <td style="font-weight:bold">Sub-Type</td>
+        </tr>
+    <tr>
+            <td>Forgery</td> 
+            <td><input type="number" name="attr_rank_Forgery" value="0"></td>
+            <td><select class="regular" name="attr_Attr_Forgery">
+             <option value="@{Agility}">Agility</option>
+             <option value="@{Awareness}">Awareness</option>
+             <option value="@{Intelligence}">Intelligence</option>
+             <option value="@{Perception}">Perception</option>
+             <option value="@{Reflexes}">Reflexes</option>
+             <option value="@{Stamina}">Stamina</option>
+             <option value="@{Strength}">Strength</option>
+			 <option value="@{Void}">Void</option>
+             <option value="@{Willpower}">Willpower</option>
+             </select></td>
+            <input type="hidden" name="attr_roll_Forgery" value="@{rank_Forgery}+@{Attr_Forgery}" disabled>
+            <input type="hidden" name="attr_keep_Forgery" value="@{Attr_Forgery}" disabled>
+            <td><input type="number" name="attr_roll_bonus_Forgery" value="0"></td>
+            <td><input type="number" name="attr_keep_bonus_Forgery" value="0"></td>
+            <td><input type="text" name="attr_Forgery_Emphases" value=""></td>
+            <td><button type="roll" value="@{name} rolls untrained Forgery\n/r  [[@{roll_Forgery}+@{roll_bonus_Forgery}]]d10k[[@{keep_Forgery}+@{keep_bonus_Forgery}]]"></button></td>
+            <td><button type="roll" value="@{name} rolls Forgery\n/r  [[@{roll_Forgery}+@{roll_bonus_Forgery}]]d10k[[@{keep_Forgery}+@{keep_bonus_Forgery}]]!!"></button></td>
+            <td><button type="roll" value="@{name} rolls Forgery with @{Forgery_Emphases} Emphasis\n/r  [[@{roll_Forgery}+@{roll_bonus_Forgery}]]d10k[[@{keep_Forgery}+@{keep_bonus_Forgery}]]!!r1"></button></td>
+    </tr>
+	<tr>
+            <td>Intimidation</td> 
+            <td><input type="number" name="attr_rank_Intimidation" value="0"></td>
+            <td><select class="regular" name="attr_Attr_Intimidation">
+             <option value="@{Awareness}">Awareness</option>
+             <option value="@{Agility}">Agility</option>
+             <option value="@{Intelligence}">Intelligence</option>
+             <option value="@{Perception}">Perception</option>
+             <option value="@{Reflexes}">Reflexes</option>
+             <option value="@{Stamina}">Stamina</option>
+             <option value="@{Strength}">Strength</option>
+			 <option value="@{Void}">Void</option>
+             <option value="@{Willpower}">Willpower</option>
+             </select></td>
+            <input type="hidden" name="attr_roll_Intimidation" value="@{rank_Intimidation}+@{Attr_Intimidation}" disabled>
+            <input type="hidden" name="attr_keep_Intimidation" value="@{Attr_Intimidation}" disabled>
+            <td><input type="number" name="attr_roll_bonus_Intimidation" value="0"></td>
+            <td><input type="number" name="attr_keep_bonus_Intimidation" value="0"></td>
+            <td><input type="text" name="attr_Intimidation_Emphases" value=""></td>
+            <td><button type="roll" value="@{name} rolls untrained Intimidation\n/r  [[@{roll_Intimidation}+@{roll_bonus_Intimidation}]]d10k[[@{keep_Intimidation}+@{keep_bonus_Intimidation}]]"></button></td>
+            <td><button type="roll" value="@{name} rolls Intimidation\n/r  [[@{roll_Intimidation}+@{roll_bonus_Intimidation}]]d10k[[@{keep_Intimidation}+@{keep_bonus_Intimidation}]]!!"></button></td>
+            <td><button type="roll" value="@{name} rolls Intimidation with @{Intimidation_Emphases} Emphasis\n/r  [[@{roll_Intimidation}+@{roll_bonus_Intimidation}]]d10k[[@{keep_Intimidation}+@{keep_bonus_Intimidation}]]!!r1"></button></td>
+    </tr><tr>
+            <td>SleightofHand</td> 
+            <td><input type="number" name="attr_rank_SleightofHand" value="0"></td>
+            <td><select class="regular" name="attr_Attr_SleightofHand">
+             <option value="@{Agility}">Agility</option>
+             <option value="@{Awareness}">Awareness</option>
+             <option value="@{Intelligence}">Intelligence</option>
+             <option value="@{Perception}">Perception</option>
+             <option value="@{Reflexes}">Reflexes</option>
+             <option value="@{Stamina}">Stamina</option>
+             <option value="@{Strength}">Strength</option>
+			 <option value="@{Void}">Void</option>
+             <option value="@{Willpower}">Willpower</option>
+             </select></td>
+            <input type="hidden" name="attr_roll_SleightofHand" value="@{rank_SleightofHand}+@{Attr_SleightofHand}" disabled>
+            <input type="hidden" name="attr_keep_SleightofHand" value="@{Attr_SleightofHand}" disabled>
+            <td><input type="number" name="attr_roll_bonus_SleightofHand" value="0"></td>
+            <td><input type="number" name="attr_keep_bonus_SleightofHand" value="0"></td>
+            <td><input type="text" name="attr_SleightofHand_Emphases" value=""></td>
+            <td><button type="roll" value="@{name} rolls untrained SleightofHand\n/r  [[@{roll_SleightofHand}+@{roll_bonus_SleightofHand}]]d10k[[@{keep_SleightofHand}+@{keep_bonus_SleightofHand}]]"></button></td>
+            <td><button type="roll" value="@{name} rolls SleightofHand\n/r  [[@{roll_SleightofHand}+@{roll_bonus_SleightofHand}]]d10k[[@{keep_SleightofHand}+@{keep_bonus_SleightofHand}]]!!"></button></td>
+            <td><button type="roll" value="@{name} rolls SleightofHand with @{SleightofHand_Emphases} Emphasis\n/r  [[@{roll_SleightofHand}+@{roll_bonus_SleightofHand}]]d10k[[@{keep_SleightofHand}+@{keep_bonus_SleightofHand}]]!!r1"></button></td>
+    </tr><tr>
+            <td>Stealth</td> 
+            <td><input type="number" name="attr_rank_Stealth" value="0"></td>
+            <td><select class="regular" name="attr_Attr_Stealth">
+             <option value="@{Agility}">Agility</option>
+             <option value="@{Awareness}">Awareness</option>
+             <option value="@{Intelligence}">Intelligence</option>
+             <option value="@{Perception}">Perception</option>
+             <option value="@{Reflexes}">Reflexes</option>
+             <option value="@{Stamina}">Stamina</option>
+             <option value="@{Strength}">Strength</option>
+			 <option value="@{Void}">Void</option>
+             <option value="@{Willpower}">Willpower</option>
+             </select></td>
+            <input type="hidden" name="attr_roll_Stealth" value="@{rank_Stealth}+@{Attr_Stealth}" disabled>
+            <input type="hidden" name="attr_keep_Stealth" value="@{Attr_Stealth}" disabled>
+            <td><input type="number" name="attr_roll_bonus_Stealth" value="0"></td>
+            <td><input type="number" name="attr_keep_bonus_Stealth" value="0"></td>
+            <td><input type="text" name="attr_Stealth_Emphases" value=""></td>
+            <td><button type="roll" value="@{name} rolls untrained Stealth\n/r  [[@{roll_Stealth}+@{roll_bonus_Stealth}]]d10k[[@{keep_Stealth}+@{keep_bonus_Stealth}]]"></button></td>
+            <td><button type="roll" value="@{name} rolls Stealth\n/r  [[@{roll_Stealth}+@{roll_bonus_Stealth}]]d10k[[@{keep_Stealth}+@{keep_bonus_Stealth}]]!!"></button></td>
+            <td><button type="roll" value="@{name} rolls Stealth with @{Stealth_Emphases} Emphasis\n/r  [[@{roll_Stealth}+@{roll_bonus_Stealth}]]d10k[[@{keep_Stealth}+@{keep_bonus_Stealth}]]!!r1"></button></td>
+    </tr><tr>
+            <td>Temptation</td> 
+            <td><input type="number" name="attr_rank_Temptation" value="0"></td>
+            <td><select class="regular" name="attr_Attr_Temptation">
+             <option value="@{Awareness}">Awareness</option>
+             <option value="@{Agility}">Agility</option>
+             <option value="@{Intelligence}">Intelligence</option>
+             <option value="@{Perception}">Perception</option>
+             <option value="@{Reflexes}">Reflexes</option>
+             <option value="@{Stamina}">Stamina</option>
+             <option value="@{Strength}">Strength</option>
+			 <option value="@{Void}">Void</option>
+             <option value="@{Willpower}">Willpower</option>
+             </select></td>
+            <input type="hidden" name="attr_roll_Temptation" value="@{rank_Temptation}+@{Attr_Temptation}" disabled>
+            <input type="hidden" name="attr_keep_Temptation" value="@{Attr_Temptation}" disabled>
+            <td><input type="number" name="attr_roll_bonus_Temptation" value="0"></td>
+            <td><input type="number" name="attr_keep_bonus_Temptation" value="0"></td>
+            <td><input type="text" name="attr_Temptation_Emphases" value=""></td>
+            <td><button type="roll" value="@{name} rolls untrained Temptation\n/r  [[@{roll_Temptation}+@{roll_bonus_Temptation}]]d10k[[@{keep_Temptation}+@{keep_bonus_Temptation}]]"></button></td>
+            <td><button type="roll" value="@{name} rolls Temptation\n/r  [[@{roll_Temptation}+@{roll_bonus_Temptation}]]d10k[[@{keep_Temptation}+@{keep_bonus_Temptation}]]!!"></button></td>
+            <td><button type="roll" value="@{name} rolls Temptation with @{Temptation_Emphases} Emphasis\n/r  [[@{roll_Temptation}+@{roll_bonus_Temptation}]]d10k[[@{keep_Temptation}+@{keep_bonus_Temptation}]]!!r1"></button></td>
+    </tr>
+    </table></fieldset></table>
+</div>
+
+
+<div class="tab-content weapons-tab">
+    <div>U = Untrained Attack | T = Trained Attack | E = Emphasis Attack</div>
+    <div>DR = Damage Roll | DK = Damage Keep</div>
+         <h1 class="separator vspace"><span>Melee Weapons</span></h1>
+             <span class="span-header" style="width: 125px">Weapon</span>
+    		 <span class="span-header" style="width: 100px">Skill</span>
+             <span class="span-header" style="width: 90px">U | T | E</span>
+			 <span class="span-header" style="width: 40px">DR</span>
+             <span class="span-header" style="width: 40px">DK</span>
+             <span class="span-header" style="width: 60px">Damage</span>
+			 <span class="span-header" style="width: 150px">Notes</span>
+             <fieldset class="repeating_weapons">
+             <div class="weapons">
+                <input type="text" name="attr_Weapon" class="regular">
+                <select class="regular" name="attr_WeaponSkill">
+                     <option value=@{rank_Jiujiutsu}>Jiujiutsu</option>
+                     <option value=@{rank_Chain_Weapons}>Chain Weapons</option>
+                     <option value=@{rank_Heavy_Weapons}>Heavy Weapons</option>
+                     <option value=@{rank_Kenjutsu}>Kenjutsu</option>
+                     <option value=@{rank_Knives}>Knives</option>
+                     <option value=@{rank_Kyujutsu}>Kyujutsu</option>
+                     <option value=@{rank_Ninjutsu_Ranged}>Ninjutsu (Ranged)</option>
+                     <option value=@{rank_Ninjutsu_Melee}>Ninjutsu (Melee)</option>
+                     <option value=@{rank_Ninjutsu_Melee}>Ninjutsu (Melee)</option>
+                     <option value=@{rank_Spears}>Spears</option>
+                     <option value=@{rank_Staves}>Staves</option>
+                     <option value=@{rank_WarFan}>War Fan</option>
+                     </select>
+        <button type="roll" value="@{name} attacks unsteadily with @{Weapon}\n/r [[@{WeaponSkill} + @{Agility}]]d10k[[@{Agility}]]"></button>
+        <button type="roll" value="@{name} attacks with @{Weapon}\n/r [[@{WeaponSkill} + @{Agility}]]d10k[[@{Agility}]]!!"></button>
+        <button type="roll" value="@{name} attacks expertly with @{Weapon}\n/r [[@{WeaponSkill} + @{Agility}]]d10k[[@{Agility}]]!!r1"></button>
+        <input type="number" name="attr_WeaponDamageRoll" class="very-narrow" value="1">
+        <input type="number" name="attr_WeaponDamageKeep" class="very-narrow" value="1">
+        <button type="roll" value="@{name} rolls damage with @{Weapon}\n/r [[@{WeaponDamageRoll}+@{Strength}]]d10k[[@{WeaponDamageKeep}]]!!"></button>
+        <input type="text" name="attr_Notes" class="sheet-wide"></div>
+    
+    </fieldset>
+    <table><fieldset>
+            <h1 class="separator vspace"><span>Bows</span></h1>
+            <table style='border-collapse: collapse; border-spacing: 0;'>
+            <table style='border-collapse: collapse; border-spacing: 0;'>
+    <tr>
+            <td style='font-weight: bold;'></td>
+            <td style='font-weight: bold;'></td>
+            <td style='font-weight: bold;'>Bow</td>
+            <td style='font-weight: bold;font-style:italic;'>Attack</td>
+            <td style='font-weight: bold;font-style:italic;'>Roll</td>
+            <td style='font-weight: bold;'></td>
+            <td style='font-weight: bold;font-style:italic;'>Arrow</td>
+            <td style='font-weight: bold;font-style:italic;'>Damage</td>
+            <td style='font-weight: bold;'></td>
+   </tr>
+    <tr>
+            <td style='font-weight: bold;'>Bow</td>
+            <td style='font-weight: bold;'>Skill</td>
+            <td style='font-weight: bold;'>Strength</td>
+            <td style='font-weight: bold;'>U</td>
+            <td style='font-weight: bold;'>T</td>
+            <td style='font-weight: bold;'>E</td>
+            <td style='font-weight: bold;'>Roll</td>
+            <td style='font-weight: bold;'>Keep</td>
+            <td style='font-weight: bold;font-size:9px'>Damage</td>
+            <td style='font-weight: bold;'>Notes</td>
+   </tr>   
+    <tr>
+        <td><input type="text" name="attr_ranged_Weapon" class="regular"></td>
+        <td><input type="hidden" name="attr_ranged_WeaponSkill" value=@{rank_Kyujutsu} disabled='true'></td>
+        <td><input type="number" name="attr_bow_Strength" class="sheet-short"></td>
+        <td><button type="roll" value="/roll [[@{roll_Kyujutsu}+@{roll_bonus_Kyujutsu}]]d10k[[@{keep_Kyujutsu}+@{keep_bonus_Kyujutsu}]]"></button></td>
+        <td><button type="roll" value="/roll [[@{roll_Kyujutsu}+@{roll_bonus_Kyujutsu}]]d10k[[@{keep_Kyujutsu}+@{keep_bonus_Kyujutsu}]]!!"></button></td>
+        <td><button type="roll" value="/roll [[@{roll_Kyujutsu}+@{roll_bonus_Kyujutsu}]]d10k[[@{keep_Kyujutsu}+@{keep_bonus_Kyujutsu}]]!!r1"></button></td>
+        <td><select class="regular" name="attr_arrow_roll">
+             <option value="1">Armor Piercing</option>
+             <option value="2">Flesh Cutter</option>
+             <option value="0">Humming Bulb</option>
+             <option value="1">Rope Cutter</option>
+             <option value="2">Willow Leaf</option>
+             </select></td>
+        <td><select class="regular" name="attr_arrow_keep">
+             <option value="1">Armor Piercing</option>
+             <option value="3">Flesh Cutter</option>
+             <option value="1">Humming Bulb</option>
+             <option value="1">Rope Cutter</option>
+             <option value="2">Willow Leaf</option>
+             </select></td>
+        <td><button type="roll" value="/roll [[@{arrow_roll}+@{bow_eff_Strength}]]d10k[[@{arrow_keep}]]!!"></button></td>
+        <td><input type="text" name="attr_Notes" class="regular"></td>
+        <td><input type="hidden" name="attr_bow_eff_Strength" value="@{Strength}" max="@{bow_Strength}" class="sheet-short" disabled='true'></td>
+    </tr>
+            <tr><td style='font-weight: bold;'>Arrow Types</td></tr>
+            <tr><td>Armor Piercing:</td><td> 1k1</td></tr>
+            <tr><td>Flesh Cutter:</td><td> 2k3</td></tr>
+            <tr><td>Humming Bulb:</td><td> 0k1</td></tr>
+            <tr><td>Rope Cutter:</td><td> 1k1</td></tr>
+            <tr><td>Willow Leaf:</td><td> 2k2</td></tr>
+    </table>
+    
+<h1 class="separator vspace"><span>Equipment and Possessions</span></h1>
+     <fieldset class="repeating_gear">
+         <div class="weapons">
+             <input type="text" name="attr_GearName" class="wide-flex">
+         </div>
+     </fieldset>
+
+    
+</div>
+
+
+<div class="tab-content spells-tab">
+            <h1 class="separator"><span>Spells</span></h1>
+    			
+			<fieldset class="repeating_sorcery">
+				<div class="spells">
+					<Span>Name:</Span><input type="text" class="wide" name="attr_SpellName" />
+					<select class="very-narrow" name="attr_SpellRing">
+                        <option value="@{All}">All</option>
+                        <option value="@{Air}">Air</option>
+                        <option value="@{Earth}">Earth</option>
+                        <option value="@{Fire}">Fire</option>
+                        <option value="@{Water}">Water</option>
+                        <option value="@{Void}">Void</option>
+                    </select>
+                    <input type="number" class="very-narrow" name="attr_SpellMastery" /><Span>:Mastery</Span>
+                    <button type="roll" value="@{name} performs @{SpellName} \n/r [[@{SpellRing}+@{SchoolRank}]]d10k[[@{SpellRing}]]!!"></button>
+					<Span>Range:</Span><input type="text" class="narrow" name="attr_SpellRange" />
+					<Span>Area:</Span><input type="text" class="narrow" name="attr_SpellArea" />
+                    <Span>Duration:</Span><input type="text" class="narrow" name="attr_SpellDuration" />
+                    <textarea class="spelleffect" name="attr_SpellEffect" /></textarea>
+				</div>
+			</fieldset>      
+</div>
+
+</div>
+
+</div>
